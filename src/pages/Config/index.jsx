@@ -6,24 +6,32 @@ export default function Quiz() {
     const [subject, setSubject] = useState('')
     const [time, setTime] = useState('')
     const [questionCount, setQuestionCount] = useState('')
+    const [randomMode, setRandomMode] = useState(true)
+    const [rangeStart, setRangeStart] = useState('')
+    const [rangeEnd, setRangeEnd] = useState('')
 
     const handleStart = () => {
+        
+
         localStorage.setItem(
             'quiz-config',
             JSON.stringify({
                 subject,
                 time,
-                questionCount
+                questionCount: randomMode ? questionCount : null,
+                randomMode,
+                rangeStart: randomMode ? null : Number(rangeStart),
+                rangeEnd: randomMode ? null : Number(rangeEnd)
             })
         );
         route(`/exam`)
     }
 
-    const user = JSON.parse(localStorage.getItem('user'));
+    const user = JSON.parse(localStorage.getItem('user'))
 
     if (!user) {
-        route('/');
-        return null;
+        route('/')
+        return null
     }
 
     return (
@@ -66,29 +74,101 @@ export default function Quiz() {
                 </div>
 
                 <div class="mb-3">
-                    <label for="selectQuestionCount" class="form-label">Số câu hỏi</label>
-                    <select
-                        id="selectQuestionCount"
-                        class="form-select"
-                        value={questionCount}
-                        onChange={(e) => setQuestionCount(e.target.value)}
-                        required
-                    >
-                        <option value="">-- Chọn số câu hỏi --</option>
-                        <option value="10">10 câu</option>
-                        <option value="20">20 câu</option>
-                        <option value="30">30 câu</option>
-                        <option value="40">40 câu</option>
-                        <option value="50">50 câu</option>
-                    </select>
+                    <label class="form-label">Chế độ chọn câu hỏi</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="questionMode"
+                                id="randomMode"
+                                value="random"
+                                checked={randomMode}
+                                onChange={() => setRandomMode(true)}
+                            />
+                            <label class="form-check-label" htmlFor="randomMode">
+                                Random
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input
+                                class="form-check-input"
+                                type="radio"
+                                name="questionMode"
+                                id="rangeMode"
+                                value="range"
+                                checked={!randomMode}
+                                onChange={() => setRandomMode(false)}
+                                disabled
+                            />
+                            <label class="form-check-label" htmlFor="rangeMode">
+                                Chọn theo khoảng
+                            </label>
+                        </div>
+                    </div>
                 </div>
+
+                {randomMode && (
+                    <div class="mb-3">
+                        <label for="selectQuestionCount" class="form-label">Số câu hỏi</label>
+                        <select
+                            id="selectQuestionCount"
+                            class="form-select"
+                            value={questionCount}
+                            onChange={(e) => setQuestionCount(e.target.value)}
+                            required
+                        >
+                            <option value="">-- Chọn số câu hỏi --</option>
+                            <option value="10">10 câu</option>
+                            <option value="20">20 câu</option>
+                            <option value="30">30 câu</option>
+                            <option value="40">40 câu</option>
+                            <option value="50">50 câu</option>
+                        </select>
+                    </div>
+                )}
+
+                {!randomMode && (
+                    <>
+                        <div class="mb-3">
+                            <label for="rangeStart" class="form-label">Câu hỏi bắt đầu từ</label>
+                            <input
+                                type="number"
+                                id="rangeStart"
+                                class="form-control"
+                                value={rangeStart}
+                                onChange={(e) => setRangeStart(e.target.value)}
+                                min="1"
+                                required
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="rangeEnd" class="form-label">Câu hỏi kết thúc tại</label>
+                            <input
+                                type="number"
+                                id="rangeEnd"
+                                class="form-control"
+                                value={rangeEnd}
+                                onChange={(e) => setRangeEnd(e.target.value)}
+                                min="1"
+                                required
+                            />
+                        </div>
+                    </>
+                )}
 
                 <div class="text-center">
                     <button
                         type="button"
                         class="btn btn-success"
                         onClick={handleStart}
-                        disabled={!subject || !time || !questionCount}
+                        disabled={
+                            !subject ||
+                            !time ||
+                            (randomMode && !questionCount) ||
+                            (!randomMode && (!rangeStart || !rangeEnd || Number(rangeStart) > Number(rangeEnd)))
+                        }
                     >
                         Bắt đầu thi
                     </button>

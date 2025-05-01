@@ -3,6 +3,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { route } from 'preact-router';
 import { validateQuizConfig } from '../../utils/validateConfig';
 import { loadQuestionsFromSubject } from '../../utils/loadQuestions';
+// import { selectQuestionsInRange } from '../../utils/selectQuestions';
 import { startTimer } from '../../utils/quizTimer';
 import { saveAndSendResult } from '../../utils/saveResult';
 
