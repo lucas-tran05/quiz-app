@@ -684,7 +684,7 @@
     "a": "Tạo khung thông tin (Fr ame)",
     "b": "Đóng gói dữ liệu",
     "c": "Cung cấp các phương tiện để người dùng có thể truy nhập được vào môi trường mạng",
-    "d": "Vận chuyển thông tin giữa các máy chủ (End to End)  PHẦN 3. TẦNG ỨNG DỤNG ",
+    "d": "Vận chuyển thông tin giữa các máy chủ (End to End)  ",
     "ans": "c"
   },
   {
@@ -988,7 +988,7 @@
     "a": "(name, value, type, ttl)",
     "b": "(value, name, ttl, type)",
     "c": "(value, ttl, name, type)",
-    "d": "(name, type, ttl, value)  PHẦN 4. TẦNG GIAO VẬN ",
+    "d": "(name, type, ttl, value)",
     "ans": "a"
   },
   {
@@ -1676,7 +1676,7 @@
     "a": "1080:0000:0000:0000:0008:0800:200C:417A",
     "b": "1080:0000:0000:0008:0800:200C:417A",
     "c": "1080:0000:0000:0000:0000:0008:0800:200C:417A",
-    "d": "1080::0008:0800:200C::417A   29",
+    "d": "1080::0008:0800:200C::417A",
     "ans": "a"
   },
   {
@@ -1684,7 +1684,7 @@
     "a": "2001:F68:0:0:0:0:1986:69AF",
     "b": "2001:F68::1986:69AF",
     "c": "Cả hai biểu diễn trên đều đúng",
-    "d": "Cả hai biểu diễn trên đều sai  PHẦN 6. TẦNG LIÊN KẾT DỮ LIU VÀ TẦNG VẬT LÝ ",
+    "d": "Cả hai biểu diễn trên đều sai ",
     "ans": "c"
   },
   {
@@ -2036,7 +2036,7 @@
     "a": "TCP/IP",
     "b": "IPX/SPX",
     "c": "NetBEUI",
-    "d": "Tất cả  PHẦN 7. AN TOÀN VÀ BẢO MẬT MẠNG  35 ",
+    "d": "Tất cả ",
     "ans": "d"
   },
   {
@@ -2116,7 +2116,7 @@
     "a": "Mã hóa khóa đối xứng",
     "b": "Mã hóa khóa công khai",
     "c": "Cả mã hóa khóa đối xứng và mã hóa khóa công khai",
-    "d": "Tất cả các phương án trên đều sai  PHẦN 8. CÁC CÔNG CỤ MẠNG LIÊN QUAN ĐẾN PHẦN THỰC HÀNH MÔN HC ( ) ",
+    "d": "Tất cả các phương án trên đều sai ",
     "ans": "b"
   },
   {
