@@ -86,7 +86,7 @@ export default function Quiz() {
                 <div class="text-center">
                     <button
                         type="button"
-                        class="btn btn-primary"
+                        class="btn btn-success"
                         onClick={handleStart}
                         disabled={!subject || !time || !questionCount}
                     >

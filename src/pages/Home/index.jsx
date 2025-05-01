@@ -84,8 +84,15 @@ export default function Home() {
                 </div>
 
                 <div class="text-center mb-4">
-                    <button type="submit" class="btn btn-primary">Bắt đầu</button>
+                    <button
+                        type="submit"
+                        class="btn btn-success"
+                        disabled={!email || !name || !major}
+                    >
+                        Bắt đầu
+                    </button>
                 </div>
+
             </form>
         </div>
     )

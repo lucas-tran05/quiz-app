@@ -66,7 +66,7 @@ export default function Result() {
 
             <div class="text-center mt-4 mb-4">
                 <button
-                    class="btn btn-primary"
+                    class="btn btn-success"
                     onClick={() => {
                         localStorage.removeItem('quiz-result');
                         const user = localStorage.getItem('user'); 
