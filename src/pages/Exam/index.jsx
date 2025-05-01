@@ -72,7 +72,7 @@ export default function Exam() {
         <div class="container mt-5">
             <div class="row">
                 {/* Cột câu hỏi */}
-                <div class="col-10">
+                <div class="col-12 col-10">
                     {questions.map((q, index) => (
                         <div key={index} id={`question-${index}`} class="mb-4">
                             {/* Hiển thị số thứ tự câu hỏi */}
@@ -102,7 +102,7 @@ export default function Exam() {
                 </div>
 
                 {/* Cột trạng thái */}
-                <div class="col-2">
+                <div class="col-2 d-none d-md-block">
                     <div style={{
                         position: 'sticky',
                         top: '20px',

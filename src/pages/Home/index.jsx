@@ -38,7 +38,7 @@ export default function Home() {
             <h1 class="text-center mb-4">Chào mừng đến với trang thi!</h1>
             <p class="text-center mb-4">Hãy chuẩn bị cho bài kiểm tra của bạn.</p>
 
-            <form class="mb-4 col-4 mx-auto" onSubmit={handleSubmit}>
+            <form class="mb-4 col-12 col-md-6 mx-auto" onSubmit={handleSubmit}>
                 <div class="form-floating mb-3">
                     <input
                         type="email"
