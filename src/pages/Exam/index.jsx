@@ -74,7 +74,12 @@ export default function Exam() {
                 <div class="col-10">
                     {questions.map((q, index) => (
                         <div key={index} id={`question-${index}`} class="mb-4">
-                            <h6 style={{ fontWeight: 'bold' }}>{q.question}</h6>
+                            {/* Hiển thị số thứ tự câu hỏi */}
+                            <h6 style={{ fontWeight: 'bold' }}>
+                                {index + 1}. {q.question}
+                            </h6>
+
+                            {/* Hiển thị các lựa chọn đáp án */}
                             {['a', 'b', 'c', 'd'].map((key) => (
                                 <div class="form-check" key={key}>
                                     <input
@@ -82,14 +87,17 @@ export default function Exam() {
                                         id={`${key}-${index}`}
                                         name={`answer-${index}`}
                                         class="form-check-input"
-                                        onChange={() => handleAnswerChange(index, key)}
-                                        checked={answers[index] === key}
+                                        onChange={() => handleAnswerChange(index, key)} 
+                                        checked={answers[index] === key} 
                                     />
-                                    <label htmlFor={`${key}-${index}`} class="form-check-label">{q[key]}</label>
+                                    <label htmlFor={`${key}-${index}`} class="form-check-label">
+                                        {q[key]} 
+                                    </label>
                                 </div>
                             ))}
                         </div>
                     ))}
+
                 </div>
 
                 {/* Cột trạng thái */}
