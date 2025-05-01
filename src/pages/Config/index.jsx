@@ -21,7 +21,8 @@ export default function Quiz() {
                 questionCount: randomMode ? questionCount : null,
                 randomMode,
                 rangeStart: randomMode ? null : Number(rangeStart),
-                rangeEnd: randomMode ? null : Number(rangeEnd)
+                rangeEnd: randomMode ? null : Number(rangeEnd),
+                startTime: Date.now()
             })
         );
         route(`/exam`)

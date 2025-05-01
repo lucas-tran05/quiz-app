@@ -7,7 +7,12 @@ async function sendResultToSheet(result) {
     formData.append('major', result.major);
     formData.append('subject', result.subject);
     formData.append('totalQuestions', result.total);
-    formData.append('score', (Math.round((result.correct / result.total) * 10 * 100) / 100));
+    formData.append('score', (Math.round((result.correct / result.total) * 10 * 100) / 100).toString().replace('.', ','));
+    formData.append('mode', result.mode);
+    formData.append('range', result.range || '');
+    formData.append('time', result.time || '');
+    formData.append('startTime', result.startTime || '');
+    formData.append('endTime', result.endTime || '');
     formData.append('secret', KEY);
 
     fetch('https://script.google.com/macros/s/AKfycbzJ4qGLNT8kHvsuh_EqiYGLW2cWydOOPHyDkn5GWTU53mL68Hn6-VyIh5mexXp9EQ0p/exec', {

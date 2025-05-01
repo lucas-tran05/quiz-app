@@ -22,6 +22,11 @@ export function saveAndSendResult({ questions, answers }) {
         correct,
         total: questions.length,
         subject: config.subject,
+        mode: config.randomMode ? 'Random' : 'Range',
+        range: config.randomMode ? null : `${config.rangeStart} - ${config.rangeEnd}`,
+        time: config.time,
+        startTime: config.startTime,
+        endTime: Date.now(),
     };
 
     sendResultToSheet(result);
