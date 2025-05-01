@@ -51,7 +51,7 @@ export default function Quiz() {
                     >
                         <option value="">-- Chọn môn học --</option>
                         <option value="int1336">Mạng máy tính</option>
-                        <option value="bas1122">Tư tưởng Hồ Chí Minh</option>
+                        <option value="bas1122" disabled>Tư tưởng Hồ Chí Minh</option>
                     </select>
                 </div>
 
