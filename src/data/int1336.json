@@ -437,15 +437,15 @@
     "b": "Hai kênh truyền thông cùng phân chia giải thông của đường truyền",
     "c": "Ba kênh tru yền thông cùng phân chia giải thông của đường truyền",
     "d": "Nhiều kênh truyền thông cùng phân chia giải thông của đường truyền ",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1.57 Truyền dẫn theo dải rộng (broadband): : ",
     "a": "Toàn bộ khả năng đường truyền được dành cho một kênh thông duy nhất",
     "b": "Hai k ênh truyền thông cùng phân chia giải thông của đường truyền",
     "c": "Ba kênh truyền thông cùng phân chia giải thông của đường truyền",
-    "d": "Nhiều kênh truyền thông cùng phân chia giải thông của đường truyền  PHẦN 2. MÔ HÌNH OSI VÀ MÔ HÌNH TCP/IP ",
-    "ans": ""
+    "d": "Nhiều kênh truyền thông cùng phân chia giải thông của đường truyền",
+    "ans": "d"
   },
   {
     "question": "Câu hỏi 1.58: Thứ tự của các tầng trong mô hình tham chiếu OSI:",
@@ -803,8 +803,8 @@
     "question": "Câu hỏi 1.103: HTTP làm nhiệm vụ gì:",
     "a": "Cung cấp một cơ chế để lấy dữ liệu từ server chuyển đến client",
     "b": "Hiển thị các trang Web từ xa trên màn hình và giúp người dùng tương tác với chúng",
-    "c": "Cung cấp giao diện người dùng như các nút bấm, thanh trượt,… D . Cung cấp dữ liệu từ server sử dụng giao thức chuyển file (File Transport Protocol) ",
-    "d": "",
+    "c": "Cung cấp giao diện người dùng như các nút bấm, thanh trượt,…",
+    "d": "Cung cấp dữ liệu từ server sử dụng giao thức chuyển file (File Transport Protocol)",
     "ans": "a"
   },
   {
@@ -1285,7 +1285,7 @@
     "b": "172.16.9.12",
     "c": "127.0.0.1",
     "d": "172.16.9.0 ",
-    "ans": ""
+    "ans": "b"
   },
   {
     "question": "Câu hỏi 1.166: Các địa chỉ IP cùng mạng con với địa chỉ 131.107.2.56/28:",
@@ -1612,8 +1612,8 @@
     "a": "149.255.255.255",
     "b": "149.6.255.255",
     "c": "149.6.7.255",
-    "d": "Tất cả đều đúng   28",
-    "ans": ""
+    "d": "Tất cả đều đúng",
+    "ans": "c"
   },
   {
     "question": "Câu hỏi 1.209: Địa chỉ IP 172.200.25.55/255.255.0.0",
@@ -1645,7 +1645,7 @@
     "b": "1480 bytes",
     "c": "1500 bytes",
     "d": "1600 bytes ",
-    "ans": ""
+    "ans": "b"
   },
   {
     "question": "Câu hỏi 1.213: Có địa chỉ 200.23.16.0/23, giá trị 23 là:",
@@ -1957,7 +1957,7 @@
     "b": "TCP và UDP",
     "c": "TCP và IP",
     "d": "ARP và RARP ",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1.253: Fast Ethernet còn được gọi là:",
@@ -2045,7 +2045,7 @@
     "b": "Nhiều người sử dụng và phân tán về mặt vật lý",
     "c": "Bảo vệ các máy chủ",
     "d": "Chống nghe trộm thông tin. ",
-    "ans": ""
+    "ans": "b"
   },
   {
     "question": "Câu hỏi 1. An toàn mạng theo nghĩa là bảo vệ và đảm bảo an toàn: 264: ",
@@ -2053,7 +2053,7 @@
     "b": "Tài nguyên của mạng",
     "c": "Phần cứng của mạng",
     "d": "Kho dữ liệu ",
-    "ans": ""
+    "ans": "b"
   },
   {
     "question": "Câu hỏi 1. Vi phạm an toàn thông tin hiểu theo nghĩa: 265: ",
@@ -2061,7 +2061,7 @@
     "b": "Can thiệp vào các hoạt động của người sử dụng",
     "c": "Nội dung thông tin và luồng thông tin thay đổi",
     "d": "Từ chối dịch vụ ",
-    "ans": ""
+    "ans": "c"
   },
   {
     "question": "Câu hỏi 1. Mật mã là quá trình chuyển đối thông tin từ bản rõ sang: 266: ",
@@ -2069,7 +2069,7 @@
     "b": "Dạng từ chối dịch vụ",
     "c": "Phủ nhận",
     "d": "Không được quyền truy xuất ",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1. Firewall là một hệ thống kiểm soát, ngăn chặn: 267: ",
@@ -2077,7 +2077,7 @@
     "b": "Sử dụng tài nguyên của mạng",
     "c": "Quyền truy xuất thông tin",
     "d": "Gián điệp ",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1. Một bộ lọc packet (cài đặt trên firewall) có thể: 268: ",
@@ -2085,7 +2085,7 @@
     "b": "Cho phép FTP client ở bên trong có thể truy cập tới FTP server bên ngoài mà máy tính bên trong không bị hack",
     "c": "Cho phép FTP client ở bên ngoài có thể truy cập tới FTP server bên trong mà máy tính bên trong không bị hack",
     "d": "Tất cả đều đúng ",
-    "ans": ""
+    "ans": "d"
   },
   {
     "question": "Câu hỏi 1.2 Chứng thực là: 69: ",
@@ -2093,7 +2093,7 @@
     "b": "Người gửi và người nhận xác định là nhận ra nhau",
     "c": "Người gửi và người nhận muốn đảm bảo thông điệp không bị thay đổi",
     "d": "Các dịch vụ phải có khả năng truy nhập và sẵn sàng với người dùng ",
-    "ans": ""
+    "ans": "b"
   },
   {
     "question": "Câu hỏi 1. Sự toàn vẹn thông điệp là: 270: ",
@@ -2101,7 +2101,7 @@
     "b": "Người gửi và người nhận xác định là nhận ra nhau",
     "c": "Người gửi và người nhận muốn đảm bảo thông điệp không bị thay đổi  36",
     "d": "Các dịch vụ phải có khả năng truy nhập và sẵn sàng với người dùng ",
-    "ans": ""
+    "ans": "c"
   },
   {
     "question": "Câu hỏi 1. DES (Data Encryption Standard) được sử dụn 271: g trong:",
@@ -2109,7 +2109,7 @@
     "b": "Mã hóa khóa công khai",
     "c": "Cả mã hóa khóa đối xứng và mã hóa khóa công khai",
     "d": "Tất cả các phương án trên đều sai ",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1.272 Giải thuật RSA được sử dụng trong: : ",
@@ -2117,7 +2117,7 @@
     "b": "Mã hóa khóa công khai",
     "c": "Cả mã hóa khóa đối xứng và mã hóa khóa công khai",
     "d": "Tất cả các phương án trên đều sai  PHẦN 8. CÁC CÔNG CỤ MẠNG LIÊN QUAN ĐẾN PHẦN THỰC HÀNH MÔN HC ( ) ",
-    "ans": ""
+    "ans": "b"
   },
   {
     "question": "Câu hỏi 1.2 Sử dụng lệnh IPconfig khi muốn: 73: ",
@@ -2229,7 +2229,7 @@
     "b": "Mô hình PPPoE (Point to Point over Ethernet) RFC 2516",
     "c": "Mô hình IP over ATM (RFC 1483R)",
     "d": "Tất cả đều đúng ",
-    "ans": ""
+    "ans": "d"
   },
   {
     "question": "Câu hỏi 1.2 Công nghệ ADSL là công nghệ đường dây thuê bao số truy nhập: 87: ",
@@ -2237,7 +2237,7 @@
     "b": "Ngẫu nhiên",
     "c": "Tuần tự",
     "d": "Đối xứng ",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1.2 Khi quên mật khẩu của ADSL Router, làm cách nào để khôi phục mật khẩu mặc 88: định:",
@@ -2253,7 +2253,7 @@
     "b": "DHCP Service",
     "c": "Câu a và b đúng",
     "d": "Tất cả các câu trên đều sai   39",
-    "ans": ""
+    "ans": "a"
   },
   {
     "question": "Câu hỏi 1.290: Trang thiết bị mạng trung tâm dùng để kết nối các máy tính trong mạng hình sao (STAR):",
