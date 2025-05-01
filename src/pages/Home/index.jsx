@@ -83,7 +83,7 @@ export default function Home() {
                     </select>
                 </div>
 
-                <div class="text-center">
+                <div class="text-center mb-4">
                     <button type="submit" class="btn btn-primary">Bắt đầu</button>
                 </div>
             </form>

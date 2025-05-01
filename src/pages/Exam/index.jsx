@@ -140,7 +140,7 @@ export default function Exam() {
                 </div>
             </div>
 
-            <div class="text-center mt-4">
+            <div class="text-center mt-4 mb-4">
                 <button class="btn btn-success" onClick={handleSubmit}>
                     Nộp bài
                 </button>

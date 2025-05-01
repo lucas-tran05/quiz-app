@@ -64,7 +64,7 @@ export default function Result() {
                 })}
             </div>
 
-            <div class="text-center mt-4">
+            <div class="text-center mt-4 mb-4">
                 <button
                     class="btn btn-primary"
                     onClick={() => {
