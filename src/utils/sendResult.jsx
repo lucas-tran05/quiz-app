@@ -7,7 +7,7 @@ async function sendResultToSheet(result) {
     formData.append('major', result.major);
     formData.append('subject', result.subject);
     formData.append('totalQuestions', result.total);
-    formData.append('score', result.correct / result.total * 10);
+    formData.append('score', (Math.round((result.correct / result.total) * 10 * 100) / 100));
     formData.append('secret', KEY);
 
     fetch('https://script.google.com/macros/s/AKfycbzJ4qGLNT8kHvsuh_EqiYGLW2cWydOOPHyDkn5GWTU53mL68Hn6-VyIh5mexXp9EQ0p/exec', {
