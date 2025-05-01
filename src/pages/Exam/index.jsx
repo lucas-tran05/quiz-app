@@ -57,6 +57,7 @@ export default function Exam() {
     const handleSubmit = () => {
         try {
             saveAndSendResult({ questions, answers });
+            localStorage.removeItem('quiz-config');
             route('/result');
         } catch (e) {
             setError(e.message);

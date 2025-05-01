@@ -69,7 +69,6 @@ export default function Result() {
                     class="btn btn-primary"
                     onClick={() => {
                         localStorage.removeItem('quiz-result');
-                        localStorage.removeItem('quiz-config');
                         const user = localStorage.getItem('user'); 
                         if (user) {
                             route(`/config`);
