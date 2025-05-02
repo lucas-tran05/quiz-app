@@ -163,10 +163,20 @@ export default function Quiz() {
                     </>
                 )}
 
-                <div class="text-center mb-3">
+                <div className="text-center mb-3 d-flex justify-content-center gap-2">
                     <button
                         type="button"
-                        class="btn btn-success"
+                        className="btn btn-outline-success"
+                        style={{ width: '100px' }}
+                        onClick={() => {
+                            route('/');
+                        }}
+                    >
+                        Home
+                    </button>
+                    <button
+                        type="button"
+                        className="btn btn-success"
                         onClick={handleStart}
                         disabled={
                             !subject ||
@@ -178,21 +188,7 @@ export default function Quiz() {
                         Bắt đầu thi
                     </button>
                 </div>
-                <div className="text-center mb-3">
-                    <hr className="mx-auto" style={{ width: '60%' }} />
-                </div>
-                <div class="text-center">
-                    <button
-                        type="button"
-                        style={{ width: '100px' }}
-                        class="btn btn-primary"
-                        onClick={() => {
-                            route('/');
-                        }}
-                    >
-                        Home
-                    </button>
-                </div>
+
             </form>
         </div>
     )
