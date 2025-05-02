@@ -1,6 +1,8 @@
 import { h } from 'preact'
 import { useState } from 'preact/hooks'
 import { route } from 'preact-router'
+import { subjects } from '../../config/subjects';
+import { timeOptions } from '../../config/time';
 
 export default function Quiz() {
     const [subject, setSubject] = useState('')
@@ -11,7 +13,7 @@ export default function Quiz() {
     const [rangeEnd, setRangeEnd] = useState('')
 
     const handleStart = () => {
-        
+
 
         localStorage.setItem(
             'quiz-config',
@@ -20,7 +22,7 @@ export default function Quiz() {
                 time,
                 questionCount: randomMode ? questionCount : null,
                 randomMode,
-                rangeStart: randomMode ? null : Number(rangeStart-1),
+                rangeStart: randomMode ? null : Number(rangeStart - 1),
                 rangeEnd: randomMode ? null : Number(rangeEnd - 1),
                 startTime: Date.now()
             })
@@ -51,8 +53,11 @@ export default function Quiz() {
                         required
                     >
                         <option value="">-- Chọn môn học --</option>
-                        <option value="int1336">Mạng máy tính</option>
-                        <option value="bas1122" disabled>Tư tưởng Hồ Chí Minh</option>
+                        {subjects.map(({ value, label, disabled }) => (
+                            <option key={value} value={value} disabled={disabled}>
+                                {label}
+                            </option>
+                        ))}
                     </select>
                 </div>
 
@@ -66,11 +71,11 @@ export default function Quiz() {
                         required
                     >
                         <option value="">-- Chọn thời gian --</option>
-                        <option value="30">30 phút</option>
-                        <option value="60">60 phút</option>
-                        <option value="90">90 phút</option>
-                        <option value="120">120 phút</option>
-                        <option value="9999">Không giới hạn</option>
+                        {timeOptions.map(({ value, label }) => (
+                            <option key={value} value={value}>
+                                {label}
+                            </option>
+                        ))}
                     </select>
                 </div>
 

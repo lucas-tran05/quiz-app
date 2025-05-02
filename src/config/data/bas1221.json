@@ -1,0 +1,801 @@
+[
+  {
+    "question": "1. Theo quan điểm của chủ nghĩa Mac-Lênin thì nguyên nhân chủ yếu làm xuất hiện Nhà nước là:",
+    "a": " Do có sự phân công lao động trong xã hội",
+    "b": " Do có sự phân hóa giai cấp và đấu tranh giai cấp trong xã hội.",
+    "c": " Do con người trong xã hội phải hợp sức lại để đắp đê, chống bão lụt, đào kênh làm thủy lợi hay chống giặc ngoại xâm.",
+    "d": " Do ý chí của con người trong xã hội.",
+    "ans": "b"
+  },
+  {
+    "question": "2. Hình thái kinh tế – xã hội nào là chưa có Nhà nước?",
+    "a": " Hình thái kinh tế – xã hội Cộng sản chủ nghĩa",
+    "b": " Hình thái kinh tế – xã hội Cộng sản nguyên thủy",
+    "c": " Hình  thái  kinh  tế  –  xã  hội  Tư  bản  chủ Nghĩa.",
+    "d": " Hình thái kinh tế – xã hội Chiếm hữu nô lệ",
+    "ans": "b"
+  },
+  {
+    "question": "3. Tổ chức Thị tộc trong xã hội Cộng sản nguyên thủy là:",
+    "a": " Một xã hội độc lập",
+    "b": " Một tập đoàn người có cùng quan hệ huyết thống",
+    "c": " Một tập đoàn người không có cùng quan hệ huyết thống",
+    "d": " Một tổ chức độc lập",
+    "ans": "b"
+  },
+  {
+    "question": "4. Theo quan điểm của chủ nghĩa Mác – Lênin về Nhà nước thì:",
+    "a": " Nhà nước là hiện tượng tự nhiên",
+    "b": " Nhà nước là hiện tượng xã hội mang tính lịch sử",
+    "c": " Nhà nước là hiện tượng vĩnh cửu, bất biến",
+    "d": " Nhà nước là hiện tượng xuất hiện và tồn tại cùng với sự xuất hiện, tồn tại của lịch sử xã hội loài người.",
+    "ans": "b"
+  },
+  {
+    "question": "5. Sự xuất hiện của nhà nước cổ đại nào sau đây có nguyên nhân là do mâu thuẫn giai cấp gay gắt đến mức không thể điều hòa được:",
+    "a": "Nhà nước Giéc–manh.",
+    "b": "Nhà nước Rôma.",
+    "c": "Nhà nước Aten.                                             ",
+    "d": "Các Nhà nước phương Đông.",
+    "ans": "b"
+  },
+  {
+    "question": "6. Khi nghiên cứu về bản chất nhà nước thì khẳng định nào sau đây là đúng?",
+    "a": " Bất cứ nhà nước nào cũng thể hiện bản chất giai cấp rõ nét hơn bản chất xã hội",
+    "b": " Bất cứ nhà nước nào cũng chỉ là bộ máy dùng để duy trì sự thống trị của giai cấp này đối với giai cấp khác ",
+    "c": " Bất cứ nhà nước nào cũng thể hiện bản chất xã hội rõ nét hơn bản chất giai cấp",
+    "d": " Bất cứ nhà nước nào cũng đều thể hiện bản chất giai cấp và bản chất xã hội",
+    "ans": "d"
+  },
+  {
+    "question": "7. Bản chất giai cấp của nhà nước được thể hiện:",
+    "a": " Nhà nước là công cụ sắc bén nhất để quản lý mọi mặt đời sống xã hội",
+    "b": " Nhà nước là một bộ máy trấn áp đặc biệt của giai cấp này đối với giai cấp khác",
+    "c": " Nhà nước là công cụ để bảo vệ an ninh chính trị, trật tự an toàn xã hội",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "8. Bản chất xã hội của nhà nước được thể hiện:",
+    "a": " Nhà nước là công cụ sắc bén để duy trì sự thống trị giai cấp",
+    "b": " Nhà nước là công cụ của đa số nhân dân lao động sử dụng để trấn áp lại thiểu số giai cấp bóc lột đã bị lật đổ cùng với bọn tội phạm phản động.",
+    "c": " Nhà nước là bộ máy nhằm bảo đảm trật tự an toàn xã hội và đảm đương các công việc chung của xã hội",
+    "d": " Nhà nước là một bộ máy cưỡng chế đặc biệt nằm trong tay giai cấp cầm quyền",
+    "ans": "c"
+  },
+  {
+    "question": "9. Nhà nước nào cũng có chức năng:",
+    "a": " Bảo đảm trật tự an toàn xã hội",
+    "b": " Tổ chức và quản lý nền kinh tế",
+    "c": " Đối nội và đối ngoại",
+    "d": " Thiết lập mối quan hệ ngoại giao",
+    "ans": "c"
+  },
+  {
+    "question": "10. Khi nghiên cứu về chức năng của nhà nước, thì khẳng định nào sau đây là sai?",
+    "a": " Chức năng đối nội và chức năng đối ngoại là quan trọng như nhau",
+    "b": " Chức năng đối nội của nhà nước là cơ sở cho việc thực hiện chức năng đối ngoại",
+    "c": " Kết quả của việc thực hiện chức năng đối ngoại có tác động đến việc thực hiện chức năng đối nội",
+    "d": " Chức năng đối nội có vai trò quan trọng hơn chức năng đối ngoại",
+    "ans": "a"
+  },
+  {
+    "question": "11. Tổ chức nào dưới đây có quyền lực công:",
+    "a": " Các tổ chức phi chính phủ  ",
+    "b": "Các Tổng công ty",
+    "c": "Hội liên hiệp phụ nữ Việt Nam                  ",
+    "d": "  Nhà nước",
+    "ans": "d"
+  },
+  {
+    "question": "12. Hình thức Nhà nước Việt Nam dước góc độ chính thể:",
+    "a": " Hình thức chính thể cộng hòa dân chủ tư sản",
+    "b": " Hình thức chính thể quân chủ hạn chế",
+    "c": " Hình thức chính thể cộng hòa lưỡng tính",
+    "d": " Hình thức chính thể cộng hòa dân chủ",
+    "ans": "d"
+  },
+  {
+    "question": "13. Chế độ chính trị của nhà nước Việt Nam là chế độ:",
+    "a": " Dân chủ chủ nô  ",
+    "b": " Dân chủ quý tộc",
+    "c": "Dân chủ tư sản ",
+    "d": "  Dân chủ xã hội chủ nghĩa",
+    "ans": "d"
+  },
+  {
+    "question": "14. “Nhà nước là một bộ máy dùng để duy trì sự thống trị của giai cấp này đối với giai cấp khác” là định nghĩa của:",
+    "b": " Angghen",
+    "c": " Lênin",
+    "d": " Hồ Chí Minh ",
+    "ans": "c"
+  },
+  {
+    "question": "15. Nhà nước nào dưới đây là nhà nước liên bang?",
+    "a": " Việt Nam",
+    "b": " Trung Quốc",
+    "c": " Pháp",
+    "d": " Ấn Độ",
+    "ans": "d"
+  },
+  {
+    "question": "16. Nhà nước nào dưới đây là nhà nước đơn nhất?",
+    "a": " Đức",
+    "b": " Australia",
+    "c": " Singapo",
+    "d": " Nga",
+    "ans": "c"
+  },
+  {
+    "question": "17. Nhà nước nào dưới đây không thuộc kiểu nhà nước Xã hội chủ nghĩa?",
+    "a": " Việt nam",
+    "b": " Trung Quốc",
+    "c": " Campuchia",
+    "d": " CuBa",
+    "ans": "c"
+  },
+  {
+    "question": "18. Chế độ phản dân chủ là",
+    "a": " Nhà nước độc tài",
+    "b": " Vi phạm các quyền tự do của nhân dân",
+    "c": " Vi phạm các quyền dân chủ của nhân dân",
+    "d": " Tất cả các câu trên đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "19. Hình thức chính thể quân chủ hạn chế còn có tên gọi khác là:",
+    "a": " Hình thức chính thể quân chủ chuyên chế",
+    "b": " Hình thức chính thể quân chủ lập hiến",
+    "c": " Hình thức chính thể quân chủ đại nghị",
+    "d": " Cả câu b và c đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "20. Quyền lực của Vua trong hình thức chính thể quân chủ tuyệt đối luôn:",
+    "a": " Bị hạn chế",
+    "b": " Vô hạn",
+    "c": " Cả a và b đều sai",
+    "d": " Cả a và b đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "21. Chính thể cộng hòa đại nghị còn được gọi là:",
+    "a": " Chính thể cộng hòa nghị viện",
+    "b": " Chính thể cộng hòa tổng thống",
+    "c": " Chính thể cộng hòa lưỡng tính",
+    "d": " Chính thể quân chủ đại nghị",
+    "ans": "a"
+  },
+  {
+    "question": "22. Việt Nam có quan hệ ngoại giao với các khu vực:",
+    "a": " Châu Á Thái Bình Dương – Châu Âu – Châu Mỹ",
+    "b": " Châu Phi – Trung Đông",
+    "c": " Cả a và b đều đúng",
+    "d": " Cả a và b đều sai",
+    "ans": "c"
+  },
+  {
+    "question": "23. Quốc hội nước CNXHCN Việt Nam được bầu bởi:",
+    "a": " Mọi công dân Việt Nam ",
+    "b": " Công dân Việt Nam từ đủ 18 tuổi trở lên",
+    "c": " Công dân Việt Nam từ 21 trở lên",
+    "d": " Công dân Việt Nam và người không có quốc tịch",
+    "ans": "b"
+  },
+  {
+    "question": "24. Một trong những bản chất của nhà nước là:",
+    "a": " Nhà nước có chủ quyền quốc gia",
+    "b": " Tính xã hội",
+    "c": " Đặt ra thuế và thu thuế dưới hình thức bắt buộc",
+    "d": " Cả a,b,c đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "25. Cơ quan nhà nước nào sau đây có vai trò tổ chức thực hiện pháp luật trên thực tế.",
+    "a": " Chính phủ",
+    "b": " Quốc hội",
+    "c": " Toà án",
+    "d": " Cả a,b,c đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "26. Quyền công tố trước toà là :",
+    "a": " Quyền truy tố cá nhân, tổ chức ra trước pháp luật",
+    "b": " Quyền khiếu nại tố cáo của nhân dân",
+    "c": " Quyền xác định tội phạm",
+    "d": " Cả a,b,c đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "27. Bộ máy nhà nước CHXHCN Việt Nam được tổ chức theo nguyên tắc nào:",
+    "a": " Tập trung dân chủ; Pháp chế XHCN; Đảm bảo sự lãnh đạo của ĐCS",
+    "b": " Quyền lực nhà nước là thống nhất nhưng có sự phân công và phối hợp giữa các CQNN trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp",
+    "c": " Đảm bảo sự tham gia đông đảo của nhân dân vào tổ chức và hoạt động của nhà nước.",
+    "d": " Tất cả các phương án đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "28. Khi nghiên cứu về bộ máy nhà nước Việt Nam thì khẳng định nào sau đây là đúng?",
+    "a": " Chính phủ có quyền giám sát toàn bộ hoạt động của nhà nước",
+    "b": " Quốc hội là cơ quan nắm giữ và thực hiện cả ba quyền: lập pháp, hành pháp và tư pháp",
+    "c": " Hội đồng nhân dân do nhân dân trực tiếp bầu ra",
+    "d": " Ủy ban nhân dân do nhân dân trực tiếp bầu ra",
+    "ans": "c"
+  },
+  {
+    "question": "29. Trong bộ máy nhà nước Việt Nam thì:",
+    "a": " Quốc hội có quyền ban hành tất cả các văn bản quy phạm pháp luật",
+    "b": " Chính phủ là cơ quan quyền lực nhà nước cao nhất",
+    "c": " Chính phủ là cơ quan chấp hành và điều hành",
+    "d": " Hội đồng nhân dân là cơ quan hành chính nhà nước ở địa phương, đại diện cho nhân dân ở địa phương",
+    "ans": "c"
+  },
+  {
+    "question": "30. Việc thực hiện quyền lực trong nhà nước cộng hòa xã hội chủ nghĩa Việt Nam có sự:",
+    "a": " Phân chia quyền lực",
+    "b": " Phân công, phân nhiệm và phối hợp trong việc thực hiện quyền lực nhà nước",
+    "c": " Ba quyền lập pháp, hành pháp và tư pháp được giao tách bạch cho 3 cơ quan Quốc hội, Chính phủ và Tòa án ",
+    "d": " Tập trung quyền lực vào Quốc hội và Chính phủ",
+    "ans": "b"
+  },
+  {
+    "question": "31. Cơ quan thường trực của Quốc hội nước ta là:",
+    "a": " Ủy ban Quốc hội",
+    "b": " Ủy ban thường vụ Quốc hội",
+    "c": " Ủy ban kinh tế và ngân sách",
+    "d": " Ủy ban đối nội và đối ngoại",
+    "ans": "b"
+  },
+  {
+    "question": "32. Việc tổ chức, thực hiện quyền lực nhà nước ở nước ta được thể hiện:",
+    "a": " Quyền lực nhà nước thuộc về cơ quan cấp cao, do nhân dân bầu ra theo nhiệm kỳ",
+    "b": " Quyền lực nhà nước thuộc về người đứng đầu nhà nước",
+    "c": " Quyền lực nhà nước tập trung toàn bộ hay một phần vào trong tay người đứng đầu nhà nước",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "33. Bộ máy nhà nước nói chung thường có mấy hệ thống cơ quan:",
+    "a": " Một hệ thống cơ quan",
+    "b": " Hai hệ thống cơ quan",
+    "c": " Ba hệ thống cơ quan",
+    "d": " Bốn hệ thống cơ quan",
+    "ans": "c"
+  },
+  {
+    "question": "34. Nhà nước Việt Nam dân chủ cộng hòa có chủ quyền quốc gia khi nào?",
+    "a": " Năm 1930",
+    "b": " Năm 1945",
+    "c": " Năm 1954",
+    "d": " Năm 1975",
+    "ans": "b"
+  },
+  {
+    "question": "35. Việc tổ chức, thực hiện quyền lực nhà nước cộng hòa XHCN Việt Nam theo nguyên tắc nào?",
+    "a": " Phân quyền",
+    "b": " Tập quyền XHCN",
+    "c": " Tam quyền phân lập",
+    "d": " Quyền lực nhà nước tập trung thống nhất vào Quốc hội và Chính phủ",
+    "ans": "b"
+  },
+  {
+    "question": "36. Bản chất Nhà nước cộng hòa xã hội chủ nghĩa Việt Nam được thể hiện:",
+    "a": " Tất cả quyền lực nhà nước thuộc về nhân dân",
+    "b": " Là nhà nước của nhân dân, do nhân dân, vì nhân dân",
+    "c": " Nhân dân được kiểm tra, giám sát hoạt động của các cơ quan nhà nước",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "37. Chức năng đối nội của Nhà nước Việt Nam được thể hiện:",
+    "a": " Gia nhập các tổ chức quốc tế và khu vực",
+    "b": " Tổ chức và quản lý nền kinh tế, thiết lập quan hệ đối ngoại",
+    "c": " Tổ chức và quản lý các mặt kinh tế, văn hóa, giáo dục, khoa học - công nghệ, bảo đảm trật tự an toàn xã hội và các quyền, lợi ích hợp pháp của công dân",
+    "d": " Bao gồm cả A, B, C",
+    "ans": "c"
+  },
+  {
+    "question": "38. Bộ máy Nhà nước cộng hòa xã hội chủ nghĩa Việt Nam gồm có các loại cơ quan?",
+    "a": " Cơ quan lập pháp, cơ quan hành pháp, cơ quan tư pháp ",
+    "b": " Cơ quan Quốc hội, cơ quan Chính phủ, cơ quan xét xử",
+    "c": " Cơ quan quyền lực, cơ quan quản lý nhà nước, cơ quan xét xử, cơ quan kiểm sát",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "39. Trong bộ máy Nhà nước cộng hòa xã hội chủ nghĩa Việt Nam thì Quốc hội là:",
+    "a": " Cơ quan quyền lực nhà nước cao nhất",
+    "b": " Cơ quan đại biểu cao nhất của nhân dân",
+    "c": " Cơ quan có quyền lập hiến, lập pháp",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "40. Hình thức cấu trúc lãnh thổ của Nhà nước cộng hòa xã hội chủ nghĩa Việt Nam là:",
+    "a": " Nhà nước đơn nhất",
+    "b": " Nhà nước liên bang",
+    "c": " Nhà nước liên minh",
+    "d": " Nhà nước tự trị",
+    "ans": "a"
+  },
+  {
+    "question": "41. Hình thức chính thể của Nhà nước cộng hòa xã hội chủ nghĩa Việt Nam là:",
+    "a": " Quân chủ",
+    "b": " Cộng hòa",
+    "c": " Cộng hòa dân chủ",
+    "d": " Quân chủ đại nghị",
+    "ans": "c"
+  },
+  {
+    "question": "42. Chủ tịch nước ta có quyền:",
+    "a": " Quyết định mọi vấn đề quan trọng của đất nước",
+    "b": " Lập hiến và lập pháp",
+    "c": " Thay mặt nhà nước để quyết định mọi vấn đề đối nội và đối ngoại",
+    "d": " Công bố Hiến pháp, luật và pháp lệnh",
+    "ans": "d"
+  },
+  {
+    "question": "43. Hội đồng nhân dân các cấp là:",
+    "a": " Do Quốc hội bầu ra",
+    "b": " Cơ quan hành chính nhà nước ở địa phương",
+    "c": " Cơ quan quyền lực nhà nước ở địa phương",
+    "d": " Cơ quan chấp hành Hiến pháp, luật, các văn bản của các cơ quan nhà nước cấp trên",
+    "ans": "c"
+  },
+  {
+    "question": "44. Khi nghiên cứu về chức năng, nhiệm vụ của các cơ quan trong bộ máy nhà nước Việt Nam, thì khẳng định nào sau đây là sai?",
+    "a": " Quốc hội là cơ quan duy nhất có quyền lập pháp",
+    "b": " Chính phủ là cơ quan hành pháp",
+    "c": " Viện kiểm sát là cơ quan duy nhất có quyền truy tố người phạm tội",
+    "d": " Tòa án là cơ quan duy nhất có quyền xét xử và thi hành án",
+    "ans": "d"
+  },
+  {
+    "question": "45. Trong bộ máy nhà nước Việt Nam thì Ủy ban nhân dân các cấp là:",
+    "a": " Cơ quan quyền lực nhà nước ở địa phương",
+    "b": " Cơ quan đại diện cho y chí của nhân dân ở địa phương",
+    "c": " Cơ quan hành chính nhà nước ở địa phương",
+    "d": " Hội đồng nhân dân là cơ quan hành chính nhà nước ở địa phương, đại diện cho nhân dân ở địa phương",
+    "ans": "c"
+  },
+  {
+    "question": "46. Ủy ban thường vụ quốc hội là cơ quan thuộc: ",
+    "a": " Hệ thống cơ quan quản lý nhà nước",
+    "b": " Hệ thống cơ quan quyền lực nhà nước",
+    "c": " Hệ thống cơ quan xét xử",
+    "d": " Hệ thống cơ quan kiểm sát",
+    "ans": "b"
+  },
+  {
+    "question": "47. Cơ quan nào trong bộ máy nhà nước Việt Nam có quyền hành pháp?",
+    "a": " Quốc hội",
+    "b": " Chính Phủ",
+    "c": " Toà án",
+    "d": " Viện kiểm sát",
+    "ans": "b"
+  },
+  {
+    "question": "48. Cơ quan nào trong bộ máy nhà nước Việt Nam có quyền tư pháp?",
+    "a": " Quốc Hội và Tòa án",
+    "b": " Tòa án và Viện Kiểm sát",
+    "c": " Quốc hội và Chính phủ",
+    "d": " Chính phủ và Viện Kiểm sát.",
+    "ans": "b"
+  },
+  {
+    "question": "49. Bộ Công thương là cơ quan trực thuộc:",
+    "a": " Quốc Hội",
+    "b": " Ủy ban thường vụ Quốc hội",
+    "c": " Chính phủ",
+    "d": " Cơ quan quyền lực nhà nước",
+    "ans": "c"
+  },
+  {
+    "question": "50. Hội đồng nhân dân trong bộ máy nhà nước Việt Nam là:",
+    "a": " Do Chính phủ bầu ra",
+    "b": " Do nhân dân địa phương bầu ra",
+    "c": " Do Quốc Hội bầu ra",
+    "d": " Do Ủy ban nhân dân bầu ra",
+    "ans": "b"
+  },
+  {
+    "question": "51. Ủy Ban nhân dân các cấp trong bộ máy nhà nước Việt Nam là cơ quan:",
+    "a": " Do Chính phủ bầu ra",
+    "b": " Do nhân dân địa phương bầu ra",
+    "c": " Do Quốc Hội bầu ra",
+    "d": " Do Hội đồng nhân dân cùng cấp bầu ra",
+    "ans": "d"
+  },
+  {
+    "question": "52. Ủy ban nhân dân trong bộ máy nhà nước Việt Nam là cơ quan thuộc:",
+    "a": " Hệ thống cơ quan Quyền lực nhà nước",
+    "b": " Hệ thống cơ quan Hành chính nhà nước",
+    "c": " Hệ thống cơ quan Xét xử",
+    "d": " Hệ thống cơ quan Kiểm sát",
+    "ans": "b"
+  },
+  {
+    "question": "53. Quốc Hội khóa XII của nhà nước ta có nhiệm kỳ:",
+    "a": " 2 năm",
+    "b": " 3 năm",
+    "c": " 4 năm",
+    "d": " 5 năm",
+    "ans": "c"
+  },
+  {
+    "question": "54. Chủ tịch nước Việt Nam hiện nay là người đứng đầu:",
+    "a": " Chính phủ",
+    "b": " Quốc Hội ",
+    "c": " Nhà nước",
+    "d": " Cả A,B,C đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "55. Trong bộ máy nhà nước Việt Nam hiện nay, Chủ tịch nước là người đứng đầu Nhà nước, thay mặt Nhà nước CHXHCN. Việt Nam về:",
+    "a": " Điều hành mọi hoạt động của đất nước",
+    "b": " Quyết định những vấn đề quan trọng nhất của đất nước",
+    "c": " Đối nội và đối ngoại",
+    "d": " Cả A,B,C đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "56. Nguyên nhân ra đời của nhà nước và pháp luật là:",
+    "a": " Hoàn toàn giống nhau",
+    "b": " Hoàn toàn khác nhau",
+    "c": " Do nhu cầu chủ quan của xã hội",
+    "d": " Do nhu cầu khách quan của xã hội",
+    "ans": "a"
+  },
+  {
+    "question": "57. Nhà nước có những biện pháp nào nhằm tuyên truyền, phổ biến pháp luật?",
+    "a": " Thông qua các phương tiện thông tin đại chúng",
+    "b": " Đưa kiến thức pháp luật vào chương trình giảng dạy trong trường học",
+    "c": " Đưa các văn bản pháp luật lên mạng Internet để mọi người cùng tìm hiểu",
+    "d": "Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "58. Pháp luật xuất hiện là do:",
+    "a": " Xuất phát từ ý chí của giai cấp thống trị trong xã hội",
+    "b": " Nhà nước tự đặt ra",
+    "c": " Nhà nước đặt ra hoặc thừa nhận",
+    "d": " Xuất phát từ những phong tục, tập quán, tín điều tôn giáo trong xã hội",
+    "ans": "c"
+  },
+  {
+    "question": "59. Pháp luật có thuộc tính cơ bản là:",
+    "a": " Tính cưỡng chế",
+    "b": " Tính xác định chặt chẽ về hình thức",
+    "c": " Tính quy phạm và phổ biến",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "60. Pháp luật có mấy thuộc tính cơ bản?",
+    "a": " 2",
+    "b": " 3",
+    "c": " 4",
+    "d": " 5",
+    "ans": "b"
+  },
+  {
+    "question": "61. Tính cưỡng chế của pháp luật được thể hiện:",
+    "a": " Những hành vi vi phạm pháp luật đều bị xử phạt hành chính",
+    "b": " Những hành vi vi phạm pháp luật đều bị áp dụng hình phạt",
+    "c": " Những hành vi vi phạm pháp luật đều bị xử lý kỷ luật",
+    "d": " Những hành vi vi phạm pháp luật đều có thể bị áp dụng biện pháp chế tài",
+    "ans": "d"
+  },
+  {
+    "question": "62. Những quy phạm xã hội tồn tại trong chế độ cộng sản nguyên thủy là:",
+    "a": " Đạo đức",
+    "b": " Tập quán",
+    "c": " Tín điều tôn giáo ",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "63. Đáp án nào sau đây thể hiện vai trò của pháp luật?",
+    "a": " Là phương tiện để nhân dân phục vụ lợi ích cho riêng mình",
+    "b": " Là phương tiện để Nhà nước quản lí mọi mặt đời sống xã hội",
+    "c": " Là công cụ để Nhà nước cưỡng chế đối với mọi người trong xã hội",
+    "d": " Cả a, b, c đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "64. Quy phạm nào sau đây là quy phạm xã hội:",
+    "a": " Nghị quyết của Hội đồng nhân dân",
+    "b": " Thông tư của Bộ Giáo dục –Đào tạo",
+    "c": " Nghị quyết của Quốc Hội",
+    "d": " Điều lệ của Đảng cộng sản",
+    "ans": "d"
+  },
+  {
+    "question": "65. Quy phạm nào sau đây là quy phạm pháp luật:",
+    "a": " Điều lệ của hội đồng hương",
+    "b": " Nghị quyết của Đảng cộng sản",
+    "c": " Nghị quyết của Quốc hội",
+    "d": " Điều lệ của Đảng cộng Sản",
+    "ans": "c"
+  },
+  {
+    "question": "66. Bộ Giáo dục và Đào tạo có quyền ban hành loại văn bản quy phạm pháp luật nào sau đây?",
+    "a": " Luật giáo dục",
+    "b": " Thông tư",
+    "c": " Nghị định",
+    "d": " Nghị quyết",
+    "ans": "b"
+  },
+  {
+    "question": "67. Văn bản quy phạm pháp luật nào sau đây là loại văn bản luật?",
+    "a": " Bộ luật;",
+    "b": " Hiến pháp",
+    "c": " Nghị quyết của Quốc hội",
+    "d": " Cả A,B,C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "68. Văn bản quy phạm pháp luật do Hội đồng nhân dân ban hành là:",
+    "a": " Nghị định",
+    "b": " Chỉ thị",
+    "c": " Nghị quyết",
+    "d": " Thông tư",
+    "ans": "c"
+  },
+  {
+    "question": "69. Văn bản quy phạm pháp luật có giá trị pháp lí cao nhất là:",
+    "a": " Hiến pháp",
+    "b": " Luật hình sự",
+    "c": " Luật dân sự",
+    "d": " Luật hiến pháp",
+    "ans": "a"
+  },
+  {
+    "question": "70. Văn bản luật là loại văn bản do:",
+    "a": " Quốc Hội ban hành",
+    "b": " Cơ quan Nhà nước có thẩm quyền ban hành theo trình tự, thủ tục nhất định",
+    "c": " Ủy ban Thường vụ Quốc Hội ban hành",
+    "d": " Chính phủ ban hành ",
+    "ans": "a"
+  },
+  {
+    "question": "71. Nhà nước và pháp luật là hai yếu tố đều thuộc",
+    "a": " Cơ sở hạ tầng",
+    "b": " Kiến trúc thượng tầng",
+    "c": " Quan hệ sản xuất thống trị",
+    "d": " Cả ba câu trên đều sai",
+    "ans": "b"
+  },
+  {
+    "question": "72. Kiểu pháp luật phong kiến thể hiện ý chí của",
+    "a": " Giai cấp địa chủ",
+    "b": " Giai cấp thống trị",
+    "c": " Giai cấp phong kiến",
+    "d": " Cả ba câu trên đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "73. Có bao nhiêu kiểu pháp luật đã và đang tồn tại?",
+    "a": " 2",
+    "b": " 3",
+    "c": " 4",
+    "d": " 5",
+    "ans": "c"
+  },
+  {
+    "question": "74. Hình thức pháp luật là cách thức mà giai cấp thống trị sử dụng để nâng ý chí của giai cấp mình lên thành pháp luật. Trong lịch sử loài người đã có…….hình thức pháp luật, đó là . . . . . . . . . . . . . . . . . .",
+    "a": " 4 - tập quán pháp, tiền lệ pháp, điều lệ pháp và văn bản quy phạm pháp luật",
+    "b": " 3 - tập quán pháp, tiền lệ pháp… văn bản quy phạm pháp luật",
+    "c": " 2 - tập quán pháp và văn bản quy phạm pháp luật",
+    "d": " 1 - văn bản quy phạm pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "75. Tập quán pháp là:",
+    "a": " Biến đổi những tục lệ, tập quán có sẵn thành pháp luật",
+    "b": " Thừa nhận những thói quen hành xử của con người trong lịch sử thành pháp luật",
+    "c": " Biến đổi những quy phạm tôn giáo thành quy phạm pháp luật",
+    "d": " Cả a,b,c đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "76. Hình thức pháp luật xuất hiện sớm nhất và được sử dụng nhiều trong các nhà nước chủ nô và nhà nước phong kiến là:",
+    "a": " Tiền lệ pháp",
+    "b": " Điều lệ pháp",
+    "c": " Tập quán pháp",
+    "d": " Văn bản quy phạm pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "77. Theo quan điểm của chủ nghĩa Mác – Lênin  về pháp luật thì:",
+    "a": " Pháp luật là một hiện tượng xã hội mang tính lịch sử",
+    "b": " Pháp luật là một hiện tượng xã hội",
+    "c": " Pháp luật là một hiện tượng tự nhiên",
+    "d": " Pháp luật là một hiện tượng tồn tại mãi mãi cùng với sự tồn tại của lịch sử xã hội loài người.",
+    "ans": "a"
+  },
+  {
+    "question": "78. Pháp luật là:",
+    "a": " Những quy định mang tính bắt buộc chung cho mọi người trong xã hội",
+    "b": " Những quy định mang tính cưỡng chế  đối với các cơ quan, tổ chức trong xã hội ",
+    "c": " Những quy định do cơ quan nhà nước ban hành theo trình tự, thủ tục nhất định",
+    "d": " Những quy tắc xử sự mang tính bắt buộc chung do nhà nước đặt ra hoặc thừa nhận, được nhà nước bảo đảm thực hiện.",
+    "ans": "d"
+  },
+  {
+    "question": "79. Khi nghiên cứu về bản chất của pháp luật, thì khẳng định nào sau đây là sai?",
+    "a": " Pháp luật là ý chí giai cấp thống trị được đề lên thành luật",
+    "b": " Pháp luật bao giờ cũng thể hiện bản chất giai cấp rõ nét hơn bản chất xã hội",
+    "c": " Pháp luật là hiện tượng vừa mang tính giai cấp vừa mang tính xã hội",
+    "d": " Pháp luật vừa mang tính chủ quan lại vừa mang tính khách quan",
+    "ans": "b"
+  },
+  {
+    "question": "80. Bản chất giai cấp của pháp luật được thể hiện:",
+    "a": " Pháp luật là ý chí của giai cấp thống trị được đề lên thành luật",
+    "b": " Pháp luật chính là sự phản chiếu thực tại khách quan",
+    "c": " Pháp luật là công cụ hữu hiệu để tổ chức quản lý xã hội",
+    "d": " Cả a, b, c đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "81. Chọn phương án đúng nhất điền vào chỗ trống: Xuất phát từ . . . . . . . . . . . . . . . . , cho nên bất cứ nhà nước nào cũng dùng pháp luật làm phương tiện chủ yếu để quản lý mọi mặt đời sống xã hội.",
+    "a": " Tính cưỡng chế của pháp luật",
+    "b": " Tính quy phạm và phổ biến của pháp luật",
+    "c": " Tính xác định chặt chẽ về mặt hình thức của pháp luật.",
+    "d": " Những thuộc tính cơ bản của pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "82. Pháp luật có chức năng:",
+    "a": " Là phương tiện chủ yếu để quản lý mọi mặt đời sống xã hội",
+    "b": " Điều chỉnh và bảo vệ các quan hệ xã hội chủ yếu",
+    "c": " Là cơ sở để hoàn thiện bộ máy nhà nước",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "83. Vai trò của pháp luật được thể hiện:",
+    "a": " Là công cụ để nhà nước thực hiện sự cưỡng chế đối với những cơ quan, tổ chức, đơn vị, cá nhân trong xã hội",
+    "b": " Là phương tiện chủ yếu để nhà nước quản lý xã hội",
+    "c": " Là phương tiện chủ yếu để nhà nước quản lý mọi mặt đời sống xã hội và bảo vệ các quyền, lợi ích hợp pháp của công dân",
+    "d": " Là công cụ để nhà nước thực hiện sự cưỡng chế đối với những hành vi vi phạm pháp luật và tội phạm",
+    "ans": "c"
+  },
+  {
+    "question": "84. Pháp luật là phương tiện để:",
+    "a": " Bảo vệ các quyền, lợi ích hợp pháp của công dân",
+    "b": " Nhà nước sử dụng làm công cụ chủ yếu quản lý mọi mặt đời sống xã hội",
+    "c": " Hoàn thiện bộ máy nhà nước và tạo lập mối quan hệ ngoại giao",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "85. Pháp luật không tồn tại trong xã hội nào?",
+    "a": " Xã hội không có tư hữu",
+    "b": " Xã hội không có giai cấp",
+    "c": " Xã hội không có nhà nước ",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "86. Đáp án nào sau đây thể hiện thuộc tính của pháp luật?",
+    "a": " Tính chính xác",
+    "b": " Tính quy phạm phổ biến",
+    "c": " Tính minh bạch",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "87. Khi nghiên cứu về các thuộc tính của pháp luật, thì khẳng định nào sau đây là sai?",
+    "a": " Bất kỳ cá nhân, tổ chức nào khi vi phạm pháp luật đều có thể bị áp dụng biện pháp chế tài",
+    "b": " Việc tuân theo pháp luật thường phụ thuộc vào ý muốn chủ quan của con người",
+    "c": " Pháp luật là thước đo cho hành vi xử sự của con người",
+    "d": " Pháp luật và đạo đức đều mang tính quy phạm",
+    "ans": "b"
+  },
+  {
+    "question": "88. Quy phạm pháp luật và quy phạm xã hội:",
+    "a": " Hoàn toàn giống nhau",
+    "b": " Hoàn toàn khác nhau",
+    "c": " Có điểm giống nhau và khác nhau",
+    "d": " Chỉ có điểm khác nhau, không có điểm giống nhau",
+    "ans": "c"
+  },
+  {
+    "question": "89. Khi nghiên cứu về chức năng của pháp luật thì khẳng định nào sau đây là đúng?",
+    "a": " Pháp luật là công cụ bảo vệ tất cả các quan hệ nảy sinh trong đời sống xã hội",
+    "b": " Pháp luật điều chỉnh tất cả các mối quan hệ nảy sinh trong đời sống xã hội",
+    "c": " Pháp luật nghiêm cấm những hành vi xâm hại, làm ảnh hưởng đến các quan hệ xã hội mà nó điều chỉnh",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "90. Khi nghiên cứu về kiểu pháp luật thì khẳng định nào sau đây là đúng?",
+    "a": " Tương ứng với 5 hình thái kinh tế - xã hội, thì có 5 kiểu pháp luật",
+    "b": " Tương ứng với mỗi chế độ xã hội thì có một kiểu pháp luật",
+    "c": " Tương ứng với mỗi kiểu nhà nước thì có một kiểu pháp luật",
+    "d": " Tương ứng với mỗi hình thức nhà nước thì có một kiểu pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "91. Điểm giống nhau của các kiểu pháp luật trong lịch sử là:",
+    "a": " Đều mang tính đồng bộ",
+    "b": " Đều mang tính khách quan",
+    "c": " Đều thể hiện ý chí của giai cấp thống trị",
+    "d": " Đều thể hiện ý chí của nhân dân trong xã hội",
+    "ans": "c"
+  },
+  {
+    "question": "92. Nhà nước và pháp luật có mối quan hệ:",
+    "a": " Là tiền đề",
+    "b": " Là cơ sở của nhau",
+    "c": " Cùng tác động đến nhau",
+    "d": " Các câu trên đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "93. Khi nghiên cứu về mối quan hệ giữa pháp luật với kinh tế thì khẳng định nào sau đây là sai?",
+    "a": " Kinh tế giữ vai trò quyết định đối với pháp luật",
+    "b": " Pháp luật không quan hệ gì với kinh tế",
+    "c": " Pháp luật luôn có sự tác động tích cực đến sự phát triển của nền kinh tế ",
+    "d": " Khi kinh tế có sự thay đổi, sẽ kéo theo sự thay đổi của pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "94. Pháp luật và chính trị là hai hiện tượng do:",
+    "a": " Kiến trúc thượng tầng quyết định",
+    "b": " Cơ sở hạ tầng kinh tế của xã hội quyết định",
+    "c": " Nhà nước quyết định",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "95. Khi nghiên cứu về mối quan hệ giữa pháp luật với đạo đức thì khẳng định nào sau đây là sai?",
+    "a": " Pháp luật và đạo đức đều là hiện tượng thuộc kiến trúc thượng tầng",
+    "b": " Pháp luật và đạo đức đều được hình thành từ thực ti̀n đời sống xã hội",
+    "c": " Pháp luật và đạo đức đều là quy phạm có tác dụng điều chỉnh đến hành vi xử sự của con người trong xã hội",
+    "d": " Pháp luật và đạo đức đều được nhà nước sử dụng để điều chỉnh tất cả các quan hệ nảy sinh trong đời sống xã hội",
+    "ans": "d"
+  },
+  {
+    "question": "96. Chọn phương án đúng nhất điền vào chỗ trống: Kiểu pháp luật là tổng thể các dấu hiệu đặc trưng cơ bản của pháp luật, thể hiện bản chất giai cấp và những điều kiện tồn tại, phát triển của pháp luật trong. . . . . . . . . . . . . .",
+    "a": " Một nhà nước nhất định",
+    "b": " Một giai đoạn lịch sử nhất định",
+    "c": " Một chế độ xã hội nhất định",
+    "d": " Một hình thái kinh tế – xã hội nhất định",
+    "ans": "d"
+  },
+  {
+    "question": "97. Chọn phương án đúng nhất điền vào chỗ trống: Hình thức . . . . . . . . . . . . do cơ quan nhà nước có thẩm quyền ban hành theo trình tự, thủ tục nhất định, trong đó có những quy tắc xử sự chung được áp dụng nhiều lần trong đời sống xã hội.",
+    "a": " Văn bản quy phạm pháp luật",
+    "b": " Tập quán pháp",
+    "c": " Tiền lệ pháp",
+    "d": " Án lệ pháp",
+    "ans": "a"
+  },
+  {
+    "question": "98. Văn bản quy phạm pháp luật là hình thức pháp luật tiến bộ nhất vì:",
+    "a": " Được nhà nước thừa nhận từ một số tập quán đã lưu truyền trong xã hội",
+    "b": " Luôn có tính rõ ràng, cụ thể, điều chỉnh được nhiều quan hệ xã hội trên các lĩnh vực khác nhau",
+    "c": " Ngày càng được sử dụng rộng rãi ở nhiều quốc gia trên thế giới",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "99. Nhà nước và pháp luật là hai hiện tượng:",
+    "a": " Cùng phát sinh, tồn tại và tiêu vong",
+    "b": " Có nhiều nét tương đồng với nhau và có sự tác động qua lại lẫn nhau",
+    "c": " Cùng thuộc kiến trúc thượng tầng",
+    "d": " Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "100. Trong mối quan hệ giữa pháp luật với kinh tế, chúng ta thấy rằng:",
+    "a": " Pháp luật và kinh tế đều là hiện tượng thuộc kiến trúc thượng tầng",
+    "b": " Pháp luật giữ vai trò chủ đạo, quyết định đối với kinh tế",
+    "c": " Pháp luật vừa chịu sự tác động, chi phối của kinh tế; đồng thời lại vừa có sự tác động đến  kinh tế rất mạnh mẽ",
+    "d": " Pháp luật và kinh tế có nhiều nét tương đồng với nhau ",
+    "ans": "c"
+  }
+]

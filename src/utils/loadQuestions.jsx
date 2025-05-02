@@ -1,5 +1,5 @@
-export async function loadQuestionsFromSubject(subject, questionCount) {
-    const module = await import(`../data/${subject}.json`);
+export async function loadQuestionsFromSubject(subject) {
+    const module = await import(`../config/data/${subject}.json`);
     const data = module.default;
 
     if (!Array.isArray(data)) {
