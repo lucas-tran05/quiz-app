@@ -105,11 +105,11 @@
   },
   {
     "question": "Câu 14: Nhà nước quân chủ hạn chế (quân chủ lập hiến) là nhà nước…?",
-    "a": "",
-    "b": "",
-    "c": "",
-    "d": "",
-    "ans": ""
+    "a": "Quyền lực nhà nước thuộc về một tập thể gồm những người quý tộc và được hình thành do thừa kế",
+    "b": "Quyền lực nhà nước được phân chia cho người đứng đầu nhà nước theo phương",
+    "c": "Quyền lực nhà nước tối cao thuộc về một cơ quan tập thể và được hình thành",
+    "d": "Quyền lực nhà nước tối cao thuộc về một cơ quan tập thể do bầu cử mà ra",
+    "ans": "b"
   },
   {
     "question": "Câu 15: Pháp luật công khai quy định về chế độ bóc lột nô lệ, thể hiện sự bất bình đẳng giữa chủ nô và nô lệ, đây là đặc điểm của kiểu pháp luật nào?",
@@ -542,14 +542,6 @@
     "c": "các hệ thống chuẩn mực, được quy định trong Hiến pháp, do Nhà nước thừa nhận",
     "d": "các quy tắc xử sự chung của mọi người, do nhà nước ban hành, được áp dụng ở phạm vi nhất định",
     "ans": "a"
-  },
-  {
-    "question": "Câu 69: Theo học thuyết Mác – Lênin, nhận định nào sau đây là đúng:",
-    "a": "",
-    "b": "",
-    "c": "",
-    "d": "",
-    "ans": ""
   },
   {
     "question": "Câu 70: So với pháp luật thì đạo đức có phạm vi điều chỉnh…",
