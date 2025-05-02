@@ -8,7 +8,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.2 Khi sử dụng mạng máy tính ta sẽ thu được các lợi ích: : ",
+    "question": "Câu hỏi 1.2 Khi sử dụng mạng máy tính ta sẽ thu được các lợi ích:",
     "a": "Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích...)",
     "b": "Quản lý tập trung",
     "c": "Tận dụng năng lực xử lý của các máy tính rỗi kết hợp lại để thực hiện các công việc lớn",
@@ -16,7 +16,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.3 Đơn vị cơ bản đo tốc độ truyền dữ liệu là: : ",
+    "question": "Câu hỏi 1.3 Đơn vị cơ bản đo tốc độ truyền dữ liệu là:",
     "a": "Bit",
     "b": "Byte",
     "c": "Bps (bit per second)",
@@ -24,7 +24,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.4 Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khác : phải trải qua giai đoạn nào:",
+    "question": "Câu hỏi 1.4 Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khácphải trải qua giai đoạn nào:",
     "a": "Phân tích dữ liệu",
     "b": "Nén dữ liệu",
     "c": "Đóng gói",
@@ -32,7 +32,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.5 Kết nối mạng sử dụng các giao thức khác nhau bằng các: : ",
+    "question": "Câu hỏi 1.5 Kết nối mạng sử dụng các giao thức khác nhau bằng các:",
     "a": "Bộ chuyển tiếp",
     "b": "Cổng giao tiếp",
     "c": "SONET",
@@ -40,7 +40,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.6 Nhược điểm của mạng dạng hình sao (Star) là: : ",
+    "question": "Câu hỏi 1.6 Nhược điểm của mạng dạng hình sao (Star) là:",
     "a": "Khó cài đặt và bảo trì",
     "b": "Khó khắc phục khi lỗi cáp xảy ra, và ảnh hưởng tới các nút mạng khác",
     "c": "Cần quá nhiều cáp để kết nối tới nút mạng trung tâm",
@@ -48,7 +48,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.7 Đặc điểm của mạng dạng Bus: : ",
+    "question": "Câu hỏi 1.7 Đặc điểm của mạng dạng Bus:",
     "a": "Tất cả các nút mạng kết nối vào nút mạng trung tâm (ví dụ như Hub)  ",
     "b": "Tất cả các nút kết nối trên cùng một đường truyền vật lý",
     "c": "Tất cả các nút mạng đều kết nối trực tiếp với nhau",
@@ -56,7 +56,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.8 Trong kỹ thuật chuyển mạch kênh, trước khi trao đổi thông tin, hệ thống sẽ thiết lập : kết nối giữa 2 thực thể bằng một:",
+    "question": "Câu hỏi 1.8 Trong kỹ thuật chuyển mạch kênh, trước khi trao đổi thông tin, hệ thống sẽ thiết lậpkết nối giữa 2 thực thể bằng một:",
     "a": "Đường truyền vật lý",
     "b": "Kết nối ảo",
     "c": "Đường ảo",
@@ -64,7 +64,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.9 Kết nối liên mạng các mạng LAN, WAN, MAN độc lập với nhau bằng các thiết bị có : chức năng:",
+    "question": "Câu hỏi 1.9 Kết nối liên mạng các mạng LAN, WAN, MAN độc lập với nhau bằng các thiết bị cóchức năng:",
     "a": "  Kiểm soát lỗi, kiểm soát luồng",
     "b": "Định tuyến",
     "c": "Điều khiển liên kết",
@@ -72,7 +72,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.10 Cáp UTP Cat5e sử dụng đầu nối: : ",
+    "question": "Câu hỏi 1.10 Cáp UTP Cat5e sử dụng đầu nối:",
     "a": "RJ - 58",
     "b": "BNC",
     "c": "RJ - 45",
@@ -80,7 +80,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.11 Cáp UTP Cat 5 có bao nhiêu đôi cáp: : ",
+    "question": "Câu hỏi 1.11 Cáp UTP Cat 5 có bao nhiêu đôi cáp:",
     "a": "2",
     "b": "4",
     "c": "6",
@@ -88,7 +88,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.12 Đặc điểm quan trọng của kiến trúc mạng client/server (khách/chủ): : ",
+    "question": "Câu hỏi 1.12 Đặc điểm quan trọng của kiến trúc mạng client/server (khách/chủ):",
     "a": "Client/server là kiến trúc phân cấp, client đóng vai trò yêu cầu và server đáp ứng lại các yêu cầu đó.",
     "b": "Serve r là host luôn hoạt động, thường có IP cố định, có nhóm các server để chia sẻ công việc. Client có kết nối không liên tục, địa chỉ IP có thể thay đổi, truyền thông với server và thường không truyền thông trực tiếp với client khác.",
     "c": "Câu A và B đều đúng",
@@ -96,7 +96,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.13 Khẳng định nào sau đây là đúng khi nói về mạng có cấu trúc điểm điểm: : - ",
+    "question": "Câu hỏi 1.13 Khẳng định nào sau đây là đúng khi nói về mạng có cấu trúc điểm điểm:- ",
     "a": "Mạng quảng bá  3",
     "b": "Nối từng cặp node lại với nhau theo một hình học xác định",
     "c": "Mạng lưu và chuyển tiếp (Store - and - Forward)",
@@ -104,7 +104,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.14 Khẳng định nào sau đây là đúng khi nói về nhược điểm của mạng có cấu trúc điểm : - điểm:",
+    "question": "Câu hỏi 1.14 Khẳng định nào sau đây là đúng khi nói về nhược điểm của mạng có cấu trúc điểm- điểm:",
     "a": "Khả năng đụng độ thông tin (collision) thấp",
     "b": "Hiệu suất sử dụng đường truyền thấp, chiếm dụng nhiều tài nguyên",
     "c": "Độ trễ lớn, tốn nhiều thời gian để thiết lập đường truyền và xử lý tại các node",
@@ -112,7 +112,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.15 Khẳng định nào sau đây là đúng khi nói về đặc trưng của mạng quảng bá: : ",
+    "question": "Câu hỏi 1.15 Khẳng định nào sau đây là đúng khi nói về đặc trưng của mạng quảng bá:",
     "a": "Tất cả các node cùng truy nhập chung trên một đường truyền vật lý",
     "b": "Nối từng cặp node lại với nhau theo một hình học xác định",
     "c": "Các node trung gian: tiếp nhận, lưu trữ tạm thời và gửi tiếp thông tin",
@@ -120,7 +120,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.16 Khẳng định nào sau đây là đúng khi nói về mạng chuyển mạch kênh: : ",
+    "question": "Câu hỏi 1.16 Khẳng định nào sau đây là đúng khi nói về mạng chuyển mạch kênh:",
     "a": "Thiết lập liên kết vật lý, truyền dữ liệu và giải phóng liên kết giữa 2 thực thể",
     "b": "Thiết lập liên kết logic, truyền dữ liệu và giải phóng liên kết giữa 2 thực thể",
     "c": "Truyền dữ liệu giữa 2 thực thể",
@@ -128,7 +128,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.17 Khẳng định nào sau đây là đúng khi nói về mạng chuyển mạch gói: : ",
+    "question": "Câu hỏi 1.17 Khẳng định nào sau đây là đúng khi nói về mạng chuyển mạch gói:",
     "a": "Gói tin lưu chuyển trên các kết nối logic",
     "b": "Gói tin lưu chuyển trên các kết nối vật lý",
     "c": "Gói tin lưu chuyển độc lập hướng đích",
@@ -136,7 +136,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.18 Khẳng định nào sau đây là đúng khi nói về quá trình phân mảnh g : ói tin:",
+    "question": "Câu hỏi 1.18 Khẳng định nào sau đây là đúng khi nói về quá trình phân mảnh gói tin:",
     "a": "Làm giảm thời gian xử lý",
     "b": "Làm tăng tính linh hoạt của mạng",
     "c": "Ảnh hưởng đến tốc độ trao đổi dữ liệu trong mạng",
@@ -144,7 +144,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.19 Khẳng định nào sau đây là đúng khi nói về truyền dữ liệu theo phương thức hướng : liên kết:",
+    "question": "Câu hỏi 1.19 Khẳng định nào sau đây là đúng khi nói về truyền dữ liệu theo phương thức hướngliên kết:",
     "a": "Có độ tin cậy cao, đảm bảo chất lượng dịch vụ và có xác nhận",
     "b": "Không cần độ tin cậy cao, chất lượng dịch vụ thấp",
     "c": "Có xác nhận, không kiểm soát lỗi, kiểm soát luồng  ",
@@ -152,7 +152,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.20 Khẳng định nào sau đây là đúng nói về cấu trúc vật lý của mạng: : ",
+    "question": "Câu hỏi 1.20 Khẳng định nào sau đây là đúng nói về cấu trúc vật lý của mạng:",
     "a": "Giao thức mạng (Protocol)",
     "b": "Hình trạng mạng (Topology )",
     "c": "Phương tiện truyền",
@@ -160,7 +160,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.21 Mạng Internet là: :   4",
+    "question": "Câu hỏi 1.21 Mạng Internet là:  4",
     "a": "Mạng của các máy tính toàn cầu kết nối lại với nhau theo giao thức TCP/IP",
     "b": "Mạng diện rộng",
     "c": "Mạng máy tính toàn cầu",
@@ -168,7 +168,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.22 Trong mạng hình BUS, tất cả các trạm truy nhập ngẫu : nhiên vào:",
+    "question": "Câu hỏi 1.22 Trong mạng hình BUS, tất cả các trạm truy nhập ngẫunhiên vào:",
     "a": "Đường truyền chung",
     "b": "Máy chủ mạng",
     "c": "Bộ nhớ đệm",
@@ -176,7 +176,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.23 Mạng LAN hình sao (STAR) khi có sự cố: : ",
+    "question": "Câu hỏi 1.23 Mạng LAN hình sao (STAR) khi có sự cố:",
     "a": "Sẽ ngừng hoạt động toàn bộ hệ thống",
     "b": "Không ảnh hưởng tới hoạt động toàn bộ hệ thống",
     "c": "Chỉ ảnh hướng đến trạm có sự cố",
@@ -184,7 +184,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.24 Với kiểu kết nối mạng theo dạng hình sao (Star), khi một trạm trong mạng ngưng : hoạt động thì các trạm còn lại:",
+    "question": "Câu hỏi 1.24 Với kiểu kết nối mạng theo dạng hình sao (Star), khi một trạm trong mạng ngưnghoạt động thì các trạm còn lại:",
     "a": "Hoạt động bình thường",
     "b": "Đều ngưng hoạt động",
     "c": "Hoạt động không ổn định",
@@ -192,7 +192,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.25 Hình trạng mạng nào cho phép tất cả các cặp thiết bị đều có 1 đường nối vật lý trực : tiếp:",
+    "question": "Câu hỏi 1.25 Hình trạng mạng nào cho phép tất cả các cặp thiết bị đều có 1 đường nối vật lý trựctiếp:",
     "a": "Star (dạng sao)",
     "b": "Bus (dạng đường trục)",
     "c": "Mesh (dạng lưới)",
@@ -200,7 +200,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.26 Về nguyên tắc cơ bản, dùng cáp UTP Cat5e nào sau đây để kết nối trực tiếp giữa 2 : PC với nhau:",
+    "question": "Câu hỏi 1.26 Về nguyên tắc cơ bản, dùng cáp UTP Cat5e nào sau đây để kết nối trực tiếp giữa 2PC với nhau:",
     "a": "Cáp thẳng",
     "b": "Cáp chéo",
     "c": "Cáp cuộn",
@@ -208,7 +208,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.27 Kết quả nào sau đây không đúng: :  ",
+    "question": "Câu hỏi 1.27 Kết quả nào sau đây không đúng: ",
     "a": "GAN",
     "b": "WAN",
     "c": "MAN",
@@ -216,7 +216,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.29 Chiều dài tối đa của một đoạn trong kiến trúc 100Base : -TX:",
+    "question": "Câu hỏi 1.29 Chiều dài tối đa của một đoạn trong kiến trúc 100Base-TX:",
     "a": "3 km",
     "b": "100 mét",
     "c": "550 mét",
@@ -224,7 +224,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.30 Xét về tỷ lệ lỗi trên đường truyền dữ liệu thì loại mạng nào cao nhất: : ",
+    "question": "Câu hỏi 1.30 Xét về tỷ lệ lỗi trên đường truyền dữ liệu thì loại mạng nào cao nhất:",
     "a": "MAN",
     "b": "WAN",
     "c": "Internet",
@@ -232,7 +232,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.31 Độ dài tối đa cho phép khi sử dụng dây cáp mạng UTP là bao nhiêu mét: : ",
+    "question": "Câu hỏi 1.31 Độ dài tối đa cho phép khi sử dụng dây cáp mạng UTP là bao nhiêu mét:",
     "a": "100",
     "b": "200",
     "c": "350",
@@ -240,7 +240,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.32 Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khác : phải trải qua giai đoạn nào:",
+    "question": "Câu hỏi 1.32 Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khácphải trải qua giai đoạn nào:",
     "a": "Phân tích dữ liệu",
     "b": "Lọc dữ liệu",
     "c": "Đóng gói dữ liệu",
@@ -248,7 +248,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.33 Khi nối mạng giữa 2 máy tính, thường sử dụng loại cáp nào để nối trực tiếp giữa : chúng:",
+    "question": "Câu hỏi 1.33 Khi nối mạng giữa 2 máy tính, thường sử dụng loại cáp nào để nối trực tiếp giữachúng:",
     "a": "Cáp quang",
     "b": "Cáp UTP thẳng",
     "c": "Cáp STP",
@@ -256,7 +256,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.34 Các quy tắc điều quản việc truyền thông máy tính được gọi là: : ",
+    "question": "Câu hỏi 1.34 Các quy tắc điều quản việc truyền thông máy tính được gọi là:",
     "a": "Các giao thức",
     "b": "Các dịch vụ",
     "c": "Các hệ điều hành mạng",
@@ -264,7 +264,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.35 Hai kiểu máy tính khác nhau có thể truyền thông nếu: : ",
+    "question": "Câu hỏi 1.35 Hai kiểu máy tính khác nhau có thể truyền thông nếu:",
     "a": "Chúng cài đặt cùng hệ điều hành mạng",
     "b": "Chúng tuân thủ theo mô hình OSI",
     "c": "Chúng cùng dùng giao thức TCP/IP",
@@ -272,7 +272,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.36 Để kết nối hai máy tính với nhau ta có thể sử dụng: : ",
+    "question": "Câu hỏi 1.36 Để kết nối hai máy tính với nhau ta có thể sử dụng:",
     "a": "Hub",
     "b": "Switch",
     "c": "Nối cáp trực tiếp",
@@ -280,7 +280,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.37 Biễu diễn số 125 từ cơ số decimal sang cơ số binary: : ",
+    "question": "Câu hỏi 1.37 Biễu diễn số 125 từ cơ số decimal sang cơ số binary:",
     "a": "01111101",
     "b": "01101111",
     "c": "01011111",
@@ -288,7 +288,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.38 Số nhị phân nào dưới đây có giá trị là 164: : ",
+    "question": "Câu hỏi 1.38 Số nhị phân nào dưới đây có giá trị là 164:",
     "a": "10100100",
     "b": "10010010",
     "c": "11000100",
@@ -296,7 +296,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.39 Thiết bị nào hoạt động ở tầng Vật lý: : ",
+    "question": "Câu hỏi 1.39 Thiết bị nào hoạt động ở tầng Vật lý:",
     "a": "Switch",
     "b": "Card mạng",
     "c": "Hub và repeater",
@@ -304,7 +304,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.40 Môi trường truyền tin thông thuờng trong mạng máy tính là: : ",
+    "question": "Câu hỏi 1.40 Môi trường truyền tin thông thuờng trong mạng máy tính là:",
     "a": "Các loại cáp như: UTP, STP, cáp điện thoại, cáp quang,...",
     "b": "Sóng hồng ngoại",
     "c": "Tất cả môi trườngng nêu tr ên",
@@ -312,7 +312,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.41 Các thành phần tạo nên mạng là: : ",
+    "question": "Câu hỏi 1.41 Các thành phần tạo nên mạng là:",
     "a": "Máy tính, hub, switch",
     "b": "Network adapter, cable",
     "c": "Protocol",
@@ -320,7 +320,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.42 Khẳng định nào sau đây là đúng khi nói về đặc tính để phân biệt một tế bào (cell) và : một gói tin:",
+    "question": "Câu hỏi 1.42 Khẳng định nào sau đây là đúng khi nói về đặc tính để phân biệt một tế bào (cell) vàmột gói tin:",
     "a": "Các tế bào nhỏ hơn một gói tin",
     "b": "Các tế bào không có địa chỉ vật lý",
     "c": "Các tế bào có độ dài cố định",
@@ -328,7 +328,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.43 : otocol là: Pr",
+    "question": "Câu hỏi 1.43otocol là: Pr",
     "a": "Các qui tắc để cho phép các máy tính có thể giao tiếp được với nhau",
     "b": "Một trong những thành phần không thể thiếu trong hệ thống mạng",
     "c": "A và B sai",
@@ -336,7 +336,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.44 Thiết bị nào sau đây được sử dụng tại trung tâm của mạng hì : nh sao:",
+    "question": "Câu hỏi 1.44 Thiết bị nào sau đây được sử dụng tại trung tâm của mạng hình sao:",
     "a": "Switch, Brigde",
     "b": "Netcard",
     "c": "Port",
@@ -344,7 +344,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.45 Kiến trúc một mạng LAN có thể là: :   7",
+    "question": "Câu hỏi 1.45 Kiến trúc một mạng LAN có thể là:  7",
     "a": "RING",
     "b": "BUS",
     "c": "STAR",
@@ -352,7 +352,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.46 Giá trị của 11101101 (giá trị các bit nhị phân) trong cơ số 16 là: : ",
+    "question": "Câu hỏi 1.46 Giá trị của 11101101 (giá trị các bit nhị phân) trong cơ số 16 là:",
     "a": "CB",
     "b": "ED",
     "c": "CF",
@@ -360,7 +360,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.47 Mô tả nào sau đây dành cho mạng hình sao (star): : ",
+    "question": "Câu hỏi 1.47 Mô tả nào sau đây dành cho mạng hình sao (star):",
     "a": "Truyền dữ liệu qua cáp đồng trục",
     "b": "Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút kh ác",
     "c": "Có một nút trung tâm và các nút mạng khác kết nối đến",
@@ -368,7 +368,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.48 Loại cáp nào được sử dụng phổ biến nhất hiện nay: : ",
+    "question": "Câu hỏi 1.48 Loại cáp nào được sử dụng phổ biến nhất hiện nay:",
     "a": "Cáp đồng trục",
     "b": "Cáp STP",
     "c": "Cáp UTP (CAT 5)",
@@ -376,7 +376,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.49 Giao thức mạng nào dưới đây được sử dụng trong mạng cục bộ LAN: : ",
+    "question": "Câu hỏi 1.49 Giao thức mạng nào dưới đây được sử dụng trong mạng cục bộ LAN:",
     "a": "TCP/IP",
     "b": "NetBIOS",
     "c": "IPX",
@@ -384,7 +384,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.50 Khẳng định nào sau đây là đúng khi nói về giao thức sử dụng trên cáp sợi quang: : ",
+    "question": "Câu hỏi 1.50 Khẳng định nào sau đây là đúng khi nói về giao thức sử dụng trên cáp sợi quang:",
     "a": "Frame Relay",
     "b": "FDDI",
     "c": "SONET",
@@ -392,7 +392,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.51 Các chuẩn Internet là: : ",
+    "question": "Câu hỏi 1.51 Các chuẩn Internet là:",
     "a": "TCP và UDP",
     "b": "ACK và NAK",
     "c": "RFC và IETF",
@@ -400,7 +400,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.52 Giải thông (bandwidth) là: : ",
+    "question": "Câu hỏi 1.52 Giải thông (bandwidth) là:",
     "a": "Tốc độ truyền dữ liệu trên đường truyền",
     "b": "Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được",
     "c": "Độ đo sự yếu đi của tín hiệu trên đường truyền",
@@ -408,7 +408,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1.53 Thông lượng (throughput) là: : ",
+    "question": "Câu hỏi 1.53 Thông lượng (throughput) là:",
     "a": "Tốc độ truyền dữ liệu trên đường truyền",
     "b": "Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được  8",
     "c": "Độ đo sự yếu đi của tín hiệu trên đường truyền",
@@ -416,7 +416,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.54 Độ suy hao là: : ",
+    "question": "Câu hỏi 1.54 Độ suy hao là:",
     "a": "Tốc độ truyền dữ liệu trên đường truyền",
     "b": "Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được",
     "c": "Độ đo sự yếu đi của tín hiệu trên đường truyền",
@@ -424,7 +424,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.55 Độ nhiễu điện từ là: : ",
+    "question": "Câu hỏi 1.55 Độ nhiễu điện từ là:",
     "a": "Tốc độ truyền dữ liệu trên đường truyền",
     "b": "Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được",
     "c": "Độ đo sự yếu đi của tín hiệu trên đường truyền",
@@ -432,7 +432,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.56 Truyền dẫn theo dải cơ sở (baseband): : ",
+    "question": "Câu hỏi 1.56 Truyền dẫn theo dải cơ sở (baseband):",
     "a": "Toàn bộ khả năng đường truyền được dành cho một kênh thông duy nhất",
     "b": "Hai kênh truyền thông cùng phân chia giải thông của đường truyền",
     "c": "Ba kênh tru yền thông cùng phân chia giải thông của đường truyền",
@@ -440,7 +440,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.57 Truyền dẫn theo dải rộng (broadband): : ",
+    "question": "Câu hỏi 1.57 Truyền dẫn theo dải rộng (broadband):",
     "a": "Toàn bộ khả năng đường truyền được dành cho một kênh thông duy nhất",
     "b": "Hai k ênh truyền thông cùng phân chia giải thông của đường truyền",
     "c": "Ba kênh truyền thông cùng phân chia giải thông của đường truyền",
@@ -1128,7 +1128,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.144 Vị trí dữ liệu thực sự trong gói dữ liệu TCP bắt đầu từ byte: : ",
+    "question": "Câu hỏi 1.144 Vị trí dữ liệu thực sự trong gói dữ liệu TCP bắt đầu từ byte:",
     "a": "40",
     "b": "32",
     "c": "5",
@@ -2112,7 +2112,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.272 Giải thuật RSA được sử dụng trong: : ",
+    "question": "Câu hỏi 1.272 Giải thuật RSA được sử dụng trong:",
     "a": "Mã hóa khóa đối xứng",
     "b": "Mã hóa khóa công khai",
     "c": "Cả mã hóa khóa đối xứng và mã hóa khóa công khai",
@@ -2168,7 +2168,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.279 Lệnh nào sẽ hiển thị kết quả dưới đây: \r :  Proto Local Address Foreign Address State \r   TCP 0.0.0.0:7 nam PC:0    -   LISTENING \r TCP 0.0.0.0:9 nam PC:0    -   LISTENING\r TCP 0.0.0.0:13 nam PC:0   -   LISTENING \rTCP 0.0.0.0:17 nam PC:0   -   LISTENING ",
+    "question": "Câu hỏi 1.279 Lệnh nào sẽ hiển thị kết quả dưới đây: \r Proto Local Address Foreign Address State \r   TCP 0.0.0.0:7 nam PC:0    -   LISTENING \r TCP 0.0.0.0:9 nam PC:0    -   LISTENING\r TCP 0.0.0.0:13 nam PC:0   -   LISTENING \rTCP 0.0.0.0:17 nam PC:0   -   LISTENING ",
     "a": "Ping",
     "b": "Tracert",
     "c": "Netstat",

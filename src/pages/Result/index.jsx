@@ -48,11 +48,11 @@ export default function Result() {
             {/* Nút chức năng canh giữa */}
             <div class="d-flex justify-content-center gap-3 mt-4 mb-4">
                 {!showDetails ? (
-                    <button class="btn btn-primary" onClick={() => setShowDetails(true)}>
+                    <button class="btn btn-outline-success" onClick={() => setShowDetails(true)}>
                         Xem chi tiết
                     </button>
                 ) : (
-                    <button class="btn btn-primary " onClick={() => setShowDetails(false)}>
+                    <button class="btn btn-outline-success" onClick={() => setShowDetails(false)}>
                         Ẩn chi tiết
                     </button>
                 )}
