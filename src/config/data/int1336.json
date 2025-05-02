@@ -972,7 +972,7 @@
     "a": "www.someschool.edu",
     "b": "192.168.1.1",
     "c": "…/someDept/pic.gif",
-    "d": "www.someschool.edu/someDept/pic.gif  17 ",
+    "d": "www.someschool.edu/someDept/pic.gif",
     "ans": "d"
   },
   {
@@ -1345,18 +1345,18 @@
   },
   {
     "question": "Câu hỏi 1.173: IPv4 có bao nhiêu địa chỉ IP:",
-    "a": "2 12",
-    "b": "2 22",
-    "c": "2 32",
-    "d": "2 42 ",
+    "a": "2^12",
+    "b": "2^22",
+    "c": "2^32",
+    "d": "2^42 ",
     "ans": "c"
   },
   {
     "question": "Câu hỏi 1.174: IPv4, lớp B có số NetIDs/HostIDs sử dụng tương ứng là:",
-    "a": "2  / 2  - 2 11 21",
-    "b": "2  / 2  - 2 14 16",
-    "c": "2  / 2  - 2 13 19",
-    "d": "2  / 2   2 10 22 – ",
+    "a": "2^11/ 2^21 - 2",
+    "b": "2^14/ 2^16 - 2",
+    "c": "2^13/ 2^19 - 2",
+    "d": "2^10/ 2^22 - 2",
     "ans": "b"
   },
   {
@@ -2096,7 +2096,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu hỏi 1. Sự toàn vẹn thông điệp là: 270: ",
+    "question": "Câu hỏi 1. Sự toàn vẹn thông điệp là:",
     "a": "Người gửi mã hóa thông điệp, người nhận giải mã thông điệp",
     "b": "Người gửi và người nhận xác định là nhận ra nhau",
     "c": "Người gửi và người nhận muốn đảm bảo thông điệp không bị thay đổi  36",
