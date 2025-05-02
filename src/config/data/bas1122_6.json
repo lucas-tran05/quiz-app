@@ -1,0 +1,610 @@
+[
+  {
+    "question": "Câu 1: Theo Tư tưởng Hồ Chí Minh, đạo đức có vai trò…",
+    "a": "Là nền tảng lý luận của người cách mạng",
+    "b": "Là cái gốc, là nền tảng của người cách mạng",
+    "c": "Là định hướng lý tưởng của người cách mạng",
+    "d": "Là cơ sở tư tưởng của người cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 2: Chuẩn mực đạo đức của người cách mạng theo Tư tưởng Hồ Chí Minh là…",
+    "a": "Trung với nước hiếu với dân; yêu thương con người",
+    "b": "Cần, kiệm, liêm, chính, chí công vô tư",
+    "c": "Có tinh thần quốc tế trong sáng",
+    "d": "Cả A, B, C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 3: Theo Hồ Chí Minh, muốn xây dựng đạo đức mới phải…",
+    "a": "Nói đi đôi với làm",
+    "b": "Xây đi đôi với chống",
+    "c": "Tu dưỡng đạo đức suốt đời",
+    "d": "Cả A, B, C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 4: Chọn câu trả lời đúng nhất: Con người theo quan niệm của Hồ Chí Minh là…",
+    "a": "Động lực của cách mạng",
+    "b": "Vốn quý của cách mạng",
+    "c": "Vốn quý nhất, nhân tố quyết định đến thành công của cách mạng",
+    "d": "Bộ phận quan trọng của cách mạng",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 5: Chọn phương án trả lời đúng nhất: Khái niệm con người trong Tư tưởng Hồ Chí Minh để chỉ…",
+    "a": "Một con người cụ thể",
+    "b": "Một cộng đồng người",
+    "c": "Con người cụ thể gắn với hoàn cảnh lịch sử cụ thể",
+    "d": "Con người nói chung",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 6: Theo Tư tưởng Hồ Chí Minh, văn hoá có chức năng…",
+    "a": "Bồi dưỡng tư tưởng đúng đắn và tình cảm cao đẹp cho con người",
+    "b": "Nâng cao dân trí",
+    "c": "Bồi dưỡng những phẩm chất tốt đẹp, những phong cách, lối sống lành mạnh, luôn hướng con người vươn tới cái thiện, cái mỹ, không ngừng hoàn thiện bản thân mình",
+    "d": "Cả A, B, C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 7: Khi viết tác phẩm “Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân”, Hồ Chí Minh lấy bút danh là gì?",
+    "a": "Hồ Chí Minh",
+    "b": "Trần Lực",
+    "c": "Già Thu",
+    "d": "X.Y.Z",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 8: “Cũng như sông có nguồn thì mới có nước, không có nguồn thì sông cạn. Cây phải có gốc, không có gốc thì cây héo. Người cách mạng phải có đạo đức, không có đạo đức thì dù tài giỏi mấy cũng không lãnh đạo được nhân dân”. Câu nói trên được trích trong tác phẩm nào của Hồ Chí Minh?",
+    "a": "Đường Kách mệnh",
+    "b": "Sửa đổi lối làm việc",
+    "c": "Nhật ký trong tù",
+    "d": "Đạo đức cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 9: Hãy cho biết câu nói dưới đây là của ai? “Việc học không bao giờ cùng, còn sống còn phải học”.",
+    "a": "V.I. Lênin",
+    "b": "Hồ Chí Minh",
+    "c": "Quản Trọng.",
+    "d": "Khổng Tử",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 10: Theo Hồ Chí Minh phẩm chất đạo đức cách mạng nào gắn với hoạt động hàng ngày của mọi người và là thước đo sự giàu có về mặt vật chất, vững mạnh về tinh thần và là nền tảng của đời sống mới, của phong trào thi đua yêu nước?",
+    "a": "Trung với nước, hiếu với dân",
+    "b": "Yêu thương con người",
+    "c": "Cần, kiệm, liêm, chính",
+    "d": "Tinh thần quốc tế trong sáng",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 11: “Người mà không liêm, không bằng súc vật”. Câu nói trên là của ai?",
+    "a": "Khổng Tử",
+    "b": "Mạnh Tử",
+    "c": "Các Mác",
+    "d": "Hồ Chí Minh",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 12: Luận điểm: “Đạo đức cách mạng không phải trên trời sa xuống. Nó do đấu tranh rèn luyện bền bỉ hằng ngày mà phát triển và củng cố. Cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong” là của ai?",
+    "a": "C. Mác",
+    "b": "Khổng Tử",
+    "c": "Mạnh Tử",
+    "d": "Hồ Chí Minh",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 13: Ba thứ giặc nội xâm theo tư tưởng Hồ Chí Minh là gì?",
+    "a": "Tay sai, bù nhìn, bọn ăn bám",
+    "b": "Bè phái, a dua, nịnh hót",
+    "c": "Tham ô, lãng phí, quan liêu",
+    "d": "Giặc đói, giặc dốt, giặc ngoại xâm",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 14: “Cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong”. Câu trên được trích trong tác phẩm nào của Hồ Chí Minh?",
+    "a": "Đường Kách mệnh",
+    "b": "Đạo đức cách mạng",
+    "c": "Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân",
+    "d": "Đời sống mới",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 15: Tác phẩm “Đạo đức cách mạng” của Hồ Chí Minh được in lần đầu tiên trên tạp chí nào?",
+    "a": "Tạp chí Quân đội nhân dân",
+    "b": "Tạp chí Học tập",
+    "c": "Tạp chí Những vấn đề hòa bình và chủ nghĩa xã hội",
+    "d": "Tạp chí Xây dựng Đảng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 16: “Đảng ta là một Đảng cầm quyền. Mỗi đảng viên và cán bộ phải thật sự thấm nhuần đạo đức cách mạng, thật sự cần kiệm, liêm, chính, chí công vô tư. Phải giữ gìn Đảng ta thật trong sạch, phải xứng đáng là người lãnh đạo, là người đầy tớ thật trung thành của nhân dân”. Câu trên được trích trong tác phẩm nào của Hồ Chí Minh?",
+    "a": "Đạo đức cách mạng",
+    "b": "Đường Kách mệnh",
+    "c": "Di chúc",
+    "d": "Sửa đổi lối làm việc",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 17: Trong các phẩm chất đạo đức cơ bản của con người Việt Nam trong thời đại mới, phẩm chất đạo đức nào quan trọng nhất, bao trùm nhất?",
+    "a": "Yêu thương con người",
+    "b": "Cần, kiệm, liêm, chính, chí công vô tư",
+    "c": "Trung với nước, hiếu với dân",
+    "d": "Tinh thần quốc tế trong sáng",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 18: Chọn đáp án trả lời đúng nhất: Theo tư tưởng Hồ Chí Minh về đạo đức, Hiếu với dân được hiểu là:",
+    "a": "Yêu thương dân",
+    "b": "Phục vụ dân hết lòng",
+    "c": "Yêu thương dân và phục vụ dân hết lòng",
+    "d": "Trung thành với dân",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 19: Theo tư tưởng Hồ Chí Minh về đạo đức, tinh thần quốc tế trong sáng được hiểu là:",
+    "a": "Tinh thần đoàn kết quốc tế vô sản",
+    "b": "Tinh thần đoàn kết với các dân tộc bị áp bức, với nhân dân lao động các nước",
+    "c": "Tinh thần đoàn kết với tất cả những người tiến bộ trên thế giới",
+    "d": "Cả A, B, C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 20: Chọn phương án đúng nhất: Để xây dựng những phẩm chất đạo đức tốt đẹp và chống lại những cái vô đạo đức có kết quả, theo quan điểm của Hồ Chí Minh phải…",
+    "a": "Tạo thành phong trào quần chúng rộng rãi",
+    "b": "Động viên từng cá nhân thực hiện",
+    "c": "Bắt buộc từng cá nhân thực hiện",
+    "d": "Chống chủ nghĩa cá nhân",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 21: Để xây dựng những phẩm chất đạo đức tốt đẹp và chống lại những cái vô đạo đức có kết quả, theo quan điểm của Hồ Chí Minh phải:",
+    "a": "Tạo thành phong trào quần chúng rộng rãi",
+    "b": "Động viên từng cá nhân thực hiện",
+    "c": "Bắt buộc từng cá nhân thực hiện",
+    "d": "Chống chủ nghĩa cá nhân",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 22: Chọn đáp án trả lời đúng nhất: Việc tu dưỡng đạo đức ở mỗi người phải được thực hiện trong:",
+    "a": "Mọi hoạt động thực tiễn",
+    "b": "Mọi mối quan hệ xã hội",
+    "c": "Mọi hoạt động thực tiễn, mọi mối quan hệ xã hội",
+    "d": "Trong đời tư và đời công",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 23: Hãy cho biết vai trò của người nghệ sỹ trong lĩnh vực văn hoá, văn nghệ theo tư tưởng Hồ Chí Minh?",
+    "a": "Là tác giả",
+    "b": "Là người chiến sĩ",
+    "c": "Vừa là người sáng tác, vừa là người phê bình",
+    "d": "Là người định hướng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 24: Cho biết vai trò của tác phẩm văn nghệ trong lĩnh vực văn hoá văn nghệ theo tư tưởng Hồ Chí Minh?",
+    "a": "Kết tinh trí tuệ, tâm hồn của văn nghệ sĩ",
+    "b": "Là vũ khí sắc bén trong đấu tranh cách mạng, xây dựng xã hội mới, con người mới",
+    "c": "Là món ăn tinh thần của mọi người trong cuộc sống",
+    "d": "Là cơ sở để đánh giá tài năng của người nghệ sỹ",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 25: Hãy cho biết ý nghĩa của việc thực hiện phương châm của Hồ Chí Minh về giáo dục: Học đi đôi với hành, lý luận liên hệ với thực tế; học tập kết hợp với lao động; kết hợp gia đình – nhà trường – xã hội.",
+    "a": "Để có chất lượng và hiệu quả cao trong học tập",
+    "b": "Để tạo ra phong trào rộng rãi trong cả nước",
+    "c": "Tận dụng tất cả các điều kiện cho học tập",
+    "d": "Để mọi người đều có cơ hội học tập",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 26: Vấn đề xây dựng đời sống mới được Hồ Chí Minh đặt ra từ khi nào?",
+    "a": "Sau Cách mạng Tháng Tám năm 1945",
+    "b": "Sau khi miền Bắc được hoàn toàn giải phóng",
+    "c": "Trong cải tạo XHCN nền kinh tế miền Bắc",
+    "d": "Sau khi hoàn thành cuộc kháng chiến chống Mỹ cứu nước",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 27: Theo Chủ tịch Hồ Chí Minh, đạo đức là…",
+    "a": "Gốc của người cách mạng",
+    "b": "Phẩm chất của người cách mạng",
+    "c": "Yêu cầu của người cách mạng",
+    "d": "Tính cách của người cách mạng",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 28: Theo Hồ Chí Minh, tuổi trẻ như mùa nào trong năm?",
+    "a": "Mùa xuân",
+    "b": "Mùa hạ",
+    "c": "Mùa thu",
+    "d": "Mùa đông",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 29: Luận điểm: “Đạo đức cách mạng không phải trên trời sa xuống. Nó do đấu tranh, rèn luyện bền bỉ hàng ngày mà phát triển và củng cố, cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong” là của ai?",
+    "a": "C. Mác",
+    "b": "Hồ Chí Minh",
+    "c": "Lê Duẩn",
+    "d": "V.I.Lênin",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 30: Theo tư tưởng Hồ Chí Minh, chữ Người là?",
+    "a": "Gia đình, anh em, họ hàng, bầu bạn.",
+    "b": "Loài người",
+    "c": "Đồng bào cả nước",
+    "d": "Cả A, B, C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 31: Theo Hồ Chí Minh, muốn xây dựng đạo đức mới phải:",
+    "a": "Nói đi đôi với làm; xây đi đôi với chống; phải tu dưỡng đạo đức suốt đời",
+    "b": "Nói đi đôi với làm; xây đi đôi với chống; rèn luyện phẩm chất đạo đức",
+    "c": "Nói đi đôi với làm; chống chủ nghĩa cá nhân; tu dưỡng đạo đức cá nhân",
+    "d": "Nói trước, làm sau; xây đi đôi với chống; phải tu dưỡng đạo đức suốt đời",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 32: Chọn luận điểm đúng với tư tưởng Hồ Chí Minh:",
+    "a": "Muốn tiến lên chủ nghĩa xã hội thì phải phát triển văn hóa và kinh tế",
+    "b": "Muốn tiến lên chủ nghĩa xã hội thì phải phát triển kinh tế và văn hóa",
+    "c": "Muốn tiến lên chủ nghĩa xã hội thì chỉ cần phát triển kinh tế",
+    "d": "Muốn tiến lên chủ nghĩa xã hội thì phải phát triển văn hóa",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 33: Hãy cho biết vai trò của người nghệ sỹ trong lĩnh vực văn hoá văn nghệ theo tư tưởng Hồ Chí Minh?",
+    "a": "Là tác giả",
+    "b": "Là người chiến sĩ",
+    "c": "Vừa là người sáng tác, vừa là người phê bình",
+    "d": "Cả A, B, C",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 34: Cho biết vai trò của tác phẩm văn nghệ trong lĩnh vực văn hoá văn nghệ theo tư tưởng Hồ Chí Minh?",
+    "a": "Kết tinh trí tuệ, tâm hồn của văn nghệ sĩ",
+    "b": "Là vũ khí sắc bén trong đấu tranh cách mạng, xây dựng xã hội mới, con người mới",
+    "c": "Là món ăn tinh thần của mọi người trong cuộc sống",
+    "d": "Là cơ sở để đánh giá tài năng của người nghệ sỹ",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 35: Vấn đề xây dựng đời sống mới được Hồ Chí Minh đặt ra từ khi nào ?",
+    "a": "Sau Cách mạng Tháng Tám năm 1945",
+    "b": "Sau khi miền Bắc được hoàn toàn giải phóng",
+    "c": "Trong cải tạo XHCN nền kinh tế miền Bắc",
+    "d": "Sau khi hoàn thành cuộc kháng chiến chống Mỹ cứu nước",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 36: Tác phẩm “Đời sống mới” do Chủ tịch Hồ Chí Minh viết vào thời gian nào?",
+    "a": "Tháng 8/1945",
+    "b": "Tháng 3/1947",
+    "c": "Tháng 5/1954",
+    "d": "Tháng 10/1965",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 37: Theo Hồ Chí Minh, đời sống mới gồm nhưng lĩnh vực nào?",
+    "a": "Đạo đức mới, lối sống mới, nếp sống mới",
+    "b": "Đạo đức mới và lối sống mới",
+    "c": "Đạo đức mới, nếp sống mới và cách sống mới",
+    "d": "Nếp song mới, lối song mới và tư tưởng mới",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 38: Theo Hồ Chí Minh, nội dung của nền giáo dục mới là:",
+    "a": "Giáo dục toàn diện cả đức lẫn tài",
+    "b": "Giáo dục toàn diện cả đức, trí, thể, mỹ",
+    "c": "Giáo dục tư tưởng chính trị",
+    "d": "Giáo dục thái độ lao động",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 39: Nội hàm định nghĩa văn hóa mà Hồ Chí Minh nêu lên là:",
+    "a": "Văn hóa bao gồm toàn bộ những giá trị vật chất mà loài người tạo ra vì sự tồn tại của họ",
+    "b": "Văn hóa bao gồm những giá trị vật chất và phi vật chất mà loài người đã tạo ra để phục vụ nhu cầu sống của mình",
+    "c": "Văn hóa gồm toàn bộ những giá trị vật chất và tinh thần mà loài người đã sáng tạo ra, nhằm đáp ứng sự sinh tồn và mục đích cuộc sống của mình",
+    "d": "Văn hóa gồm toàn bộ giá trị vật chất và tinh thần qua quá trình lịch sử con người đã để lại cho loài người",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 40: Theo Hồ Chí Minh để xây dựng nền tảng đạo đức mới cần phải dựa trên những nguyên tắc?",
+    "a": "Lập trường dân chủ tư sản",
+    "b": "Lập trường dân tộc chủ nghĩa",
+    "c": "Lập trường giai cấp công nhân",
+    "d": "Lập trường yêu nước",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 41: Nguyên tắc cơ bản để xây dựng nền đạo đức mới theo tư tưởng Hồ Chí Minh là gì?",
+    "a": "Nói đi đôi với làm, nêu gương về đạo đức",
+    "b": "Xây đi đôi với chống",
+    "c": "Tu dưỡng đạo đức suốt đời",
+    "d": "A, B và C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 42: Hãy cho biết động lực bao trùm của chủ nghĩa xã hội theo tư tưởng Hồ Chí Minh là gì?",
+    "a": "Con người",
+    "b": "Kinh tế",
+    "c": "Dân chủ",
+    "d": "Tiến bộ, công bằng",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 43: Hồ Chí Minh đặt văn hóa ngang hàng với các lĩnh vực nào?",
+    "a": "Chính trị",
+    "b": "Kinh tế",
+    "c": "Xã hội",
+    "d": "Kinh tế, chính trị, xã hội",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 44: Theo Hồ Chí Minh, văn hóa thuộc bộ phận nào của đời sống xã hội…",
+    "a": "Cơ sở hạ tầng",
+    "b": "Kiến trúc thượng tầng",
+    "c": "Tồn tại xã hội",
+    "d": "Ý thức xã hội",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 45: Quan điểm của Hồ Chí Minh về tính chất của nền văn hóa luôn bao hàm…",
+    "a": "Tính dân tộc và tính khoa học",
+    "b": "Tính dân tộc và tính quần chúng",
+    "c": "Tính dân tộc, tính khoa học, tính đại chúng",
+    "d": "Tính dân tộc, tính khoa học, tính cách mạng",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 46: Hồ Chí Minh đã kết hợp một cách nhuần nhuyễn giữa quản lý xã hội bằng pháp luật với phát huy những truyền thống tốt đẹp của dân tộc qua",
+    "a": "",
+    "b": "",
+    "c": "",
+    "d": "",
+    "ans": ""
+  },
+  {
+    "question": "Câu 47: Theo Hồ Chí Minh, tính đại chúng của văn hóa thể hiện:",
+    "a": "Văn hóa từ quần chúng nhân dân mà ra",
+    "b": "Văn hóa phải phục vụ nhân dân và do nhân dân xây dựng nên",
+    "c": "Văn hóa dành cho quần chúng nhân dân",
+    "d": "Văn hóa phải hướng về đa số, phục tùng đa số",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 48: Bản chất con người theo Hồ Chí Minh là gì?",
+    "a": "Sản phẩm của sự tiến hóa tự nhiên",
+    "b": "Sự thống nhất cả hai mặt tự nhiên và xã hội",
+    "c": "Mang bản chất giai cấp công nhân",
+    "d": "Tổng hợp các quan hệ xã hội từ rộng đến hẹp",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 49: Hãy cho biết tác phẩm đầu tiên của Hồ Chí Minh đề cập đến đạo đức cách mạng.",
+    "a": "Bản án chế độ thực dân Pháp",
+    "b": "Đường Kách mệnh",
+    "c": "Sửa đổi lối làm việc",
+    "d": "Đạo đức cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 50: “Không sợ thiếu, chỉ sợ không công bằng; Không sợ nghèo, chỉ sợ lòng dân không yên”. Câu nói trên của Hồ Chí Minh được ra đời năm nào?",
+    "a": "Năm 1944",
+    "b": "Năm 1966",
+    "c": "Năm 1967",
+    "d": "Năm 1969",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 51: Theo tư tưởng Hồ Chí Minh đạo đức có vai trò như thế nào trong đời sống xã hội?",
+    "a": "Đạo đức là gốc, là nền tảng của người cách mạng, vũ khí sắc bén trong cuộc đấu tranh cách mạng",
+    "b": "Đạo đức là thước đo lòng cao thượng của con người",
+    "c": "Đạo đức là nhân tố tạo nên sức hấp dẫn của chủ nghĩa xã hội",
+    "d": "A, B và C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 52: Vấn đề đạo đức được Hồ Chí Minh xem xét như thế nào?",
+    "a": "Đối với mọi đối tượng",
+    "b": "Trên mọi lĩnh vực, mọi phạm vi",
+    "c": "Trong cả ba mối quan hệ chủ yếu của mỗi người - đối với mình, đối với người, đối với việc",
+    "d": "A, B và C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 53: Theo tư tưởng Hồ Chí Minh, phẩm chất đạo đức quan trọng nhất, bao trùm nhất của con người Việt Nam mới là gì?",
+    "a": "Trung với nước, hiếu với dân",
+    "b": "Yêu thương con người",
+    "c": "Cần, kiệm, liêm, chính, chí công vô tư",
+    "d": "Tinh thần quốc tế trong sáng",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 54: Thế nào là “Trung với nước” theo tư tưởng Hồ Chí Minh?",
+    "a": "Tuyệt đối trung thành với sự nghiệp dựng nước và giữ nước",
+    "b": "Trung thành với con đường đi lên chủ nghĩa xã hội của đất nước",
+    "c": "Suốt đời phấn đấu cho Đảng, cho cách mạng.",
+    "d": "A, B và C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 55: Biểu hiện của “Hiếu với dân” theo tư tưởng Hồ Chí Minh là gì?",
+    "a": "Thương dân, tin dân, phục vụ nhân dân hết lòng",
+    "b": "Phải làm theo tất cả những điều dạy bảo của dân",
+    "c": "Trước tiên phải phụng dưỡng tốt cho cha mẹ",
+    "d": "Hiểu dân, lấy dân làm gốc, làm theo dân",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 56: Theo Hồ Chí Minh “Chính” được thể hiện qua những mối quan hệ nào?",
+    "a": "Quan hệ gia đình, làng xã, quốc gia",
+    "b": "Quan hệ với mình, với người, với việc",
+    "c": "Quan hệ với đồng bào, đồng chí, anh em",
+    "d": "Quan hệ với mình, với việc",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 57: Theo Hồ Chí Minh, chức năng cơ bản của văn hóa là:",
+    "a": "Bồi dưỡng tư tưởng đúng đắn và tinh cảm cao đẹp của con người",
+    "b": "Bồi dưỡng những phẩm chất, phong cách và lối sống tốt đẹp, lành mạnh, hướng con người hoàn thiện bản thân",
+    "c": "Mở rộng hiểu biết, nâng cao dân trí",
+    "d": "Cả A, B, C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 58: Con người theo quan điểm Hồ Chí Minh là:",
+    "a": "Vốn quý nhất, nhân tố quan trọng của cách mạng",
+    "b": "Vốn quý nhất, nhân tố quyết định thành công của cách mạng",
+    "c": "Vốn quý của cách mạng",
+    "d": "Động lực của cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 59: Chọn cụm từ điền vào chỗ trống đúng với tư tưởng Hồ Chí Minh: “Người cách mạng phải có … thì mới gánh được nặng và đi được xa”.",
+    "a": "Trí tuệ",
+    "b": "Đạo đức cách mạng",
+    "c": "ý chí cách mạng",
+    "d": "Lập trường cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 60: Theo tư tưởng Hồ Chí Minh, đạo đức có vai trò như thế nào?",
+    "a": "Là nền tảng lý luận của người cách mạng",
+    "b": "Là cái gốc, nền tảng của người cách mạng",
+    "c": "Là định hướng lý tưởng của người cách mạng",
+    "d": "Là cơ sở tư tưởng của người cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 61: Trong Di chúc, Hồ Chí Minh xác định công việc đầu tiên là công việc gì?",
+    "a": "Tiếp tục phát triển kinh tế",
+    "b": "Công việc đối với con người",
+    "c": "Ra sức phát triển văn hóa",
+    "d": "Phát triển khoa học – kỹ thuật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 62: Theo tư tưởng Hồ Chí Minh, trong mỗi con người bao giờ cũng có:",
+    "a": "Tốt – xấu, thiện – ác",
+    "b": "Không tốt, không xấu",
+    "c": "Phần lớn là mặt tốt",
+    "d": "Phần lớn là mặt xấu",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 63: Theo Hồ Chí Minh, đấu tranh chống chủ nghĩa cá nhân là:",
+    "a": "Chỉ bảo vệ lợi ích của tập thể",
+    "b": "Loại bỏ lợi ích cá nhân",
+    "c": "Bảo vệ lợi ích cá nhân",
+    "d": "Không dày xéo lên lợi ích cá nhân",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 64: Theo tư tưởng Hồ Chí Minh, muốn thức tỉnh một dân tộc, trước hết phải thức tỉnh bộ phận dân cư nào?",
+    "a": "Trí thức",
+    "b": "Thanh niên",
+    "c": "Thiếu niên, nhi đồng",
+    "d": "Công nhân và nông dân",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 65: Theo Hồ Chí Minh, kẻ thù hung ác của chủ nghĩa xã hội là gì?",
+    "a": "Giặc ngoại xâm",
+    "b": "Chủ nghĩa tư bản",
+    "c": "Chủ nghĩa đế quốc",
+    "d": "Chủ nghĩa cá nhân",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 66: Theo Hồ Chí Minh, ai làm chủ chế độ xã hội chủ nghĩa?",
+    "a": "Nhân dân",
+    "b": "Người lao động",
+    "c": "Đảng, nhà nước, chính phủ",
+    "d": "Cả 3 phương án",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 67: “Phê bình mình cũng như phê bình người phải ráo riết, triệt để, thật thà, không nể nang, không thêm bớt, phải vạch rõ ưu điểm và khuyết điểm. Đồng thời chớ dùng những lời mỉa mai, chua cay, đâm chọc. Phê bình việc làm, chứ không phê bình người”. Câu nói trên của Hồ Chí Minh chỉ cho chúng ta biết điều gì?",
+    "a": "Cách thức tự phê bình và phê bình",
+    "b": "Mục đích tự phê bình và phê bình",
+    "c": "Điều kiện để đoàn kết thống nhất",
+    "d": "A, B và C",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 68: Hồ Chí Minh xác định yếu tố nào là gốc của người cách mạng?",
+    "a": "Tài năng",
+    "b": "Đạo đức",
+    "c": "Chuyên môn",
+    "d": "Cả A, B, C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 69: “Đảng là trí tuệ, lương tâm, danh dự cả dân tộc và thời đại”. Hãy cho biết luận điểm trên là của ai?",
+    "a": "C. Mác",
+    "b": "V.I. Lênin",
+    "c": "J. Stalin",
+    "d": "Hồ Chí Minh",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 70: Theo Hồ Chí Minh, mục tiêu của giáo dục là gì?",
+    "a": "Xoá nạn mù chữ, làm cho mọi người dân biết đọc, biết viết",
+    "b": "Hình thành đội ngũ trí thức cách mạng",
+    "c": "Đào tạo những con người tốt, có ích cho xã hội",
+    "d": "Phát triển khoa học nước nhà",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 71: Theo Hồ Chí Minh, nội dung của nền giáo dục mới là gì?",
+    "a": "Giáo dục toàn diện cả đức, trí, thể, mỹ",
+    "b": "Giáo dục tư tưởng chính trị",
+    "c": "Giáo dục thái độ lao động",
+    "d": "Giáo dục tri thức văn hoá",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 72: Lựa chọn đáp án trả lời đúng nhất về vai trò của văn hoá:",
+    "a": "Phục vụ nhiệm vụ chính trị",
+    "b": "Thúc đẩy xây dựng và phát triển kinh tế",
+    "c": "Phục vụ nhiệm vụ chính trị, thúc đẩy xây dựng và phát triển kinh tế",
+    "d": "Không có ảnh hưởng gì đến kinh tế và chính trị",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 73: Phẩm chất đạo đức cơ bản của con người Việt Nam trong thời đại mới theo tư tưởng Hồ Chí Minh là:",
+    "a": "Trung với nước, hiếu với dân; Yêu thương con người",
+    "b": "Cần, kiệm, liêm, chính, chí công vô tư",
+    "c": "Có tinh thần quốc tế trong sáng",
+    "d": "Cả A, B, C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 74: Con người theo quan điểm Hồ Chí Minh là:",
+    "a": "Vốn quý nhất, nhân tố quan trọng của cách mạng",
+    "b": "Vốn quý nhất, nhân tố quyết định thành công của cách mạng",
+    "c": "Vốn quý của cách mạng",
+    "d": "Động lực của cách mạng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 75: Khái niệm con người theo tư tưởng Hồ Chí Minh là:",
+    "a": "Một con người cụ thể",
+    "b": "Một cộng đồng người",
+    "c": "Con người cụ thể gắn với hoàn cảnh cụ thể",
+    "d": "Con người trừu tượng, chung chung",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 76: Theo Hồ Chí Minh: “… là gốc của người cách mạng”",
+    "a": "Tài năng",
+    "b": "Bản lĩnh chính trị",
+    "c": "Đạo đức",
+    "d": "Phẩm chất chính trị",
+    "ans": "c"
+  }
+]
