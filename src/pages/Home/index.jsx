@@ -75,11 +75,10 @@ export default function Home() {
                         required
                     >
                         <option value="" disabled>-- Chọn ngành học --</option>
-                        <option value="Công nghệ thông tin">Công nghệ thông tin</option>
-                        <option value="An toàn thông tin">An toàn thông tin</option>
-                        <option value="Khoa học máy tính">Khoa học máy tính</option>
-                        <option value="Hệ thống thông tin">Hệ thống thông tin</option>
-                        <option value="Khoa học dữ liệu">Khoa học dữ liệu</option>
+                        <option value="Kĩ thuật">Kĩ thuật</option>
+                        <option value="Kinh tế">Kinh tế</option>
+                        <option value="Đa phương tiện">Đa phương tiện</option>
+                        <option value="Báo chí">Báo chí</option>
                     </select>
                 </div>
 

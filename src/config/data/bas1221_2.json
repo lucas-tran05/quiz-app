@@ -1,0 +1,714 @@
+[
+  {
+    "question": "Câu 1: Tập quán pháp là:",
+    "a": "Biến đổi những tục lệ, tập quán có sẵn thành pháp luật",
+    "b": "Biến đổi những thói quen hành xử của con người trong lịch sử thành pháp luật",
+    "c": "Biến đổi những quy phạm tôn giáo thành quy phạm pháp luật",
+    "d": "Tất cả đều sai",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 2: Điền vào chỗ trống: Chủ thể vi phạm pháp luật là cá nhân hoặc tổ chức có ...... đã thực hiện hành vi vi phạm pháp luật?",
+    "a": "Năng lực hành vi",
+    "b": "Năng lực pháp luật",
+    "c": "Khả năng",
+    "d": "Năng lực trách nhiệm pháp lý",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 3: Các cá nhân, tổ chức sử dụng đúng đắn các quyền của mình, làm những gì mà pháp luật cho phép làm là nội dung của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Sử dụng pháp luật",
+    "b": "Áp dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Thi hành pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 4: Các cá nhân, tổ chức sử dụng đúng đắn các quyền của mình làm những gì mà pháp luật cho phép làm là nội dung của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Tuân thủ pháp luật",
+    "c": "Sử dụng pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 5: Thi hành pháp luật được hiểu là các cá nhân tổ chức thực hiện đầy đủ những nghĩa vụ, chủ động làm những gì mà pháp luật…",
+    "a": "Quy định phải làm",
+    "b": "quy định nên làm",
+    "c": "không cấm",
+    "d": "cho phép làm",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 6: Bộ phận nào của quy phạm pháp luật nêu lên cách thức xử sự cho chủ thể được làm, không được làm, phải làm:",
+    "a": "Giả định",
+    "b": "Quy định",
+    "c": "Chế tài",
+    "d": "Tất cả đều sai",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 7: Các cá nhân, tổ chức thực hiện đầy đủ những nghĩa vụ, chủ động làm những gì mà pháp luật quy định phải làm là hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Áp dụng pháp luật",
+    "b": "Sử dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Thi hành pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 8: Anh A sử dụng điện thoải di động khi đang điều khiển xe máy, công an xử phạt hành chính anh A. Việc làm của công an là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Tuân thủ pháp luật",
+    "b": "Ban hành pháp luật",
+    "c": "Thi hành pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 9: Một tổ chức có tư cách pháp nhân khi có điều kiện?",
+    "a": "Được thành lập hợp pháp, có cơ cấu tổ chức chặt chẽ",
+    "b": "Có tài sản độc lập với cá nhân, tổ chức khác",
+    "c": "Nhân danh mình tham gia các quan hệ pháp luật một cách độc lập",
+    "d": "Tất cả đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 10: Công dân khi tham gia các quan hệ xã hội đều thực hiện cách xử sự phù hợp với quy định của pháp luật là biểu hiện của…",
+    "a": "Ban hành pháp luật",
+    "b": "Thực hiện pháp luật",
+    "c": "Phổ biến pháp luật",
+    "d": "Xây dựng pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 11: Cá nhân có năng lực hành vi đầy đủ khi:",
+    "a": "Từ đủ 6 tuổi trở lên",
+    "b": "Từ đủ 21 tuổi trở lên",
+    "c": "Từ đủ 18 tuổi trở lên",
+    "d": "Từ đủ 15 tuổi trở lên",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 12: Việc các cơ quan công chức nhà nước có thẩm quyền ra quyết định làm phát sinh chấm dứt hoặc thay đổi việc thực hiện các quyền, nghĩa vụ cụ thể của công dân là nội dung của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Sử dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 13: Nội dung của văn bản do cơ quan cấp dưới ban hành trái với nội dung của văn bản do cơ quan cấp trên ban hành là vi phạm đặc trưng nào dưới đây của pháp luật?",
+    "a": "hiệu lực tuyệt đối của văn bản pháp luật",
+    "b": "tính xác định chặt chẽ về mặt hình thức",
+    "c": "trình tự ban hành quy phạm pháp luật",
+    "d": "khả năng đảm bảo việc thi hành pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 14: Cơ quan công chức nhà nước có thẩm quyền ban hành các quyết định trong quản lý điều hành là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Sử dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 15: Hình thức thể hiện của pháp luật là các văn bản có chứa…",
+    "a": "chuẩn mực chung",
+    "b": "quy định bắt buộc",
+    "c": "quy chế chung",
+    "d": "quy phạm pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 16: Nội dung nào dưới đây không phải là biểu hiện của thực hiện pháp luật…",
+    "a": "làm những việc mà pháp luật quy định phải làm",
+    "b": "không làm những việc mà pháp luật cấm",
+    "c": "làm những việc mà pháp luật cấm",
+    "d": "làm những việc mà pháp luật cho phép làm",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 17: Cảnh sát giao thông xử phạt người chở hàng cồng kềnh khi tham gia giao thông là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Áp dụng pháp luật",
+    "b": "Sử dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Thi hành pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 18: Ưu thế vượt trội của pháp luật so với các quy phạm xã hội khác là?",
+    "a": "Tính rộng rãi",
+    "b": "Tính cưỡng chế",
+    "c": "Tính xã hội",
+    "d": "Tồn tại trong thời gian dài",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 19: Áp dụng pháp luật được hiểu là các cơ quan công chức nhà nước có thẩm quyền ra các quyết định làm phát sinh chấm dứt hoặc thay đổi việc thực hiện…",
+    "a": "nghĩa vụ và lợi ích cụ thể của công dân",
+    "b": "quyền và trách nhiệm cụ thể của công dân",
+    "c": "quyền và nghĩa vụ cụ thể của công dân",
+    "d": "nghĩa vụ và quyền lợi cụ thể của công dân",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 20: Việc các cá nhân tổ chức không làm những điều mà pháp luật cấm là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Áp dụng pháp luật",
+    "c": "Sử dụng pháp luật",
+    "d": "Tuân thủ pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 21: Hình thức pháp luật chủ yếu được áp dụng ở Việt Nam hiện nay là:",
+    "a": "Văn bản quy phạm pháp luật",
+    "b": "Án lệ pháp",
+    "c": "Tập quán pháp",
+    "d": "Tiền lệ pháp",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 22: Chủ thể có năng lực trách nhiệm pháp lý khi có đủ điều kiện sau?",
+    "a": "Đạt độ tuổi do pháp luật quy định, có năng lực pháp luật",
+    "b": "Có năng lực pháp luật và năng lực hành vi",
+    "c": "Từ 18 tuổi trở lên và có trí óc bình thường",
+    "d": "Đạt độ tuổi do pháp luật quy định, có khả năng nhận thức và điều khiển hành vi",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 23: Thực hiện pháp luật là quá trình hoạt động có mục đích, làm cho các quy định của pháp luật đi vào cuộc sống trở thành hành vi…",
+    "a": "hợp pháp của công dân",
+    "b": "cốt lõi của cá nhân",
+    "c": "có ích của công dân",
+    "d": "cơ bản của cá nhân",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 24: Chị M điều khiển xe máy vượt quá tốc độ cho phép nên đã bị cảnh sát giao thông X lập biên bản và xử phạt hành chính, hành vi của cảnh sát giao thông X là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Tuân thủ pháp luật",
+    "c": "Áp dụng pháp luật",
+    "d": "Sử dụng pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 25: Các quy phạm pháp luật có đặc điểm chung giống nhau để điều chỉnh một nhóm quan hệ xã hội tương ứng, đó chính là:",
+    "a": "Hệ thống pháp luật",
+    "b": "Ngành luật",
+    "c": "Chế định pháp luật",
+    "d": "Quy phạm pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 26: Chọn phương án đúng nhất: Năng lực hành vi của cá nhân chỉ xuất hiện khi?",
+    "a": "Được nhà nước quy định",
+    "b": "Cá nhân đủ 16 tuổi, có trí óc bình thường",
+    "c": "Cá nhân đã đến độ tuổi nhất định và có những điều kiện nhất định",
+    "d": "Cá nhân đủ 18 tuổi, không mắc bệnh tâm thần",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 27: Khả năng chủ thể có quyền hoặc có nghĩa vụ pháp lý do Nhà nước quy định, gọi là?",
+    "a": "Khả năng pháp lý",
+    "b": "Năng lực đạo đức",
+    "c": "Năng lực hành vi",
+    "d": "Năng lực pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 28: Nhận định nào sau đây là SAI?",
+    "a": "Hình thức tập quán pháp được sử dụng nhiều trong Nhà nước xã hội chủ nghĩa",
+    "b": "Tập quán pháp là hình thức Nhà nước thừa nhận một số tập quán lưu truyền trong xã hội và quy định thành cách xử sự chung, được Nhà nước bảo đảm thực hiện",
+    "c": "Văn bản quy phạm pháp luật là hình thức pháp luật tiến bộ nhất",
+    "d": "Hình thức tiền lệ pháp còn gọi là án lệ pháp",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 29: Quá trình hoạt động có mục đích, làm cho các quy định của pháp luật đi vào cuộc sống và trở thành những hành vi hợp pháp của các cá nhân, tổ chức là nội dung của khái niệm nào dưới đây?",
+    "a": "ban hành pháp luật",
+    "b": "xây dựng pháp luật",
+    "c": "thực hiện pháp luật",
+    "d": "phổ biến pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 30: Kết hôn là:",
+    "a": "Hành vi pháp lý",
+    "b": "Sự biến pháp lý",
+    "c": "Năng lực hành vi",
+    "d": "Sự kiện thông thường",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 31: Ông B lừa chị C bằng cách mượn của chị 10 triệu đồng nhưng đến ngày hẹn ông B đã không chịu trả cho chị C số tiền trên. Chị C đã làm đơn kiện ông B ra tòa. Việc chị C kiện ông B là hành vi…",
+    "a": "thi hành pháp luật",
+    "b": "sử dụng pháp luật",
+    "c": "tuân thủ pháp luật",
+    "d": "áp dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 32: Phương pháp điều chỉnh của Luật Hành chính là?",
+    "a": "Phương pháp bình đẳng, thỏa thuận",
+    "b": "Phương pháp độc lập, tự định đoạt",
+    "c": "Phương pháp quyền uy và phương pháp thông qua hoạt động của tổ chức công đoàn",
+    "d": "Phương pháp mệnh lệnh đơn phương",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 33: Nội dung của tất cả các văn bản pháp luật đều phải phù hợp không được trái Hiến pháp đề cập đến đặc trưng nào dưới đây của pháp luật?",
+    "a": "Tính xác định chi tiết về nội dung",
+    "b": "Tính xác định chặt chẽ về mặt hình thức",
+    "c": "Tính khuôn mẫu, thuyết phục",
+    "d": "Tính quyền lực bắt buộc chung",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 34: Anh M sử dụng điện thoại di động khi đang điều khiển xe máy. Công an đã xử phạt hành chính anh M việc làm của công an là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Tuân thủ pháp luật",
+    "b": "Sử dụng pháp luật",
+    "c": "Thi hành pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 35: Khi nghiên cứu về đặc điểm của quan hệ pháp luật thì khẳng định nào sau đây là sai?",
+    "a": "Quan hệ pháp luật xuất hiện dựa trên cơ sở quy phạm pháp luật",
+    "b": "Quan hệ pháp luật do nhà nước quy định",
+    "c": "Quan hệ pháp luật là loại quan hệ có ý chí",
+    "d": "Quan hệ pháp luật luôn gắn liền với sự kiện pháp lý",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 36: Chọn phương án đúng nhất: Hình thức pháp luật là cách thức mà giai cấp thống trị sử dụng để nâng ý chí của giai cấp mình lên thành pháp luật. Trong lịch sử loài người đã có ............ hình thức pháp luật, đó là ..................",
+    "a": "1 – văn bản quy phạm pháp luật",
+    "b": "3 – tập quán pháp, tiền lệ pháp, văn bản quy phạm pháp luật",
+    "c": "4 – tập quán pháp, tiền lệ pháp, điều lệ pháp và Văn bản quy phạm pháp luật",
+    "d": "2 – tập quán pháp và văn bản quy phạm pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 37: Các tổ chức, cá nhân chủ động thực hiện quyền (những việc được làm) là:",
+    "a": "Tuân thủ pháp luật",
+    "b": "Thi hành pháp luật",
+    "c": "Sử dụng pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 38: Chọn phương án đúng nhất: Hình thức nhà nước thừa nhận một số tập quán lưu truyền trong xã hội và quy định thành cách xử sự chung là hình thức pháp luật nào sau đây?",
+    "a": "Tiền lệ pháp",
+    "b": "Tập quán pháp",
+    "c": "Tiền lệ pháp và tập quán pháp",
+    "d": "Văn bản quy phạm pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 39: Các tổ chức cá nhân chủ động thực hiện nghĩa vụ (những việc phải làm) là…",
+    "a": "Áp dụng pháp luật",
+    "b": "Thi hành pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Sử dụng pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 40: Tuân thủ pháp luật được hiểu là việc các cá nhân tổ chức…",
+    "a": "làm những điều mà pháp luật bắt buộc",
+    "b": "không làm những điều mà pháp luật cấm",
+    "c": "không làm những điều mà pháp luật ràng buộc",
+    "d": "làm những điều mà pháp luật cho phép",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 41: Khi nào pháp nhân có năng lực chủ thể:",
+    "a": "Khi một tổ chức có đủ vốn",
+    "b": "Khi các thành viên thỏa thuận thành lập pháp nhân",
+    "c": "Khi nhà nước cho phép hoặc công nhận sự thành lập của pháp nhân",
+    "d": "Khi tổ chức có đủ số thành viên",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 42: Hình thức thể hiện của pháp luật là các văn bản có chứa…?",
+    "a": "chuẩn mực chung",
+    "b": "quy phạm pháp luật",
+    "c": "quy định chung",
+    "d": "quy định bắt buộc",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 43: Mục đích của việc ban hành pháp luật là điều chỉnh cách xử sự của công dân theo các quy tắc, cách thức phù hợp với yêu cầu của chủ thể nào dưới đây?",
+    "a": "xã hội",
+    "b": "nhà nước",
+    "c": "tổ chức",
+    "d": "cộng đồng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 44: Nội dung của văn bản quy phạm pháp luật đòi hỏi phải được diễn đạt…",
+    "a": "chính xác, một nghĩa",
+    "b": "tương đối chính xác, một nghĩa",
+    "c": "tương đối chính xác, đa nghĩa",
+    "d": "chính xác, đa nghĩa",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 45: Quan hệ xã hội nào sau đây không phải là quan hệ pháp luật?",
+    "a": "Quan hệ tình yêu nam – nữ",
+    "b": "Quan hệ vợ – chồng",
+    "c": "Quan hệ mua – bán",
+    "d": "Quan hệ cha mẹ – con",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 46: Tuân thủ pháp luật là hình thức thực hiện pháp luật, trong đó các cá nhân, tổ chức không làm những điều mà pháp luật…",
+    "a": "cho phép làm",
+    "b": "quy định cấm",
+    "c": "quy định phải làm",
+    "d": "không bắt buộc",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 47: Sử dụng pháp luật được hiểu là công dân sử dụng đúng đắn các quyền của mình làm những gì mà pháp luật…",
+    "a": "quy định phải làm",
+    "b": "cho phép làm",
+    "c": "không cho phép làm",
+    "d": "quy định cấm làm",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 48: Tổ chức được thành lập hợp pháp được gọi là:",
+    "a": "Pháp nhân",
+    "b": "Thể nhân",
+    "c": "Cá nhân",
+    "d": "Tất cả đều sai",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 49: Xác định phương án SAI: Khi phát sinh tranh chấp về quyền và nghĩa vụ giữa các chủ thể thì…",
+    "a": "Các chủ thể có thể nhờ người hòa giải",
+    "b": "Các chủ thể không có quyền tự giải quyết tranh chấp",
+    "c": "Các chủ thể có thể thỏa thuận với nhau về cách giải quyết tranh chấp",
+    "d": "Các chủ thể có quyền yêu cầu nhà nước giải quyết",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 50: Điền từ vào chỗ trống: “Pháp luật là hệ thống quy tắc xử sự mang tính ............., do............ ban hành và bảo đảm thực hiện, thể hiện ................. của giai cấp thống trị và phụ thuộc vào các điều kiện ..............., là nhân tố điều chỉnh các quan hệ xã hội”.",
+    "a": "Bắt buộc – quốc hội – lý tưởng – kinh tế xã hội",
+    "b": "Bắt buộc chung – nhà nước – ý chí – kinh tế xã hội",
+    "c": "Bắt buộc – quốc hội – ý chí – chính trị",
+    "d": "Bắt buộc chung – nhà nước – lý tưởng – chính trị",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 51: Các hình thức thực hiện pháp luật theo thứ tự là:",
+    "a": "Tuân thủ pháp luật, thi hành pháp luật, sử dụng pháp luật và áp dụng pháp luật",
+    "b": "Sử dụng pháp luật, thi hành pháp luật, tuân thủ pháp luật và áp dụng pháp luật",
+    "c": "Tuân thủ pháp luật, sử dụng pháp luật, thi hành pháp luật và áp dụng pháp luật",
+    "d": "Sử dụng pháp luật, thi hành pháp luật, áp dụng pháp luật và tuân thủ pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 52: Năng lực của chủ thể bao gồm:",
+    "a": "Năng lực pháp luật và năng lực hành vi",
+    "b": "Năng lực hành vi và năng lực nhận thức",
+    "c": "Năng lực pháp luật và năng lực công dân",
+    "d": "Năng lực hành vi và năng lực nhận thức",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 53: Những người thực hiện không đúng quy định của pháp luật sẽ bị cơ quan có thẩm quyền áp dụng các biện pháp cần thiết để buộc họ phải tuân theo là thể hiện đặc trưng nào dưới đây của pháp luật?",
+    "a": "Tính quy phạm phổ biến",
+    "b": "Tính quyền lực bắt buộc chung",
+    "c": "Tính thực tiễn khả thi cao",
+    "d": "Tính hiệu lực tuyệt đối",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 54: Hành vi không đội mũ bảo hiểm khi tham gia giao thông trên đường của người điều khiển người ngồi trên xe mô tô là vi phạm hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Sử dụng pháp luật",
+    "c": "Áp dụng pháp luật",
+    "d": "Tuân thủ pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 55: Công dân khi tham gia các quan hệ xã hội đều thực hiện cách xử sự phù hợp với quy định của pháp luật là biểu hiện của…",
+    "a": "phổ biến pháp luật",
+    "b": "xây dựng pháp luật",
+    "c": "ban hành pháp luật",
+    "d": "thực hiện pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 56: Cảnh sát giao thông xử phạt người chở hang cồng kềnh khi tham gia giao thông là biểu hiện của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "uân thủ pháp luật",
+    "b": "Áp dụng pháp luật",
+    "c": "Sử dụng pháp luật",
+    "d": "Thi hành pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 57: Giá trị công bằng bình đẳng của pháp luật được thể hiện rõ nhất ở đặc trưng nào dưới đây?",
+    "a": "Tính xác định chặt chẽ về hình thức",
+    "b": "Tính quyền lực, bắt buộc chung",
+    "c": "Tính quy phạm phổ biến",
+    "d": "Tính chặt chẽ, cụ thể về nội dung",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 58: Chọn phương án đúng nhất: Quy phạm pháp luật là quy tắc xử sự mang tính .................... do ................... ban hành và bảo đảm thực hiện, thể hiện ý chí và bảo vệ lợi ích của giai cấp thống trị để điều chỉnh các ...........................",
+    "a": "Bắt buộc chung – nhà nước – quan hệ xã hội",
+    "b": "Bắt buộc chung – nhà nước – quan hệ pháp luật",
+    "c": "Bắt buộc – nhà nước – quan hệ xã hội",
+    "d": "Bắt buộc chung – quốc hội – quan hệ xã hội",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 59: Tuân thủ pháp luật là hình thức thực hiện pháp luật trong đó các cá nhân tổ chức không làm những điều mà pháp luật…?",
+    "a": "quy định cấm",
+    "b": "không bắt buộc",
+    "c": "cho phép làm",
+    "d": "quy định phải làm",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 60: Tổng hợp các quy phạm pháp luật điều chỉnh một lĩnh vực nhất định của đời sống xã hội, đó chính là:",
+    "a": "Ngành luật",
+    "b": "Hệ thống pháp luật",
+    "c": "Quy phạm pháp luật",
+    "d": "Chế định pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 61: “Pháp luật là hệ thống quy tắc xử sự mang tính ....................., do .................. ban hành và bảo đảm thực hiện, thể hiện ....................... của giai cấp thống trị và phụ thuộc vào các điều kiện .................. là nhân tố điều chỉnh các quan hệ xã hội”.",
+    "a": "Bắt buộc – quốc hội – lý tưởng – kinh tế xã hội",
+    "b": "Bắt buộc – quốc hội – ý chí – chính trị",
+    "c": "Bắt buộc chung – nhà nước – ý chí – kinh tế xã hội",
+    "d": "Bắt buộc chung – nhà nước – lý tưởng – chính trị",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 62: Khi nghiên cứu về quyền chủ thể trong quan hệ pháp luật, thì khẳng định nào sau đây là ĐÚNG?",
+    "a": "Khả năng được lựa chọn những xử sự theo ý muốn chủ quan của mình",
+    "b": "Khả năng yêu cầu các chủ thể khác thực hiện nghĩa vụ để bảo đảm việc thực hiện quyền của mình",
+    "c": "Khả năng yêu cầu cơ quan Nhà nước có thẩm quyền bảo vệ quyền của mình khi bị phía chủ thể bên kia vi phạm",
+    "d": "Tất cả đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 63: Thực hiện pháp luật là quá trình hoạt động có mục đích, làm cho các quy định của pháp luật đi vào cuộc sống, trở thành hành vi…",
+    "a": "có ích của công dân",
+    "b": "cơ bản của cá nhân",
+    "c": "cốt lõi của cá nhân",
+    "d": "hợp pháp của công dân",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 64: Quá trình thực hiện pháp luật chỉ đạt hiệu quả khi các chủ thể tham gia quan hệ pháp luật thực hiện…",
+    "a": "Đúng đắn các quyền và nghĩa vụ của mình theo Hiến pháp và pháp luật",
+    "b": "Đúng đắn các quyền của mình theo Hiến pháp và pháp luật",
+    "c": "Đầy đủ các quyền và nghĩa vụ của mình theo Hiến pháp và pháp luật",
+    "d": "Đầy đủ nghĩa vụ của mình theo Hiến pháp và pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 65: Công dân được làm những gì mà pháp luật cho phép làm là nội dung của hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Sử dụng pháp luật",
+    "b": "Áp dụng pháp luật",
+    "c": "Thi hành pháp luật",
+    "d": "Tuân thủ pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 66: Hệ thống quy tắc xử sự chung do nhà nước ban hành và được bảo đảm thực hiện bằng…",
+    "a": "quyền lực của nhà nước",
+    "b": "chính sách của nhà nước",
+    "c": "quy định của nhà nước",
+    "d": "chủ trương của nhà nước",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 67: Công dân chủ động làm những gì mà pháp luật quy định phải làm là hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Sử dụng pháp luật",
+    "b": "Áp dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Thi hành pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 68: Hình thức thực hiện pháp luật nào dưới đây mà chủ thể có quyền lựa chọn làm hoặc không làm?",
+    "a": "Tuân thủ pháp luật",
+    "b": "Thi hành pháp luật",
+    "c": "Áp dụng pháp luật",
+    "d": "Sử dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 69: Hình thức thực hiện pháp luật nào dưới đây có chủ thể thực hiện khác với các hình thức còn lại?",
+    "a": "Tuân thủ pháp luật",
+    "b": "Thi hành pháp luật",
+    "c": "Sử dụng pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 70: Khi nghiên cứu về chủ thể quan hệ pháp luật thì khẳng định nào sau đây là đúng?",
+    "a": "Mọi tổ chức đều được tham gia vào tất cả quan hệ pháp luật",
+    "b": "Mọi cá nhân đạt độ tuổi do luật định được tham gia vào tất cả quan hệ pháp luật",
+    "c": "Mọi cá nhân đều có năng lực hành vi như nhau",
+    "d": "Mọi chủ thể tham gia vào quan hệ pháp luật đều có quyền và nghĩa vụ nhất định",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 71: Hành vi tổ chức đánh bạc của công chức, viên chức nhà nước bị công an bắt quả tang được xác định là hành vi:",
+    "a": "Vi phạm kỷ luật",
+    "b": "Vi phạm công vụ",
+    "c": "Vi phạm dân sự",
+    "d": "Vi phạm hình sự",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 72: Nội dung của quan hệ pháp luật là:",
+    "a": "Là đối tượng mà các chủ thể quan tâm khi tham gia vào quan hệ pháp luật",
+    "b": "Là các bên tham gia vào quan hệ pháp luật",
+    "c": "Quyền và nghĩa vụ của các chủ thể trong quan hệ pháp luật",
+    "d": "Những giá trị mà các chủ thể quan hệ pháp luật muốn đạt được",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 73: So với pháp luật thì đạo đức có phạm vi điều chỉnh…",
+    "a": "hẹp hơn",
+    "b": "bằng nhau",
+    "c": "như nhau",
+    "d": "rộng hơn",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 74: Nội dung nào sau đây phù hợp với tính quy phạm và phổ biến của pháp luật?",
+    "a": "Ai cũng cần phải thực hiện theo các tín điều tôn giáo được ban hành",
+    "b": "Phạm vi tác động của pháp luật rộng lớn cả về không gian, thời gian và đối tượng áp dụng",
+    "c": "Cơ quan có quyền ban hành pháp luật thì cũng có quyền không thực hiện pháp luật",
+    "d": "Phạm vi tác động của quy phạm xã hội rộng hơn so với pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 75: Chọn phương án đúng nhất: Các hình thức thực hiện pháp luật bao gồm:",
+    "a": "Tuân thủ pháp luật và sử dụng pháp luật",
+    "b": "Áp dụng pháp luật và thực thi pháp luật",
+    "c": "Sử dụng pháp luật, tuân thủ pháp luật, thực thi pháp luật và áp dụng pháp luật",
+    "d": "Tuân thủ pháp luật và thực thi pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 76: Thi hành pháp luật là việc các cá nhân tổ chức…",
+    "a": "chủ động làm những gì mà pháp luật quy định phải làm",
+    "b": "tự giác làm những gì mà pháp luật cho phép làm",
+    "c": "chủ động không làm những gì mà pháp luật cấm",
+    "d": "tự giác thực hiện những gì mà pháp luật quy định nên làm",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 77: Xác định phương án SAI: Trong một quan hệ pháp luật…",
+    "a": "Quyền của cá nhân, tổ chức này không liên quan đến nghĩa vụ của cá nhân, tổ chức khác",
+    "b": "Quyền và nghĩa vụ của các chủ thể không tách rời nhau",
+    "c": "Không có chủ thể nào chỉ có nghĩa vụ mà không có quyền",
+    "d": "Không có chủ thể nào chỉ có quyền mà không có nghĩa vụ",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 78: Chọn phương án đúng nhất: Sự kiện pháp lý là những sự kiện xảy ra…?",
+    "a": "Từ hành vi xử sự của con người",
+    "b": "Từ thực tiễn đời sống xã hội",
+    "c": "Trong thực tiễn đời sống mà sự xuất hiện hay mất đi của nó được pháp luật gắn với việc hình thành, thay đổi hay chấm dứt quan hệ pháp luật",
+    "d": "Tất cả đều sai",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 79: Các tổ chức cá nhân không làm những việc bị cấm là:",
+    "a": "Thi hành pháp luật",
+    "b": "Áp dụng pháp luật",
+    "c": "Tuân thủ pháp luật",
+    "d": "Sử dụng pháp luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 80: Pháp luật được hiểu là?",
+    "a": "quy tắc xử sự chung",
+    "b": "quy tắc xử sự riêng",
+    "c": "quy định chung",
+    "d": "quy định riêng",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 81: Nội dung nào sau đây phù hợp với tính quy phạm và phổ biến của pháp luật?",
+    "a": "Cơ quan có quyền ban hành pháp luật thì cũng có quyền không thực hiện pháp luật",
+    "b": "Phạm vi tác động của quy phạm xã hội rộng hơn so với pháp luật",
+    "c": "Phạm vi tác động của pháp luật rộng lớn cả về không gian, thời gian và đối tượng áp dụng",
+    "d": "Ai cũng cần phải thực hiện theo các tín điều tôn giáo được ban hành",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 82: Khả năng nhà nước thừa nhận cho chủ thể bằng hành vi của mình có thể xác lập và thực hiện quyền hoặc nghĩa vụ pháp lý, gọi là?",
+    "a": "Năng lực pháp lý",
+    "b": "Khả năng hành vi",
+    "c": "Năng lực hành vi",
+    "d": "Năng lực pháp luật",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 83: Bộ phận đảm bảo cho quy phạm pháp luật được thực hiện nghiêm chỉnh là…?",
+    "a": "Quy định",
+    "b": "Chế tài",
+    "c": "Quy cách",
+    "d": "Giả định",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 84: Trong các hành vi dưới đây hành vi nào thể hiện công dân áp dụng pháp luật?",
+    "a": "Người tham gia giao thông không vượt qua ngã tư khi có tín hiệu đèn đỏ",
+    "b": "Công dân A gửi đơn khiếu nại lên cơ quan nhà nước",
+    "c": "Cảnh sát giao thông xử phạt người không đội mũ bảo hiểm",
+    "d": "Anh A và chị B đến UBND phường đăng ký kết hôn",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 85: Tính quy phạm phổ biến là đặc tính của:",
+    "a": "Đạo đức",
+    "b": "Tôn giáo",
+    "c": "Tập quán",
+    "d": "Pháp luật",
+    "ans": "d"
+  },
+  {
+    "question": "Câu 86: Khi nghiên cứu về chủ thể quan hệ pháp luật thì khẳng định nào sau đây là đúng?",
+    "a": "Tất cả mọi cá nhân và tổ chức có đủ những điều kiện do pháp luật quy định đều có thể trở thành chủ thể của quan hệ pháp luật",
+    "b": "Tất cả mọi tổ chức đều có thể trở thành chủ thể của quan hệ pháp luật",
+    "c": "Tất cả mọi cá nhân đều có thể trở thành chủ thể của quan hệ pháp luật",
+    "d": "Tất cả các cơ quan, đơn vị, tổ chức và cá nhân trong xã hội đều có thể trở thành chủ thể của quan hệ pháp luật",
+    "ans": "a"
+  },
+  {
+    "question": "Câu 87: Trong các yếu tố cấu thành hệ thống pháp luật, yếu tố được xem là đơn vị cơ bản nhỏ nhất trong hệ thống pháp luật là:",
+    "a": "Tất cả đếu đúng",
+    "b": "Chế định pháp luật",
+    "c": "Quy phạm pháp luật",
+    "d": "Ngành luật",
+    "ans": "c"
+  },
+  {
+    "question": "Câu 88: Khả năng của chủ thể bằng chính hành vi của mình thực hiện được các quyền và nghĩa vụ mà pháp luật quy định, đó là:",
+    "a": "Năng lực pháp luật",
+    "b": "Năng lực hành vi",
+    "c": "Năng lực chủ thể",
+    "d": "Tất cả đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Câu 89: Hành vi không lạng lách đánh võng khi đi xe máy trên đường của anh A là biểu hiện hình thức thực hiện pháp luật nào dưới đây?",
+    "a": "Thi hành pháp luật",
+    "b": "Tuân thủ pháp luật",
+    "c": "Sử dụng pháp luật",
+    "d": "Áp dụng pháp luật",
+    "ans": "b"
+  }
+]
