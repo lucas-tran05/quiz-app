@@ -1217,7 +1217,7 @@
   },
   {
     "question": "Câu hỏi 1.155: Giả sử trường Length của một gói dữ liệu UDP có giá trị 150. Dữ liệu thực sự sẽ có:",
-    "a": "67 byte  21",
+    "a": "67 byte",
     "b": "142 byte",
     "c": "150 byte",
     "d": "158 byte ",
@@ -1280,14 +1280,6 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.165: Cho kết xuất lệnh route print trên máy X như sau:    Máy X có địa chỉ IP:",
-    "a": "0.0.0.0",
-    "b": "172.16.9.12",
-    "c": "127.0.0.1",
-    "d": "172.16.9.0 ",
-    "ans": "b"
-  },
-  {
     "question": "Câu hỏi 1.166: Các địa chỉ IP cùng mạng con với địa chỉ 131.107.2.56/28:",
     "a": "Từ 131.107.2.48 đến 131.107.2.63",
     "b": "Từ 131.107.2.49 đến 131.107.2.63",
@@ -1316,7 +1308,7 @@
     "a": "255.255.255.224",
     "b": "255.255.255.252",
     "c": "255.255.255.240",
-    "d": "255.255.255.248  23 ",
+    "d": "255.255.255.248",
     "ans": "a"
   },
   {
@@ -1384,7 +1376,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.178: Địa chỉ IP nào sau đây là hợp lệ:  24",
+    "question": "Câu hỏi 1.178: Địa chỉ IP nào sau đây là hợp lệ:",
     "a": "192.168.1.2",
     "b": "255.255.255.254",
     "c": "10.20.30.40",
@@ -1449,7 +1441,7 @@
   },
   {
     "question": "Câu hỏi 1.186: Cấu trúc khuôn dạng của địa chỉ IP lớp B là:",
-    "a": "Bit 1: 0, bit 2- 8: NetID, 9-32: HostID  25",
+    "a": "Bit 1: 0, bit 2- 8: NetID, 9-32: HostID",
     "b": "Bit 1: 0, bit 2- 16: NetID, 17-32: HostID",
     "c": "Bit 1-2: 10, bit 3- 8: NetID, 9 - 32: HostID",
     "d": "Bit 1-2: 10, bit 3- 16: NetID, 17 - 32: HostID ",
@@ -1744,7 +1736,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.225: thiết bị mạng nào dùng để nối các mạng và kiểm soát được broadcast: Trang ",
+    "question": "Câu hỏi 1.225: Trang thiết bị mạng nào dùng để nối các mạng và kiểm soát được broadcast:",
     "a": "Ethernet switch",
     "b": "Bridge",
     "c": "Router",
@@ -1976,7 +1968,7 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.255: Kỹ thuật mạng LAN Fast Ethernet có tốc độ truyền dữ liệu cơ bản là:  34",
+    "question": "Câu hỏi 1.255: Kỹ thuật mạng LAN Fast Ethernet có tốc độ truyền dữ liệu cơ bản là:",
     "a": "10 Mbps",
     "b": "100 Mbps",
     "c": "1.000 Mbps",
@@ -2240,7 +2232,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.2 Khi quên mật khẩu của ADSL Router, làm cách nào để khôi phục mật khẩu mặc 88: định:",
+    "question": "Câu hỏi 1.2 Khi quên mật khẩu của ADSL Router, làm cách nào để khôi phục mật khẩu mặc định:",
     "a": "Tra cứu trong cuốn hướng dẫn sử dụng của nhà cung cấp  ",
     "b": "Cấp điện cho ADSL Router và ấn giữ nút Reset trong một khoảng thời gian nhất định",
     "c": "Dùng software để dò Username và Password",
