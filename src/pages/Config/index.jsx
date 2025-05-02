@@ -163,7 +163,7 @@ export default function Quiz() {
                     </>
                 )}
 
-                <div class="text-center">
+                <div class="text-center mb-3">
                     <button
                         type="button"
                         class="btn btn-success"
@@ -178,10 +178,14 @@ export default function Quiz() {
                         Bắt đầu thi
                     </button>
                 </div>
+                <div className="text-center mb-3">
+                    <hr className="mx-auto" style={{ width: '60%' }} />
+                </div>
                 <div class="text-center">
                     <button
                         type="button"
-                        class="btn btn-success"
+                        style={{ width: '100px' }}
+                        class="btn btn-primary"
                         onClick={() => {
                             route('/');
                         }}
