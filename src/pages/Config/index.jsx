@@ -20,8 +20,8 @@ export default function Quiz() {
                 time,
                 questionCount: randomMode ? questionCount : null,
                 randomMode,
-                rangeStart: randomMode ? null : Number(rangeStart),
-                rangeEnd: randomMode ? null : Number(rangeEnd),
+                rangeStart: randomMode ? null : Number(rangeStart-1),
+                rangeEnd: randomMode ? null : Number(rangeEnd - 1),
                 startTime: Date.now()
             })
         );
@@ -100,7 +100,6 @@ export default function Quiz() {
                                 value="range"
                                 checked={!randomMode}
                                 onChange={() => setRandomMode(false)}
-                                disabled
                             />
                             <label class="form-check-label" htmlFor="rangeMode">
                                 Chọn theo khoảng

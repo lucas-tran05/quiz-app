@@ -1,4 +1,5 @@
 const KEY = import.meta.env.VITE_SECRET_KEY || 'b23dcat034';
+const API_URL = 'https://script.google.com/macros/s/AKfycbzJ4qGLNT8kHvsuh_EqiYGLW2cWydOOPHyDkn5GWTU53mL68Hn6-VyIh5mexXp9EQ0p/exec'
 
 async function sendResultToSheet(result) {
     const formData = new FormData();
@@ -15,7 +16,7 @@ async function sendResultToSheet(result) {
     formData.append('endTime', result.endTime || '');
     formData.append('secret', KEY);
 
-    fetch('https://script.google.com/macros/s/AKfycbzJ4qGLNT8kHvsuh_EqiYGLW2cWydOOPHyDkn5GWTU53mL68Hn6-VyIh5mexXp9EQ0p/exec', {
+    fetch(API_URL, {
         method: 'POST',
         mode: 'no-cors',
         // headers: {
@@ -24,7 +25,9 @@ async function sendResultToSheet(result) {
         body: formData
     })
         .then(() => {
-            console.log('Gửi thành công!');
+            let results = JSON.parse(localStorage.getItem('result')) || [];
+            results.push(result);
+            localStorage.setItem('result', JSON.stringify(results));
         })
         .catch(err => {
             console.error('Lỗi gửi:', err);
