@@ -178,6 +178,17 @@ export default function Quiz() {
                         Bắt đầu thi
                     </button>
                 </div>
+                <div class="text-center">
+                    <button
+                        type="button"
+                        class="btn btn-success"
+                        onClick={() => {
+                            route('/');
+                        }}
+                    >
+                        Home
+                    </button>
+                </div>
             </form>
         </div>
     )
