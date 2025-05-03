@@ -8,7 +8,7 @@ const round = (value, decimals) => {
 
 export default function Result() {
     const [data, setData] = useState(null);
-    const [showDetails, setShowDetails] = useState(false);
+    const [showDetails, setShowDetails] = useState(true);
 
     useEffect(() => {
         const stored = localStorage.getItem('quiz-result');
