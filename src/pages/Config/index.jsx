@@ -140,8 +140,8 @@ export default function Quiz() {
                 )}
 
                 {!randomMode && (
-                    <>
-                        <div class="mb-3">
+                    <div class="row mb-3">
+                        <div class="mb-3 col-6 mx-auto">
                             <label for="rangeStart" class="form-label">Câu hỏi bắt đầu từ</label>
                             <input
                                 type="number"
@@ -154,7 +154,7 @@ export default function Quiz() {
                             />
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 col-6 mx-auto">
                             <label for="rangeEnd" class="form-label">Câu hỏi kết thúc tại</label>
                             <input
                                 type="number"
@@ -166,7 +166,7 @@ export default function Quiz() {
                                 required
                             />
                         </div>
-                    </>
+                    </div>
                 )}
 
                 <div className="text-center mb-3 d-flex justify-content-center gap-2">
