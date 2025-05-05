@@ -13,8 +13,6 @@ export default function Quiz() {
     const [rangeEnd, setRangeEnd] = useState('')
 
     const handleStart = () => {
-
-
         localStorage.setItem(
             'quiz-config',
             JSON.stringify({
@@ -37,12 +35,20 @@ export default function Quiz() {
         return null
     }
 
+    const alertInfoTitle = () => {
+        return (
+            <div class="alert alert-info" role="alert">
+                <strong>Trick!</strong> Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ <strong>Chọn theo khoảng</strong> và nhập số câu hỏi <strong>bắt đầu = 0</strong> và <strong>kết thúc = 1000</strong>.
+            </div>
+        )
+    }
+
     return (
         <div class="container mt-5">
             <h1 class="text-center mb-4">Cấu hình bài thi</h1>
             <p class="text-center mb-4">Hãy chọn các tùy chọn cho bài thi của bạn.</p>
-
             <form class="col-12 col-md-6 mx-auto">
+                {alertInfoTitle()}
                 <div class="mb-3">
                     <label for="selectSubject" class="form-label">Môn học</label>
                     <select
