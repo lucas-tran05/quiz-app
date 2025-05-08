@@ -2152,40 +2152,8 @@
     "ans": "c"
   },
   {
-    "question": "Câu hỏi 1.2 Lệnh nào sẽ hiển thị kết quả dưới đây:\r Reply from 74.125.128.102: byte=32 time=50ms TTL=45 \rReply from 74.125.128.102: byte=32 time=51ms TTL=45 \r Reply from 74.125.128.102: byte=32 time=56ms TTL=45  \r Reply from 74.125.128.102: byte=32 time=52ms TTL=45  \r Packets: Sent = 4, Received = 4, Lost = 0 <0% lost> Approximate round trip times in milli-seconds:  Minimum = 50ms, Maximum = 56ms, Average = 52ms ",
-    "a": "Ping",
-    "b": "Tracert",
-    "c": "Telnet",
-    "d": "Ipconfig ",
-    "ans": "a"
-  },
-  {
-    "question": "Câu hỏi 1.279 Lệnh nào sẽ hiển thị kết quả dưới đây: \r Proto Local Address Foreign Address State \r   TCP 0.0.0.0:7 nam PC:0    -   LISTENING \r TCP 0.0.0.0:9 nam PC:0    -   LISTENING\r TCP 0.0.0.0:13 nam PC:0   -   LISTENING \rTCP 0.0.0.0:17 nam PC:0   -   LISTENING ",
-    "a": "Ping",
-    "b": "Tracert",
-    "c": "Netstat",
-    "d": "Ipconfig ",
-    "ans": "c"
-  },
-  {
-    "question": "Câu hỏi 1.2 Công cụ nào sẽ hiển thị các thông tin như dưới đây: 80:    ",
-    "a": "Ping",
-    "b": "Tracert",
-    "c": "Netstat",
-    "d": "Wireshark ",
-    "ans": "d"
-  },
-  {
-    "question": "Câu hỏi 1.2 Lệnh nào sẽ hiển thị kết quả dưới đây: 81:   ",
-    "a": "Ping",
-    "b": "Ping  – a",
-    "c": "Tracert",
-    "d": "Netstat ",
-    "ans": "c"
-  },
-  {
     "question": "Câu hỏi 1.2 Lệnh nào sau đây cho biết địa chỉ IP của máy tính: 82: ",
-    "a": "IP  38",
+    "a": "IP",
     "b": "IPCONFIG",
     "c": "TCP_IP",
     "d": "FTP ",
@@ -2208,7 +2176,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.2 Tiện ích TCP/IP nào dùng để kiểm tra sự kết nối mạng: 85: ",
+    "question": "Câu hỏi 1.2 Tiện ích TCP/IP nào dùng để kiểm tra sự kết nối mạng: ",
     "a": "Route",
     "b": "ARP",
     "c": "Ping",
@@ -2224,7 +2192,7 @@
     "ans": "d"
   },
   {
-    "question": "Câu hỏi 1.2 Công nghệ ADSL là công nghệ đường dây thuê bao số truy nhập: 87: ",
+    "question": "Câu hỏi 1.2 Công nghệ ADSL là công nghệ đường dây thuê bao số truy nhập: ",
     "a": "Không đối xứng",
     "b": "Ngẫu nhiên",
     "c": "Tuần tự",
@@ -2244,7 +2212,7 @@
     "a": "VCI/VPI, LAN IP Address, Tài khoản kết nối đến nhà cung cấp dịch vụ (user, password)",
     "b": "DHCP Service",
     "c": "Câu a và b đúng",
-    "d": "Tất cả các câu trên đều sai   39",
+    "d": "Tất cả các câu trên đều sai",
     "ans": "a"
   },
   {
