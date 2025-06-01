@@ -4,6 +4,7 @@ import { route } from 'preact-router'
 import { subjects } from '../../config/subjects'
 import { timeOptions } from '../../config/time'
 import { questionCountOptions } from '../../config/question'
+import Alert from '../../components/alert'
 
 export default function Quiz() {
     const defaultTime = timeOptions.find(opt => opt.isdefault)?.value || ''
@@ -36,19 +37,12 @@ export default function Quiz() {
         return null
     }
 
-    const alertInfoTitle = () => (
-        <div className="alert alert-info" role="alert">
-            <strong>Trick!</strong> Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ <strong>Chọn theo khoảng</strong> và nhập số câu hỏi <strong>bắt đầu = 0</strong> và <strong>kết thúc = 1000</strong>.
-        </div>
-    )
-
     return (
         <div className="container mt-5">
             <h1 className="text-center mb-4">Cấu hình bài thi</h1>
             <p className="text-center mb-4">Hãy chọn các tùy chọn cho bài thi của bạn.</p>
             <form className="col-12 col-md-6 mx-auto">
-                {alertInfoTitle()}
-
+                <Alert message={<><strong>Trick!</strong> Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ <strong>Chọn theo khoảng</strong> và nhập số câu hỏi <strong>bắt đầu = 0</strong> và <strong>kết thúc = 1000</strong>.</>} />
                 {/* Chọn môn học */}
                 <div className="mb-3">
                     <label htmlFor="selectSubject" className="form-label">Môn học</label>

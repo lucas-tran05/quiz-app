@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { route } from 'preact-router';
 import BackToTop from '../../components/BackToTop';
+import Alert from '../../components/alert';
 
 const round = (value, decimals) => {
     return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
@@ -39,6 +40,12 @@ export default function Result() {
 
     return (
         <div class="container mt-5">
+            <Alert
+                message="TQC: Chúc các bạn thi toàn A+ :>>>"
+                type="success"
+                index="center"
+            />
+
             <h3 class="text-center mb-4 fw-bold">Kết quả bài thi</h3>
 
             <div class="text-center mb-4">
