@@ -1084,7 +1084,7 @@
     "a": "UDP = IP",
     "b": "UDP = TCP -  (tính tin cậy)",
     "c": "UDP = ICMP + (phân kênh theo địa chỉ cổng)",
-    "d": "UDP = TCP  – IP ",
+    "d": "UDP = TCP -IP ",
     "ans": "b"
   },
   {

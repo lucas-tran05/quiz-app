@@ -8,11 +8,11 @@
     "ans": "b"
   },
   {
-    "question": "2. Hình thái kinh tế – xã hội nào là chưa có Nhà nước?",
-    "a": " Hình thái kinh tế – xã hội Cộng sản chủ nghĩa",
-    "b": " Hình thái kinh tế – xã hội Cộng sản nguyên thủy",
-    "c": " Hình  thái  kinh  tế  –  xã  hội  Tư  bản  chủ Nghĩa.",
-    "d": " Hình thái kinh tế – xã hội Chiếm hữu nô lệ",
+    "question": "2. Hình thái kinh tế-xã hội nào là chưa có Nhà nước?",
+    "a": " Hình thái kinh tế-xã hội Cộng sản chủ nghĩa",
+    "b": " Hình thái kinh tế-xã hội Cộng sản nguyên thủy",
+    "c": " Hình  thái  kinh  tế - xã  hội  Tư  bản  chủ Nghĩa.",
+    "d": " Hình thái kinh tế-xã hội Chiếm hữu nô lệ",
     "ans": "b"
   },
   {
@@ -24,7 +24,7 @@
     "ans": "b"
   },
   {
-    "question": "4. Theo quan điểm của chủ nghĩa Mác – Lênin về Nhà nước thì:",
+    "question": "4. Theo quan điểm của chủ nghĩa Mác-Lênin về Nhà nước thì:",
     "a": " Nhà nước là hiện tượng tự nhiên",
     "b": " Nhà nước là hiện tượng xã hội mang tính lịch sử",
     "c": " Nhà nước là hiện tượng vĩnh cửu, bất biến",
@@ -168,8 +168,8 @@
   },
   {
     "question": "22. Việt Nam có quan hệ ngoại giao với các khu vực:",
-    "a": " Châu Á Thái Bình Dương – Châu Âu – Châu Mỹ",
-    "b": " Châu Phi – Trung Đông",
+    "a": " Châu Á Thái Bình Dương-Châu Âu-Châu Mỹ",
+    "b": " Châu Phi-Trung Đông",
     "c": " Cả a và b đều đúng",
     "d": " Cả a và b đều sai",
     "ans": "c"
@@ -607,7 +607,7 @@
     "ans": "c"
   },
   {
-    "question": "77. Theo quan điểm của chủ nghĩa Mác – Lênin  về pháp luật thì:",
+    "question": "77. Theo quan điểm của chủ nghĩa Mác-Lênin  về pháp luật thì:",
     "a": " Pháp luật là một hiện tượng xã hội mang tính lịch sử",
     "b": " Pháp luật là một hiện tượng xã hội",
     "c": " Pháp luật là một hiện tượng tự nhiên",
@@ -763,7 +763,7 @@
     "a": " Một nhà nước nhất định",
     "b": " Một giai đoạn lịch sử nhất định",
     "c": " Một chế độ xã hội nhất định",
-    "d": " Một hình thái kinh tế – xã hội nhất định",
+    "d": " Một hình thái kinh tế-xã hội nhất định",
     "ans": "d"
   },
   {

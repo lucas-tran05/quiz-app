@@ -147,7 +147,7 @@
     "question": "Câu 19: Cơ sở lý luận nào có vai trò quyết định trong việc hình thành tư  \r\ntưởng Hồ Chí Minh?",
     "a": "Giá trị truyền thống tốt đẹp của dân tộc Việt Nam",
     "b": "Tinh hoa văn hóa nhân loại",
-    "c": "Chủ nghĩa Mác – Lênin",
+    "c": "Chủ nghĩa Mác-Lênin",
     "d": "Cả A, B, C đều đúng.",
     "ans": "d"
   },
@@ -275,8 +275,8 @@
     "question": "Câu 35: Đại hội VII của Đảng khẳng định:",
     "a": "Đảng lấy Chủ nghĩa Mác - Lênin là nền tảng tư tưởng, kim chỉ nam \r\ncho hành động",
     "b": "Đảng lấy Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, kim chỉ nam  \r\ncho hành động",
-    "c": "Đảng lấy chủ nghĩa Mác – Lênin và tư tưởng Hồ Chí Minh làm nền \r\ntảng tư tưởng, kim chỉ nam cho hành động",
-    "d": "Đảng lấy chủ nghĩa Mác – Lênin và tư tưởng Hồ Chí Minh làm nền \r\ntảng tư tưởng.",
+    "c": "Đảng lấy chủ nghĩa Mác-Lênin và tư tưởng Hồ Chí Minh làm nền \r\ntảng tư tưởng, kim chỉ nam cho hành động",
+    "d": "Đảng lấy chủ nghĩa Mác-Lênin và tư tưởng Hồ Chí Minh làm nền \r\ntảng tư tưởng.",
     "ans": "c"
   },
   {
@@ -331,7 +331,7 @@
     "question": "Câu 42: Theo tư tưởng Hồ Chí Minh: cách mạng giải phóng dân tộc phải dựa  \r\ntrên lực lượng:",
     "a": "Công nhân, nông dân.",
     "b": "Công nhân, nông dân, trí thức.",
-    "c": "Đại đoàn kết toàn dân tộc, lấy liên minh công – nông làm nền tảng",
+    "c": "Đại đoàn kết toàn dân tộc, lấy liên minh công-nông làm nền tảng",
     "d": "Cả A, B, C đều sai.",
     "ans": "c"
   },
@@ -512,11 +512,11 @@
     "ans": "b"
   },
   {
-    "question": "Câu 65: Theo tư tưởng Hồ Chí Minh, Đảng Cộng sản Việt Nam phải lấy chủ nghĩa\r\nMác – Lênin ”làm cốt”, nghĩa là:",
-    "a": "Đảng Cộng sản Việt Nam phải lấy chủ nghĩa Mác – Lênin làm chủ \r\ntrương, đường lối",
-    "b": "Đảng Cộng sản Việt Nam phải lấy chủ nghĩa Mác – Lênin làm nền \r\ntảng tư tưởng và kim chỉ nam cho hành động",
-    "c": "Đảng Cộng sản Việt Nam phải lấy chủ nghĩa Mác – Lênin làm học thuyết\r\ncủa Đảng",
-    "d": "Đảng Cộng sản Việt Nam phải căn cứ hoàn toàn vào chủ nghĩa Mác – \r\nLênin để lãnh đạo cách mạng",
+    "question": "Câu 65: Theo tư tưởng Hồ Chí Minh, Đảng Cộng sản Việt Nam phải lấy chủ nghĩa\r\nMác-Lênin ”làm cốt”, nghĩa là:",
+    "a": "Đảng Cộng sản Việt Nam phải lấy chủ nghĩa Mác-Lênin làm chủ \r\ntrương, đường lối",
+    "b": "Đảng Cộng sản Việt Nam phải lấy chủ nghĩa Mác-Lênin làm nền \r\ntảng tư tưởng và kim chỉ nam cho hành động",
+    "c": "Đảng Cộng sản Việt Nam phải lấy chủ nghĩa Mác-Lênin làm học thuyết\r\ncủa Đảng",
+    "d": "Đảng Cộng sản Việt Nam phải căn cứ hoàn toàn vào chủ nghĩa Mác-\r\nLênin để lãnh đạo cách mạng",
     "ans": "b"
   },
   {
@@ -625,10 +625,10 @@
   },
   {
     "question": "Câu 79. Theo tư tưởng Hồ Chí Minh, sự ra đời của Đảng Cộng sản Việt Nam bắt \r\nnguồn từ sự kết hợp của những yếu tố nào?",
-    "a": "Sự kết hợp giữa chủ nghĩa Mác – Lênin với các phong trào đấu tranh của \r\ndân tộc Việt Nam.",
-    "b": "Sự kết hợp giữa chủ nghĩa Mác – Lênin với phong trào công nhân và \r\nphong trào yêu nước.",
-    "c": "Sự kết hợp giữa chủ nghĩa Mác – Lênin với phong trào đấu tranh của \r\ncông nhân thế giới.",
-    "d": "Sự kết hợp giữa chủ nghĩa Mác – Lênin  với phong trào công nhân \r\nViệt Nam.",
+    "a": "Sự kết hợp giữa chủ nghĩa Mác-Lênin với các phong trào đấu tranh của \r\ndân tộc Việt Nam.",
+    "b": "Sự kết hợp giữa chủ nghĩa Mác-Lênin với phong trào công nhân và \r\nphong trào yêu nước.",
+    "c": "Sự kết hợp giữa chủ nghĩa Mác-Lênin với phong trào đấu tranh của \r\ncông nhân thế giới.",
+    "d": "Sự kết hợp giữa chủ nghĩa Mác-Lênin  với phong trào công nhân \r\nViệt Nam.",
     "ans": "b"
   },
   {
@@ -648,7 +648,7 @@
     "ans": "b"
   },
   {
-    "question": "Câu 82: Trong Bài nói chuyện tại Hội nghị đại biểu Mặt trận Liên – Việt toàn\r\nquốc (10/1/1955) Hồ Chí Minh nói: “Đại đoàn kết: Đại đoàn kết tức là trước hết\r\nphải đoàn kết đại đa số nhân dân, mà đại đa số nhân dân ta là công nhân, nông dân\r\nvà các tầng lớp nhân dân lao động khác. Đó là................của đại đoàn kết.\r\nChọn cụm từ đúng điền vào chỗ trống trong đoạn trích trên.",
+    "question": "Câu 82: Trong Bài nói chuyện tại Hội nghị đại biểu Mặt trận Liên-Việt toàn\r\nquốc (10/1/1955) Hồ Chí Minh nói: “Đại đoàn kết: Đại đoàn kết tức là trước hết\r\nphải đoàn kết đại đa số nhân dân, mà đại đa số nhân dân ta là công nhân, nông dân\r\nvà các tầng lớp nhân dân lao động khác. Đó là................của đại đoàn kết.\r\nChọn cụm từ đúng điền vào chỗ trống trong đoạn trích trên.",
     "a": "cở sở",
     "b": "nền gốc",
     "c": "thành công",
@@ -907,7 +907,7 @@
     "question": "Câu 114. Tên gọi nào dưới đây không phải là tên gọi của Mặt trận dân tộc thống \r\nnhất qua các thời kỳ?",
     "a": "Mặt trận Việt Minh",
     "b": "Mặt trận dân tộc giải phóng miềm Nam Việt Nam.",
-    "c": "Mặt trận Việt – Miên – Lào",
+    "c": "Mặt trận Việt-Miên-Lào",
     "d": "Mặt trận Tổ quốc Việt Nam",
     "ans": "c"
   },
