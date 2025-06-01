@@ -175,7 +175,7 @@ export default function Exam() {
 
     const renderQuestion = (q, index) => (
         <div key={index} id={`question-${index}`} class="mb-4">
-            <h6 style={{ fontWeight: 'bold' }}>{index + 1}. {q.question}</h6>
+            <h6 style={{ fontWeight: 'bold', textAlign: 'justify' }}>{index + 1}. {q.question}</h6>
             {['a', 'b', 'c', 'd'].map((key) => (
                 <div class="form-check" key={key}>
                     <input
@@ -186,7 +186,7 @@ export default function Exam() {
                         onChange={() => handleAnswerChange(index, key)}
                         checked={answers[index] === key}
                     />
-                    <label htmlFor={`${key}-${index}`} class="form-check-label">
+                    <label htmlFor={`${key}-${index}`} class="form-check-label" style={{ textAlign: 'justify' }}>
                         {q[key]}
                     </label>
                 </div>
