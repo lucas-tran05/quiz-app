@@ -8,21 +8,21 @@ import Config from './pages/Config'
 import UploadPage from './pages/Upload'
 
 export function App() {
-  useEffect(() => {
-    const handleCopy = (e) => e.preventDefault();
-    const handleCut = (e) => e.preventDefault();
-    const handleContextMenu = (e) => e.preventDefault();
+  // useEffect(() => {
+  //   const handleCopy = (e) => e.preventDefault();
+  //   const handleCut = (e) => e.preventDefault();
+  //   const handleContextMenu = (e) => e.preventDefault();
 
-    document.addEventListener('copy', handleCopy);
-    document.addEventListener('cut', handleCut);
-    document.addEventListener('contextmenu', handleContextMenu);
+  //   document.addEventListener('copy', handleCopy);
+  //   document.addEventListener('cut', handleCut);
+  //   document.addEventListener('contextmenu', handleContextMenu);
 
-    return () => {
-      document.removeEventListener('copy', handleCopy);
-      document.removeEventListener('cut', handleCut);
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('copy', handleCopy);
+  //     document.removeEventListener('cut', handleCut);
+  //     document.removeEventListener('contextmenu', handleContextMenu);
+  //   };
+  // }, []);
   return (
     <>
       <Router>
