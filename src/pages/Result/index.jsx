@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { route } from 'preact-router';
+import BackToTop from '../../components/BackToTop';
 
 const round = (value, decimals) => {
     return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
@@ -100,6 +101,7 @@ export default function Result() {
                     })}
                 </div>
             )}
+            <BackToTop />
         </div>
     );
 }
