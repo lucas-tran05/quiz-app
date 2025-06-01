@@ -20,6 +20,7 @@ export default function Exam() {
     const [isRandomMode, setIsRandomMode] = useState(true);
     const [rangeStart, setRangeStart] = useState(0);
     const [rangeEnd, setRangeEnd] = useState(0);
+    const [reviewMarks, setReviewMarks] = useState([]);
     const [subject, setSubject] = useState('');
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [showTimeUpModal, setShowTimeUpModal] = useState(false);
@@ -71,6 +72,7 @@ export default function Exam() {
             if (!isMounted.current) return;
 
             setQuestions(selectedQuestions);
+            setReviewMarks(new Array(selectedQuestions.length).fill(false));
             if (parseInt(timeSetting) !== 9999) {
                 startExamTimer();
             }
@@ -81,6 +83,14 @@ export default function Exam() {
                 setLoading(false);
             }
         }
+    };
+
+    const toggleReviewMark = (index) => {
+        setReviewMarks((prev) => {
+            const updated = [...prev];
+            updated[index] = !updated[index];
+            return updated;
+        });
     };
 
     const loadConfigFromLocalStorage = () => {
@@ -174,24 +184,39 @@ export default function Exam() {
     };
 
     const renderQuestion = (q, index) => (
-        <div key={index} id={`question-${index}`} class="mb-4">
-            <h6 style={{ fontWeight: 'bold', textAlign: 'justify' }}>{index + 1}. {q.question}</h6>
-            {['a', 'b', 'c', 'd'].map((key) => (
-                <div class="form-check" key={key}>
-                    <input
-                        type="radio"
-                        id={`${key}-${index}`}
-                        name={`answer-${index}`}
-                        class="form-check-input"
-                        onChange={() => handleAnswerChange(index, key)}
-                        checked={answers[index] === key}
-                    />
-                    <label htmlFor={`${key}-${index}`} class="form-check-label" style={{ textAlign: 'justify' }}>
-                        {q[key]}
-                    </label>
-                </div>
-            ))}
-        </div>
+        <>
+            <div class="form-check mt-2">
+                <input
+                    type="checkbox"
+                    id={`review-${index}`}
+                    class="form-check-input"
+                    checked={reviewMarks[index] || false}
+                    onChange={() => toggleReviewMark(index)}
+                />
+                <label htmlFor={`review-${index}`} class="form-check-label text-muted" style={{ fontStyle: 'italic', fontSize: '0.85rem', marginLeft: '5px', color: '#dedede !important' }}>
+                    "Đánh dấu xem lại"
+                </label>
+            </div>
+
+            <div key={index} id={`question-${index}`} class="mb-4">
+                <h6 style={{ fontWeight: 'bold', textAlign: 'justify' }}>{index + 1}. {q.question}</h6>
+                {['a', 'b', 'c', 'd'].map((key) => (
+                    <div class="form-check" key={key}>
+                        <input
+                            type="radio"
+                            id={`${key}-${index}`}
+                            name={`answer-${index}`}
+                            class="form-check-input"
+                            onChange={() => handleAnswerChange(index, key)}
+                            checked={answers[index] === key}
+                        />
+                        <label htmlFor={`${key}-${index}`} class="form-check-label" style={{ textAlign: 'justify' }}>
+                            {q[key]}
+                        </label>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 
     const renderQuestionNavigator = () => (
@@ -199,7 +224,13 @@ export default function Exam() {
             {questions.map((_, index) => (
                 <button
                     key={index}
-                    class={`btn btn-sm rounded-3 ${answers[index] ? 'btn-success' : 'btn-outline-secondary'}`}
+                    class={`btn btn-sm rounded-3 ${reviewMarks[index]
+                        ? 'btn-warning'
+                        : answers[index]
+                            ? 'btn-success'
+                            : 'btn-outline-secondary'
+                        }`}
+
                     style={{ width: '40px', height: '40px', padding: 0, fontSize: '0.8rem' }}
                     onClick={() => scrollToQuestion(index)}
                 >
@@ -261,11 +292,15 @@ export default function Exam() {
                         <button type="button" class="btn-close" onClick={() => setShowConfirmModal(false)}></button>
                     </div>
                     <div class="modal-body">
-                        <p>{timeSet === 9999
-                            ? 'Bạn đang làm bài ở chế độ không giới hạn thời gian.'
-                            : `Bạn vẫn còn thời gian làm bài (${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}).`}</p>
+                        <p>
+                            {timeSet === 9999
+                                ? 'Bạn đang làm bài ở chế độ không giới hạn thời gian.'
+                                : `Bạn vẫn còn thời gian làm bài (${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}).`}
+                        </p>
                         <p>Đã trả lời: {answers.filter(a => a).length}/{questions.length} câu</p>
+                        <p>Đánh dấu xem lại: {reviewMarks.filter(mark => mark).length} câu</p>
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" onClick={() => setShowConfirmModal(false)}>Huỷ</button>
                         <button type="button" class="btn btn-warning" onClick={() => {
