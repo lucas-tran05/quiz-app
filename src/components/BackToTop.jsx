@@ -20,12 +20,14 @@ const BackToTop = () => {
     return (
         <button
             type="button"
-            class={`btn btn-outline-success position-fixed bottom-0 end-0 m-4 ${isVisible ? 'd-block' : 'd-none'}`}
+            class={`btn btn-warning rounded-circle position-fixed bottom-0 end-0 m-4 d-flex justify-content-center align-items-center ${isVisible ? 'd-block' : 'd-none'}`}
+            style={{ width: '50px', height: '50px' }}
             onClick={scrollToTop}
             aria-label="Back to top"
         >
-            🔝
+            <i class="bi bi-arrow-up"></i>
         </button>
+
     );
 };
 
