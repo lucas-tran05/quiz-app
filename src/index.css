@@ -20,3 +20,7 @@ body {
   max-height: 127px;
   overflow-y: auto;
 }
+
+.form-check-input{
+  margin-top: 0 !important;
+}

@@ -109,7 +109,7 @@ export default function Exam() {
     };
 
     const startExamTimer = () => {
-        if (timeSet === 9999) return; // Không đếm nếu không giới hạn
+        if (timeSet === 9999) return;
 
         timerRef.current = setInterval(() => {
             setTimeLeft((prevTime) => {
@@ -185,23 +185,23 @@ export default function Exam() {
 
     const renderQuestion = (q, index) => (
         <>
-            <div class="form-check mt-2">
-                <input
-                    type="checkbox"
-                    id={`review-${index}`}
-                    class="form-check-input"
-                    checked={reviewMarks[index] || false}
-                    onChange={() => toggleReviewMark(index)}
-                />
-                <label htmlFor={`review-${index}`} class="form-check-label text-muted" style={{ fontStyle: 'italic', fontSize: '0.85rem', marginLeft: '5px', color: '#dedede !important' }}>
-                    "Đánh dấu xem lại"
-                </label>
-            </div>
-
             <div key={index} id={`question-${index}`} class="mb-4">
-                <h6 style={{ fontWeight: 'bold', textAlign: 'justify' }}>{index + 1}. {q.question}</h6>
+                <div style={{ display: 'flex', alignItems: 'start', gap: '8px', marginBottom: '8px' }}>
+                    <input
+                        // style={{ marginTop: '4px' }}
+                        type="checkbox"
+                        id={`review-${index}`}
+                        className="form-check-input"
+                        checked={reviewMarks[index] || false}
+                        onChange={() => toggleReviewMark(index)}
+                    />
+                    <h6 style={{ fontWeight: 'bold', textAlign: 'justify', margin: 0 }}>
+                        {index + 1}. {q.question}
+                    </h6>
+                </div>
+
                 {['a', 'b', 'c', 'd'].map((key) => (
-                    <div class="form-check" key={key}>
+                    <div class="form-check" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} key={key}>
                         <input
                             type="radio"
                             id={`${key}-${index}`}
