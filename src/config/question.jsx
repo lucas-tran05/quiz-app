@@ -1,5 +1,5 @@
 export const questionCountOptions = [
-    { value : '1', label: '1 câu' },
+    // { value : '1', label: '1 câu' },
     { value: '10', label: '10 câu' },
     { value: '20', label: '20 câu' },
     { value: '30', label: '30 câu' },
