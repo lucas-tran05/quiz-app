@@ -301,7 +301,7 @@ export default function Exam() {
                         <p>Đánh dấu xem lại: {reviewMarks.filter(mark => mark).length} câu</p>
                     </div>
 
-                    <div class="modal-footer">
+                    <div class="modal-footer justify-content-center">
                         <button type="button" class="btn btn-secondary" onClick={() => setShowConfirmModal(false)}>Huỷ</button>
                         <button type="button" class="btn btn-warning" onClick={() => {
                             setShowConfirmModal(false);
@@ -320,19 +320,19 @@ export default function Exam() {
             <div class={`modal fade ${showTimeUpModal ? 'show' : ''}`}
                 style={{ display: showTimeUpModal ? 'block' : 'none', backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
                 tabIndex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog modal-dialog-centered" style={{ zIndex: '1061' }} role="document">
                     <div class="modal-content">
                         <div class="modal-header bg-danger text-white">
                             <h5 class="modal-title">Hết thời gian làm bài!</h5>
                         </div>
-                        <div class="modal-body text-center">
+                        <div class="modal-body">
                             <i class="fas fa-clock fa-3x text-danger mb-3"></i>
                             <p class="fw-bold">Đã hết thời gian làm bài.</p>
                             <p>Đã trả lời: {answers.filter(a => a).length}/{questions.length} câu</p>
                             <p>Bạn cần nộp bài ngay để xem kết quả.</p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary w-100" onClick={() => submitExam(true)}>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-danger" onClick={() => submitExam(true)}>
                                 Nộp bài ngay
                             </button>
                         </div>
