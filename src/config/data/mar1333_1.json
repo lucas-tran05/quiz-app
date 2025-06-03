@@ -1,0 +1,866 @@
+[
+  {
+    "question": "Theo cách phân loại dựa trên kích thước, những loại máy tính nào dưới đây được phân loại vào mục máy vi tính?",
+    "a": "Máy tính được tích hợp trong ôtô để giải trí.",
+    "b": "Máy tính để trên bàn làm việc phục vụ mục đích cá nhân",
+    "c": "Cả A và B đều đúng",
+    "d": "Vòng đeo tay thông minh",
+    "ans": "c"
+  },
+  {
+    "question": "Theo cách phân loại dựa trên kích thước, những loại máy tính nào dưới đây được phân loại vào mục máy tính riêng biệt là các thiết bị di dộng?",
+    "a": "Máy tính xách tay (Laptop)",
+    "b": "Máy chơi game cầm tay (Handheld console)",
+    "c": "Cả A và B đều đúng",
+    "d": "Máy tính tầm trung (mini computer)",
+    "ans": "c"
+  },
+  {
+    "question": "Những loại máy tính nào dưới đây theo cách phân loại dựa trên kích thước được phân loại vào mục máy tính riêng biệt là các thiết bị di dộng?",
+    "a": "Máy tính được tích hợp trong ôtô để chuyển hướng (Carputer).",
+    "b": "Máy chơi game cầm tay (Handheld console)",
+    "c": "Cả A và B đều đúng",
+    "d": "Máy tính tầm trung (mini computer)",
+    "ans": "b"
+  },
+  {
+    "question": "Những loại máy tính nào dưới đây được phân loại vào mục máy vi tính theo cách phân loại dựa trên kích thước?",
+    "a": "Máy tính tầm trung (mini computer)",
+    "b": "Máy tính để trên bàn làm việc (desktop computer)",
+    "c": "Cả A và B đều đúng",
+    "d": "Đồng hồ thông minh - smart watch",
+    "ans": "b"
+  },
+  {
+    "question": "Bàn phím máy tính là bộ phận như thế nào đối với hệ thống máy tính?",
+    "a": "Bàn phím máy tính là bộ xử lý trung tâm - phần quan trọng đặc biệt và được xem là bộ não của máy tính",
+    "b": "Bàn phím máy tính là bộ phận có chức năng kết nối các linh kiện bên trong máy lại với nhau thành một khối.",
+    "c": "Cả A và B đều đúng",
+    "d": "Bàn phím là một thiết bị đầu vào của hệ thống máy tính dùng để gõ các ký tự vào máy tính",
+    "ans": "d"
+  },
+  {
+    "question": "Ổ cứng HDD - Hard disk drive là bộ phận có chức năng như thế nào trong máy tính?",
+    "a": "Chức năng lưu trữ dữ liệu",
+    "b": "Chức năng tản nhiệt",
+    "c": "Chức năng bảo vệ và bao bọc các thành phần khác trong máy tính",
+    "d": "Chức năng hiển thị hình ảnh với người sử dụng",
+    "ans": "a"
+  },
+  {
+    "question": "Thiết bị nào sau đây sử dụng hệ điều hành dành cho máy tính?",
+    "a": "Đồng hồ thông minh - smart watch",
+    "b": "Vòng đeo tay thông minh - smart band",
+    "c": "Cả A và B đều đúng",
+    "d": "Máy tính để bàn",
+    "ans": "d"
+  },
+  {
+    "question": "Thiết bị nào sau đây sử dụng hệ điều hành dành cho thiết bị di động?",
+    "a": "Mini computer",
+    "b": "Desktop computer",
+    "c": "Cả A và B đều đúng",
+    "d": "Laptop",
+    "ans": "d"
+  },
+  {
+    "question": "Chức năng chính của hệ điều hành máy tính là gì? ",
+    "a": "Tạo ra các chương trình ứng dụng ",
+    "b": "Tổ chức giao tiếp giữa người dùng và hệ thống máy tính",
+    "c": "Thiết kế phần cứng máy tính ",
+    "d": "Cả A và C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Hệ điều hành có chức năng chính là gì? ",
+    "a": "Thiết kế các ứng dụng văn phòng ",
+    "b": "Quản lý và cấp phát tài nguyên cho chương trình ",
+    "c": "Tạo kết nối mạng giữa các máy tính",
+    "d": "Cả A và C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Nhiệm vụ cơ bản của hệ thống điều hành là gì? ",
+    "a": "Tổ chức quá trình truyền thông giữa các máy tính.",
+    "b": "Kiểm tra và hỗ trợ bằng phần mềm cho các thiết bị ngoại vi (chuột, bàn phím, màn hình, ...)",
+    "c": "Cả A và B đều đúng",
+    "d": "Phát ra âm thanh cho người sử dụng máy tính",
+    "ans": "c"
+  },
+  {
+    "question": "Hệ điều hành nào sau đây là phổ biến nhất, được sử dụng trên nhiều máy tính cá nhân và máy chủ trên khắp thế giới? ",
+    "a": "Ubuntu ",
+    "b": "Symbian OS",
+    "c": "Linux Mint ",
+    "d": "Windows",
+    "ans": "d"
+  },
+  {
+    "question": "Hệ điều hành nào dưới đây được phát triển bởi của công ty Apple Inc., và thường được gọi là hệ điều hành \"đóng\"? ",
+    "a": " Fedora",
+    "b": "LinuxOS",
+    "c": "Ubuntu ",
+    "d": "MacOS",
+    "ans": "d"
+  },
+  {
+    "question": "Hệ điều hành nào sau đây được phát triển dựa trên mã nguồn mở và có thể sử dụng được trên nhiều loại máy tính với mục tiêu tối ưu hiệu suất và tính bảo mật? ",
+    "a": "Windows ",
+    "b": "MacOS",
+    "c": "Ubuntu",
+    "d": "Cả A và B đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "Hệ điều hành nào sau đây được phát triển và quản lý bởi công ty Alphabet Inc., và thường được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng? ",
+    "a": "Windows",
+    "b": "IOS ",
+    "c": "Android",
+    "d": "Ubuntu",
+    "ans": "c"
+  },
+  {
+    "question": "Hệ điều hành nào sau đây là phổ biến nhất trong thời điểm hiện tại?",
+    "a": "Hệ điều hành Unbutu",
+    "b": "Hệ điều hành Windows",
+    "c": "Hệ điều hành Fedora",
+    "d": "Hệ điều hành Symbian OS",
+    "ans": "b"
+  },
+  {
+    "question": "Hệ điều hành nào sau đây phổ biến nhất cho máy tính riêng biệt là các thiết bị di dộng?",
+    "a": "Hệ điều hành Linus",
+    "b": "Hệ điều hành iOS",
+    "c": "Hệ điều hành Solaris",
+    "d": "Hệ điều hành Chrome OS",
+    "ans": "b"
+  },
+  {
+    "question": "Phát biểu nào sau đây phản ánh chính xác nhất về khái niệm hệ điều hành máy tính?",
+    "a": "Hệ điều hành là một phần mềm của máy tính dùng để điều hành, quản lý cả phần cứng và phần mềm của của máy tính.",
+    "b": "Hệ điều hành là một phần mềm của máy tính dùng để điều hành, quản lý phần cứng của máy tính.",
+    "c": "Hệ điều hành là một phần mềm của máy tính dùng để điều hành, quản lý phần mềm của máy tính.",
+    "d": "Cả B và C đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Thiết bị nào sau đây sẽ sử dụng hệ điều hành dành cho máy tính?",
+    "a": "Đồng hồ thông minh - smart watch",
+    "b": "Vòng đeo tay thông minh - smart band",
+    "c": "Laptop",
+    "d": "Cả A và B đều đúng.",
+    "ans": "c"
+  },
+  {
+    "question": "Thiết bị nào sau đây sẽ sử dụng hệ điều hành dành cho thiết bị di động?",
+    "a": "Mini computer",
+    "b": "Desktop computer",
+    "c": "Đáp án A, B đều đúng.",
+    "d": "Tablet PC",
+    "ans": "d"
+  },
+  {
+    "question": "Hệ điều hành dành cho loại máy tính nào sau đây được gọi là \"Hệ điều hành nhúng\" và thường được sử dụng trong các thiết bị di động?",
+    "a": "Máy tính MainFrame ",
+    "b": "Máy tính Laptop",
+    "c": "Máy tính PDA ",
+    "d": "Cả A và B đều đúng.",
+    "ans": "c"
+  },
+  {
+    "question": "Mạng máy tính là gì?",
+    "a": "Một phần mềm để quản lý máy tính.",
+    "b": "Một loại máy tính đặc biệt.",
+    "c": "Một tập hợp các máy tính kết nối với nhau bằng sóng bluetooth.",
+    "d": "Một tập hợp các máy tính được kết nối với nhau bằng đường truyền vật lý.",
+    "ans": "d"
+  },
+  {
+    "question": "Thế nào là mạng máy tính?",
+    "a": "là một cơ sở dữ liệu lưu trữ thông tin về máy tính",
+    "b": "là một loại máy tính chuyên dụng cho việc kết nối mạng",
+    "c": "là một hình thức ghi chép về quá trình vận hành của máy tính",
+    "d": "là một tập hợp các máy tính được kết nối với nhau để chia sẻ tài nguyên và thông tin",
+    "ans": "d"
+  },
+  {
+    "question": "DNS là một thuật ngữ tiếng anh viết tắt, có thể viết đầy đủ là từ nào sau đây?",
+    "a": "Dynamic Network System.",
+    "b": "Domain Name System.",
+    "c": "Domain Network System.",
+    "d": "Dynamic Name System.",
+    "ans": "b"
+  },
+  {
+    "question": " “Internet Explorer” có ý nghĩa là gì?",
+    "a": "Đó là tiêu chuẩn của một mạng cục bộ",
+    "b": "Đó là ứng dụng duy nhất để kết nối mạng Internet",
+    "c": "Là một giao thức kết nối mạng Lan với mạng Internet",
+    "d": "Là tên của một trình duyệt web được phát triển bởi Microsoft.",
+    "ans": "d"
+  },
+  {
+    "question": "Trong mạng máy tính, thuật ngữ tiếng anh “HTTP” có ý nghĩa là gì?",
+    "a": "Mang ý nghĩa là địa chỉ cố định của các trang web",
+    "b": "Mang ý nghĩa là phần tên cố định của các trang web",
+    "c": "Mang ý nghĩa là một giao thức mạng được sử dụng để truyền tải dữ liệu qua mạng Internet.",
+    "d": "Mang ý nghĩa là ngôn ngữ soạn thảo văn bản bằng nội dung trên các trang web",
+    "ans": "c"
+  },
+  {
+    "question": "Thuật ngữ “Download” có ý nghĩa là gì?",
+    "a": "Đó là thuật ngữ chỉ việc truyền dữ liệu từ trang web lên máy tính server.",
+    "b": "Đó là thuật ngữ chỉ việc tải dữ liệu từ máy tính server về máy tính client.",
+    "c": "Đó là thuật ngữ chỉ việc lưu trữ dữ liệu lên trên mạng Internet.",
+    "d": "Đó là thuật ngữ chỉ việc truyền dữ liệu từ máy tính server về máy tính client.",
+    "ans": "b"
+  },
+  {
+    "question": "Thuật ngữ “Upload” có ý nghĩa là gì?",
+    "a": "Đó là thuật ngữ chỉ việc tải dữ liệu từ máy tính server về máy tính client.",
+    "b": "Đó là thuật ngữ chỉ việc tải dữ liệu từ máy tính client lên máy tính server.",
+    "c": "Đó là thuật ngữ mô tả việc mở các trang web từ các máy tính server.",
+    "d": "Đó là thuật ngữ chỉ việc bảo mật dữ liệu của hệ thống máy tính.",
+    "ans": "b"
+  },
+  {
+    "question": "Trình duyệt web có ý nghĩa là gì?",
+    "a": "Đó là phần mềm thiết kế các ứng dụng trên website",
+    "b": "Đó là một phần mềm ứng dụng để lập trình ra các trang web",
+    "c": "Đó là một phần mềm ứng dụng được sử dụng để duyệt và hiển thị các trang web trên Internet",
+    "d": "Cả A và B đều đúng.",
+    "ans": "c"
+  },
+  {
+    "question": "Tên miền có ý nghĩa là gì?",
+    "a": "Đó là tên của một máy tính tham gia vào hệ thống mạng",
+    "b": "Đó là tên định danh của một địa chỉ IP để giúp dễ nhớ hơn",
+    "c": "Đó là tên của một giao thức truyền tải dữ liệu ",
+    "d": "Đó là tên của một người dùng được cấp khi sử dụng các dịch vụ trên internet",
+    "ans": "b"
+  },
+  {
+    "question": "Thuật ngữ ‘Ethernet’ có ý nghĩa là gì?",
+    "a": "Đó là một phần của mô hình OSI",
+    "b": "Đó là một phần mềm ứng dụng để lập trình ra các trang web",
+    "c": "Đó là một chuẩn mạng cục bộ",
+    "d": "Đó là một giao thức của Internet",
+    "ans": "c"
+  },
+  {
+    "question": "Trong mạng máy tính, thuật ngữ tiếng anh HTML (HyperText Markup Language) có ý nghĩa là gì?",
+    "a": "Đó là ngôn ngữ được dùng để lập trình các văn bản đa phương tiện trên internet.",
+    "b": "Đó là một ứng dụng để thiết kế đồ họa trên máy tính",
+    "c": "Đó là một giao thức để xác nhận các dữ liệu truyền và gửi trên internet",
+    "d": "Đó là một ngôn ngữ đánh dấu được sử dụng để tạo và định dạng nội dung trên các trang web",
+    "ans": "d"
+  },
+  {
+    "question": "Mạng Internet được ra đời vào năm nào?",
+    "a": 1948,
+    "b": 1900,
+    "c": 1997,
+    "d": 1974,
+    "ans": "d"
+  },
+  {
+    "question": " ‘Internet’ có ý nghĩa là gì?",
+    "a": "Đó là một hệ thống mạng do Hoa Kỳ xây dựng và làm chủ",
+    "b": "Đó là một hệ thống mạng thông tin toàn cầu được kết nối bởi rất nhiều hệ thống mạng quy mô nhỏ hơn ",
+    "c": "Đó là kho thông tin, dữ liệu được lưu trữ bởi rất nhiều quốc gia trên toàn cầu",
+    "d": "Đó là tên một hình thức giải trí",
+    "ans": "b"
+  },
+  {
+    "question": "Các lĩnh vực nào sau đây có thể được đăng tải trên mạng Internet?",
+    "a": "Lĩnh vực y tế",
+    "b": "Lĩnh vực chính trị",
+    "c": "Lĩnh vực giáo dục",
+    "d": "Cả A và B và C đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "Bộ giao thức nào dưới đây được sử dụng phổ biến trên Internet? ",
+    "a": "TCP/IP",
+    "b": "H.324.",
+    "c": "IPX/SPX.",
+    "d": "AppleTalk.",
+    "ans": "a"
+  },
+  {
+    "question": "Dịch vụ internet được chính thức cung cấp tại Việt Nam vào năm nào?",
+    "a": 1960,
+    "b": 1945,
+    "c": 1985,
+    "d": 1997,
+    "ans": "d"
+  },
+  {
+    "question": "Mạng nào sau đây được cho là tiền thân của mạng internet?",
+    "a": "ARPANET",
+    "b": "ONENET",
+    "c": "LAN",
+    "d": "DOTNET",
+    "ans": "a"
+  },
+  {
+    "question": "Giao thức TCP/IP được phát triển trong khuôn khổ của dự án nào sau đây?",
+    "a": "Dự án Apollo",
+    "b": "Dự án Manhattan",
+    "c": "Dự án ARPANET",
+    "d": "Dự án Hubble",
+    "ans": "c"
+  },
+  {
+    "question": "Hãy lựa chọn một phát biểu chính xác nhất về máy tính lớn (mainframe computer)?",
+    "a": "Máy tính lớn - mainframe computer hoạt động giống như một máy chủ, lưu trữ cơ sở dữ liệu lớn và phục vụ đồng thời một số lượng lớn người dùng.",
+    "b": "Máy tính lớn - mainframe computer là máy tính lớn nhất, nhanh nhất và đắt nhất thế giới có khả năng thực hiện hàng tỷ thao tác dấu phẩy động trong một giây.",
+    "c": "Cả A và B đều đúng",
+    "d": "Máy tính lớn - mainframe computer là máy tính sử dụng các nguyên tắc của cơ học lượng tử để thực hiện các phép tính toán.",
+    "ans": "a"
+  },
+  {
+    "question": "Phát biểu nào sau đây là chính xác nhất về RAM máy tính ?",
+    "a": "RAM là bộ nhớ chỉ đọc, cấu tạo từ một vi chíp giữ vai trò khởi động để cho máy tính tải hệ điều hành, kiểm tra phần cứng, hiển thị thông số BIOS, ngày tháng...",
+    "b": "RAM là bộ nhớ truy cập ngẫu nhiên dùng để lưu trữ tạm thời các bản sao của các file và dễ dàng bị xóa sạch.",
+    "c": "Cả A và B đều đúng",
+    "d": "RAM là bộ lưu trữ dữ liệu ngoài của máy tính có thể dễ dàng tháo ra và vận chuyển.",
+    "ans": "b"
+  },
+  {
+    "question": "Bộ phận nào sau đây đảm nhiệm chức năng kết nối người sử dụng với máy tính nhằm mục đích hiển thị và phục vụ cho quá trình giao tiếp giữa người sử dụng với máy tính?",
+    "a": "RAM - bộ nhớ truy cập ngẫu nhiên",
+    "b": "Loa máy tính.",
+    "c": "Màn hình máy tính.",
+    "d": "Bàn phím máy tính.",
+    "ans": "c"
+  },
+  {
+    "question": "Bộ phận nào sau đây có nhiệm vụ cung cấp năng lượng cho hầu hết các bộ phận quan trọng khác của máy tính?",
+    "a": "PSU - Power Supply Unit",
+    "b": "CPU - Central Processing Unit",
+    "c": "Bo mạch chủ - Mainboard",
+    "d": "HDD - Hard disk drive",
+    "ans": "a"
+  },
+  {
+    "question": "Bộ vi xử lý là thành phần như thế nào của hệ thống máy tính? ",
+    "a": "Một loại màn hình hiển thị thông tin. ",
+    "b": "Thiết bị lưu trữ dữ liệu lớn. ",
+    "c": "Là thiết bị ngoại vi có thể tháo rời. ",
+    "d": "Là bộ phận điều khiển trung tâm của máy tính, thực hiện phép toán và quản lý các nhiệm vụ.",
+    "ans": "d"
+  },
+  {
+    "question": "Đâu là thành phần chịu trách nhiệm lưu trữ dữ liệu lâu dài trên máy tính và được cắm trực tiếp vào bo mạch chủ?",
+    "a": "Bộ nhớ truy cập ngẫu nhiên - RAM ",
+    "b": "Bộ vi xử lý - CPU",
+    "c": "Ổ đĩa cứng - Hard disk drive",
+    "d": "Card mạng",
+    "ans": "c"
+  },
+  {
+    "question": "Hệ điều hành của máy tính có vai trò như thế nào đối với hệ thống máy tính?",
+    "a": "Hệ điều hành điều khiển và kết hợp sử dụng phần cứng trong các ứng dụng khác nhau của nhiều người dùng khác nhau.",
+    "b": "Hệ điều hành sử dụng các tài nguyên của hệ thống máy tính để giải đáp các câu hỏi cụ thể của người sử dụng",
+    "c": "Cả A và B đều đúng",
+    "d": "Hệ điều hành không có liên quan gì tới với hệ thống máy tính",
+    "ans": "a"
+  },
+  {
+    "question": "Theo cách phân loại dưới góc độ người sử dụng và số chương trình máy tính được thực hiện cùng lúc, hệ điều hành nào sau đây cho phép mỗi lần chỉ thực hiện được một chương trình, các chương trình phải được thực hiện lần lượt?",
+    "a": "Hệ điều hành đa nhiệm một người dùng",
+    "b": "Hệ điều hành đơn nhiệm một người dùng",
+    "c": "Hệ điều hành đơn nhiệm đa người dùng",
+    "d": "Cả A và C đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Hệ điều hành nào sau đây cho phép thực hiện đồng thời nhiều chương trình ứng dụng cùng một lúc, tuy nhiên chỉ cho phép một người đăng nhập vào hệ thống khi làm việc?",
+    "a": "Hệ điều hành đa nhiệm một người dùng",
+    "b": "Hệ điều hành đơn nhiệm một người dùng",
+    "c": "Hệ điều hành đa nhiệm đa người dùng",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Loại hệ điều hành nào sau đây mà người dùng có thể thực hiện đồng thời nhiều chương trình một cách song song, tuy nhiên không cho phép từ hai người trở lên đăng nhập vào hệ thống cùng lúc?",
+    "a": "Hệ điều hành đa nhiệm một người dùng",
+    "b": "Hệ điều hành đơn nhiệm một người dùng",
+    "c": "Hệ điều hành đơn nhiệm một người dùng",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Loại hệ điều hành nào sau đây cho phép nhiều người dùng đăng nhập vào hệ thống cùng lúc và thực hiện đồng thời nhiều chương trình trên mỗi tài khoản?",
+    "a": "Hệ điều hành đa nhiệm một người dùng",
+    "b": "Hệ điều hành đa nhiệm đa người dùng",
+    "c": "Hệ điều hành đơn nhiệm đa người dùng",
+    "d": "Hệ điều hành đơn nhiệm một người dùng",
+    "ans": "b"
+  },
+  {
+    "question": "Để các máy tính trên mạng có thể liên lạc được với nhau thì mỗi máy tính cần có điều gì sau đây?",
+    "a": "Địa chỉ MAC",
+    "b": "Địa chỉ IP",
+    "c": "Địa chỉ Local",
+    "d": "Địa chỉ thư tín",
+    "ans": "b"
+  },
+  {
+    "question": "Tên miền nào sau đây thường được dùng cho các tổ chức, cá nhân hoạt động trong lĩnh vực về giáo dục tại việt nam?",
+    "a": "Tên miền có đuôi là .edu.vn",
+    "b": "Tên miền có đuôi là .com.vn",
+    "c": "Tên miền có đuôi là .giaoduc.com",
+    "d": "Cả B và C đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Hãy xác định mục đích chính xác của việc sử dụng tên miền thay vì địa chỉ IP trong số những đáp án dưới đây?",
+    "a": "Là do tên miền dễ dàng lưu trữ hơn địa chỉ IP.",
+    "b": "Là do tên miền khiến người dùng dễ nhớ, dễ hiểu hơn địa chỉ IP.",
+    "c": "Là do tên miền dễ được máy tính xử lý hơn địa chỉ IP.",
+    "d": "Là do tên miền có chi phí thấp hơn địa chỉ IP",
+    "ans": "b"
+  },
+  {
+    "question": "Tên miền nào trong số các tên miền sau đây không đúng với quy định, quy cách?",
+    "a": "abc.edu.vn",
+    "b": "abc.vn",
+    "c": "abc.edu",
+    "d": "abc.com",
+    "ans": "c"
+  },
+  {
+    "question": "Hãy trình bày các đặc trưng cơ bản của mạng WAN?",
+    "a": "Tốc độ truyền dữ liệu thấp so với mạng cục bộ có cùng chi phí.",
+    "b": "Hoạt động phạm vi địa lý rộng hơn ra ngoài phạm vi một tòa nhà.",
+    "c": "Tốc độ truyền dữ liệu cao và không cần đường truyền vật lý",
+    "d": "Cả A và B đều đúng",
+    "ans": "d"
+  },
+  {
+    "question": "Sự khác nhau giữa Mạng MAN (Metropolitan Area Network) và Mạng LAN (Local Area Network) là gì?",
+    "a": "Mạng MAN thường có quy mô lớn hơn và có thể kết nối các vị trí trong cả thành phố hoặc quốc gia, trong khi Mạng LAN giới hạn trong một khu vực nhỏ như một văn phòng hoặc tòa nhà.",
+    "b": "Mạng LAN thường có băng thông cao hơn tuy nhiên chi phí lắp đặt cũng cao hơn đáng kể so với Mạng MAN.",
+    "c": "Mạng LAN hoàn toàn được chính phủ miễn phí lắp đặt còn mạng MAN thì không",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Sự khác biệt giữa Mạng WAN (Wide Area Network) và Mạng LAN (Local Area Network) là gì?",
+    "a": "Mạng WAN thường dành cho các tổ chức và doanh nghiệp lớn, trong khi Mạng LAN thường được sử dụng cho hộ gia đình và văn phòng nhỏ.",
+    "b": "Mạng WAN có băng thông cao hơn và bảo đảm kết nối ổn định hơn so với Mạng LAN.",
+    "c": "Mạng LAN có phạm vi bao phủ lớn, thường vượt quốc gia hoặc lục địa, trong khi Mạng WAN giới hạn trong một khu vực nhỏ như một văn phòng hoặc tòa nhà.",
+    "d": "Cả hai Mạng WAN và Mạng LAN tuy có cùng mức chi phí thiết lập nhưng khác nhau về mức độ phức tạp trong công tác quản lý và vận hành.",
+    "ans": "a"
+  },
+  {
+    "question": "Sự khác biệt giữa Mạng WAN (Wide Area Network) và Mạng MAN (Metropolitan Area Network) là gì?",
+    "a": "Mạng MAN thường có quy mô lớn hơn và phù hợp cho tổ chức lớn, trong khi Mạng WAN thường được sử dụng cho các tổ chức nhỏ và văn phòng cá nhân.",
+    "b": "Mạng WAN có phạm vi bao phủ lớn hơn, thường vượt quốc gia hoặc lục địa, trong khi Mạng MAN giới hạn trong một khu vực như một thành phố.",
+    "c": "Mạng MAN và Mạng WAN tuy có cùng băng thông nhưng khác nhau về tốc độ truyền tải dữ liệu.",
+    "d": "Cả hai Mạng WAN và Mạng MAN tuy khác nhau về mức chi phí thiết lập nhưng độ phức tạp trong công tác quản lý lại tương tự nhau.",
+    "ans": "b"
+  },
+  {
+    "question": "Sự khác biệt giữa Mạng GAN (Global Area Network) và Mạng MAN (Metropolitan Area Network) là gì?",
+    "a": "Mạng GAN thường có phạm vi bao phủ toàn thế giới, trong khi Mạng MAN giới hạn trong một khu vực địa lý cụ thể.",
+    "b": "Mạng MAN thường sử dụng tín hiệu vệ tinh để kết nối các máy tính với nhau, trong khi Mạng GAN sử dụng mạng viễn thông.",
+    "c": "Cả hai Mạng GAN và Mạng MAN tuy có cùng tốc độ truyền dữ liệu nhưng khác nhau về chi phí vận hành.",
+    "d": "Mạng GAN và Mạng MAN là hai khái niệm hoàn toàn khác nhau và không hề có bất cứ sự liên quan nào tới nhau.",
+    "ans": "a"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính peer-to-peer (P2P) có ưu điểm gì?",
+    "a": "Mô hình P2P thường yêu cầu ít cấu hình và không đòi hỏi kiến thức kỹ thuật phức tạp.",
+    "b": "Mô hình P2P thích hợp cho các doanh nghiệp lớn hoạt động với nhiều cụm trung tâm lưu trữ dữ liệu đặt sát nhau",
+    "c": "Mô hình P2P luôn đảm bảo tính bảo mật cao và quản lý hiệu quả.",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính peer-to-peer (P2P) có nhược điểm gì?",
+    "a": "Trong mô hình P2P, việc quản lý tài nguyên và máy tính trong mạng trở nên phức tạp khi số lượng máy tính tăng lên.",
+    "b": "Mô hình P2P thường yêu cầu các kiến thức kỹ thuật cao để cài đặt và quản lý.",
+    "c": "Mô hình P2P chỉ phù hợp cho các tổ chức lớn với nhiều chi nhánh và văn phòng trên toàn quốc.",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính peer-to-peer (P2P) nhấn mạnh vào yếu tố gì đối với các máy tính trong mạng?",
+    "a": "Trong mô hình P2P, chỉ có một máy tính duy nhất được ưu tiên làm máy chủ trung tâm.",
+    "b": "Mọi máy tính trong mạng P2P được coi là bình đẳng và có khả năng chia sẻ tài nguyên.",
+    "c": "Máy tính có cấu hình cao hơn thường chiếm được vị trí quan trọng hơn trong mô hình P2P.",
+    "d": "Mô hình P2P không cho phép máy tính cá nhân thực hiện các chức năng quản lý mạng.",
+    "ans": "b"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) có nhược điểm gì sau đây?",
+    "a": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) đòi hỏi một máy chủ trung tâm có chi phí tương đối đắt đỏ để duy trì.",
+    "b": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server), tất cả máy tính trong mạng phải đảm bảo hiệu năng cao để duy trì kết nối với máy chủ.",
+    "c": "Bảo mật dữ liệu trong mô hình quản lý mạng máy tính khách-chủ (Client-Server) cực kỳ yếu kém.",
+    "d": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) yêu cầu phải đảm bảo kết nối internet không giới hạn băng thông với phạm vi hoạt động tương đối rộng để hoạt động.",
+    "ans": "a"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) có ưu điểm gì sau đây?",
+    "a": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) yêu cầu ít phần cứng và tài nguyên hơn nhiều so với mô hình quản lý mạng máy tính ngang hàng (Peer-to-Peer).",
+    "b": "Dữ liệu và tài nguyên trong mô hình quản lý mạng máy tính khách-chủ (Client-Server) có thể được tập trung và quản lý dễ dàng trên máy chủ.",
+    "c": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server), mọi máy tính trong mạng đều có quyền tham gia quản lý toàn bộ hệ thống.",
+    "d": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) rất phù hợp cho các tổ chức nhỏ và các cá nhân sử dụng.",
+    "ans": "b"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) khác với mô hình quản lý mạng máy tính ngang hàng (Peer-to-Peer) ở đặc điểm nào sau đây?",
+    "a": "Tính bình đẳng giữa các máy chủ trung tâm.",
+    "b": "Sự phân tán của thiết bị lưu trữ dữ liệu và tài nguyên mạng.",
+    "c": "Cấu trúc mạng tập trung và quản lý dữ liệu trên máy chủ.",
+    "d": "Cả A và B đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "Sự khác biệt chính giữa mô hình quản lý mạng máy tính khách-chủ (Client-Server) và mô hình quản lý mạng máy tính ngang hàng (Peer-to-Peer) là gì?",
+    "a": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server) có một máy tính chủ tập trung quản lý tài nguyên mạng, trong khi mô hình quản lý mạng ngang hàng (Peer-to-Peer) thì không có máy tính chủ.",
+    "b": "Cả hai mô hình đều có máy tính chủ tập trung quản lý tài nguyên mạng tuy nhiên máy tính chủ trong mô hình quản lý mạng máy tính khách-chủ (Client-Server) sẽ có cấu hình cao hơn nhiều.",
+    "c": "Trong mô hình quản lý mạng ngang hàng (Peer-to-Peer), mọi máy tính đều là máy tính cá nhân, còn đối với mô hình quản lý mạng máy tính khách-chủ (Client-Server) thì có một máy tính đặc biệt cấu hình cao làm máy chủ.",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Điểm mạnh của mô hình quản lý mạng máy tính khách-chủ (Client-Server) so với mô hình quản lý mạng máy tính ngang hàng (Peer-to-Peer) là gì?",
+    "a": "Sự linh hoạt và sự đơn giản trong triển khai.",
+    "b": "Khả năng tập trung quản lý và bảo mật tài nguyên mạng.",
+    "c": "Tính đồng nhất và tiết kiệm chi phí.",
+    "d": "Khả năng chia sẻ tài nguyên dễ dàng giữa các máy tính.",
+    "ans": "b"
+  },
+  {
+    "question": "Nhược điểm của mô hình quản lý mạng máy tính khách-chủ (Client-Server) so với mô hình quản lý mạng máy tính ngang hàng (Peer-to-Peer) là gì?",
+    "a": "Đó là việc khó triển khai và khó thiết lập cấu hình cho các máy chủ và máy khách.",
+    "b": "Đó là sự không đồng nhất và không tiện lợi trong việc chia sẻ tài nguyên.",
+    "c": "Đó là vấn đề yêu cầu quá nhiều tài nguyên phần cứng mạnh mẽ để hoạt động.",
+    "d": "Đó là sự phụ thuộc vào máy chủ, sẽ gây chậm trễ nếu máy chủ gặp sự cố.",
+    "ans": "d"
+  },
+  {
+    "question": "Đặc trưng cơ bản của mạng LAN là gì?",
+    "a": "Quản trị và bảo dưỡng mạng rất phức tạp.",
+    "b": "Tốc độ truyền dữ liệu cao, từ10÷100 Mbps đến hàng trăm Gbps, độ tin cậy cao.",
+    "c": "Quy mô của mạng trung bình, phạm vi hoạt động vào khoảng vài trăm km.",
+    "d": "Cả A và B đều đúng",
+    "ans": "b"
+  },
+  {
+    "question": "Đặc trưng cơ bản của mạng WAN là gì?",
+    "a": "Quản trị và bảo dưỡng mạng rất đơn giản",
+    "b": "Quy mô của mạng nhỏ, phạm vi hoạt động chỉ vào khoảng vài km.",
+    "c": "Tốc độ truyền dữ liệu tương đối thấp so với mạng cục bộ có cùng mức chi phí",
+    "d": "Cả A và B đều đúng",
+    "ans": "c"
+  },
+  {
+    "question": "Mạng LAN (Local Area Network) có đặc điểm gì sau đây?",
+    "a": "Băng thông hẹp và kích thước mạng không bị giới hạn bởi thiết bị",
+    "b": "Băng thông lớn và kích thước mạng bị giới hạn bởi thiết bị",
+    "c": "Băng thông lớn và chi phí thiết kế, lắp đặt mạng LAN cao",
+    "d": "Băng thông hẹp và quản trị mạng LAN phức tạp",
+    "ans": "b"
+  },
+  {
+    "question": "Phát biểu nào sau đây là đúng về Mạng LAN (Local Area Network)?",
+    "a": "Mạng LAN thường có băng thông hẹp tuy nhiên kích thước của mạng không bị giới hạn bởi thiết bị.",
+    "b": "Mạng LAN có băng thông lớn tuy nhiên kích thước của mạng bị giới hạn bởi thiết bị.",
+    "c": "Mạng LAN thường có băng thông lớn tuy nhiên chi phí thiết kế, lắp đặt cực kỳ đắt đỏ.",
+    "d": "Mạng LAN thường có băng thông hẹp tuy nhiên quản trị mạng LAN rất phức tạp.",
+    "ans": "b"
+  },
+  {
+    "question": "Đặc điểm nào sau đây là đúng về Mạng đô thị MAN (Metropolitan Area Network)?",
+    "a": "Mạng MAN có băng thông ở mức thấp và quản trị mạng đơn giản.",
+    "b": "Mạng MAN có băng thông cao và kết nối các mạng LAN trong cùng một thành phố.",
+    "c": "Mạng MAN có băng thông trung bình, phục vụ các ứng dụng cấp thành phố hay quốc gia, như chính phủ điện tử và thương mại điện tử.",
+    "d": "Mạng MAN có băng thông rất cao và kết nối các mạng LAN ở toàn quốc.",
+    "ans": "c"
+  },
+  {
+    "question": "Hãy lựa chọn một đáp án chính xác sau đây về đặc điểm của Mạng đô thị MAN (Metropolitan Area Network)?",
+    "a": "Mạng MAN có băng thông cực kỳ thấp và chỉ phù hợp cho các ứng dụng cấp độ toàn quốc .",
+    "b": "Mạng MAN có băng thông rất lớn và có khả năng kết nối các mạng LAN ở cấp độ toàn quốc.",
+    "c": "Mạng MAN có băng thông trung bình và phục vụ các ứng dụng cấp thành phố hoặc quốc gia như thương mại điện tử.",
+    "d": "Mạng MAN có băng thông rất cao và có khả năng kết nối tất cả các mạng LAN trong phạm vi một tòa nhà.",
+    "ans": "c"
+  },
+  {
+    "question": "Mạng LAN (Local Area Network) và Mạng MAN (Metropolitan Area Network) thường có sự khác biệt như thế nào về mức chi phí phải bỏ ra?",
+    "a": "Mạng LAN thường có chi phí thiết kế và lắp đặt thấp hơn so với Mạng MAN.",
+    "b": "Cả hai loại mạng thường có chi phí thiết kế và lắp đặt tương đương nhau.",
+    "c": "Mạng LAN thường có chi phí thiết kế và lắp đặt cao hơn so với Mạng MAN.",
+    "d": "Chi phí thiết kế và lắp đặt không phụ thuộc vào loại mạng, mà chỉ phụ thuộc vào chất lượng của các thiết bị mạng.",
+    "ans": "a"
+  },
+  {
+    "question": "Ứng dụng của Mạng LAN (Local Area Network) và Mạng MAN (Metropolitan Area Network) thường khác nhau như thế nào?",
+    "a": "Mạng LAN thường được sử dụng cho các ứng dụng cấp tổ chức hoặc doanh nghiệp, trong khi Mạng MAN thích hợp cho các ứng dụng cấp thành phố hoặc quốc gia.",
+    "b": "Cả hai loại mạng đều được sử dụng cho các ứng dụng cấp tổ chức hoặc doanh nghiệp.",
+    "c": "Mạng LAN thường được sử dụng cho các ứng dụng cấp quốc gia, trong khi Mạng MAN thích hợp cho các ứng dụng cấp tổ chức hoặc doanh nghiệp.",
+    "d": "Ứng dụng của Mạng LAN và Mạng MAN không khác biệt, và cả hai đều phù hợp cho mọi loại ứng dụng trong thực tế.",
+    "ans": "a"
+  },
+  {
+    "question": "Quy mô của Mạng LAN (Local Area Network) so với Mạng MAN (Metropolitan Area Network) khác nhau như thế nào?",
+    "a": "Mạng LAN thường có quy mô nhỏ hơn và giới hạn trong một khu vực nhỏ như một văn phòng hoặc tòa nhà, trong khi Mạng MAN có quy mô lớn hơn và có thể phủ rộng trong cả thành phố hoặc quốc gia.",
+    "b": "Cả hai loại mạng thường có cùng quy mô và giới hạn trong một khu vực nhỏ.",
+    "c": "Mạng LAN thường có quy mô lớn hơn và có thể phủ rộng trong cả thành phố hoặc quốc gia, trong khi Mạng MAN có quy mô nhỏ hơn và giới hạn trong một khu vực nhỏ như một văn phòng hoặc tòa nhà.",
+    "d": "Quy mô của Mạng LAN và Mạng MAN không khác biệt, và cả hai có thể phủ rộng kể từ các khu vực nhỏ cho đến quốc gia.",
+    "ans": "a"
+  },
+  {
+    "question": "Đặc điểm chính của Mạng WAN (Wide Area Network) là gì?",
+    "a": "Mạng WAN có băng thông cao và phục vụ cho nhiều ứng dụng trực tuyến.",
+    "b": "Mạng WAN thường giới hạn trong phạm vi thành phố hoặc quốc gia.",
+    "c": "Mạng WAN là tập hợp của nhiều Mạng LAN và MAN được nối lại với nhau.",
+    "d": "Mạng WAN có chi phí thiết bị và công nghệ thấp hơn so với Mạng LAN.",
+    "ans": "c"
+  },
+  {
+    "question": "Mạng toàn cầu (GAN) là mạng như thế nào?",
+    "a": "Mạng toàn cầu GAN là mạng kết nối máy tính trên phạm vi toàn thế giới thông qua mạng Internet.",
+    "b": "Mạng toàn cầu GAN là mạng kết nối máy tính trên phạm vi toàn thế giới tuy nhiên không liên quan gì đến mạng Internet.",
+    "c": "Mạng toàn cầu GAN là mạng nội bộ của một doanh nghiệp hoạt động tại một quốc gia cụ thể.",
+    "d": "Mạng toàn cầu GAN là mạng nội bộ thường sử dụng tín hiệu vệ tinh để kết nối các máy tính với nhau ở quy mô toàn thế giới.",
+    "ans": "a"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính peer-to-peer (P2P) được đặc điểm gì sau đây?",
+    "a": "Mô hình P2P thường được sử dụng trong các tổ chức, doanh nghiệp lớn với rất nhiều các hệ thống máy chủ trung tâm.",
+    "b": "Trong mô hình P2P, mỗi máy tính có thể hoạt động như máy chủ và máy khách đồng thời.",
+    "c": "Mô hình P2P yêu cầu sự tập trung vào một máy chủ chính để quản lý tất cả các máy tính khác.",
+    "d": "Mô hình P2P không thích hợp cho việc chia sẻ tài nguyên và thông tin giữa các máy tính.",
+    "ans": "b"
+  },
+  {
+    "question": "Phát biểu nào sau đây là chính xác về mô hình quản lý mạng máy tính peer-to-peer (P2P)?",
+    "a": "Mô hình P2P luôn yêu cầu một máy chủ trung tâm để điều hành mạng.",
+    "b": "Trong mô hình P2P, mỗi máy tính có thể truy cập tài nguyên của các máy tính khác trong mạng.",
+    "c": "Mô hình P2P chỉ phù hợp cho các tổ chức lớn với hệ thống máy chủ trung tâm.",
+    "d": "Mô hình P2P không cho phép các máy tính đơn lẻ nào hoạt động như máy chủ.",
+    "ans": "b"
+  },
+  {
+    "question": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) đặc trưng bởi điều gì sau đây?",
+    "a": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server), mọi máy tính được coi là bình đẳng và đều có khả năng chia sẻ tài nguyên lẫn nhau.",
+    "b": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server), chỉ có một máy tính có cấu hình mạnh mẽ nhất được ưu tiên làm máy chủ trung tâm.",
+    "c": "Máy tính khách trong mạng Client-Server đều có khả năng tự động quản lý và lưu trữ dữ liệu.",
+    "d": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) thường yêu cầu máy tính khách kết nối liên tục với máy chủ để truy cập tài nguyên và dịch vụ.",
+    "ans": "d"
+  },
+  {
+    "question": "Đâu là phát biểu chính xác về mô hình quản lý mạng máy tính khách-chủ (Client-Server)?",
+    "a": "Tất cả máy tính trong mạng đều có vai trò bình đẳng và hoạt động độc lập.",
+    "b": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server), máy chủ trung tâm (Server) sẽ cung cấp tài nguyên và dịch vụ cho các máy tính khách (Clients).",
+    "c": "Mọi máy tính trong mô hình quản lý mạng máy tính khách-chủ (Client-Server) đều phải tự quản lý và lưu trữ dữ liệu nội bộ.",
+    "d": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) không đòi hỏi kết nối internet để hoạt động.",
+    "ans": "b"
+  },
+  {
+    "question": "Điểm nổi bật liên quan đến quản lý dữ liệu trong mô hình quản lý mạng máy tính khách-chủ (Client-Server) là gì?",
+    "a": "Tất cả máy tính trong mạng có quyền truy cập và quản lý dữ liệu theo ý muốn.",
+    "b": "Dữ liệu và tài nguyên có thể được tập trung và quản lý dễ dàng trên máy chủ.",
+    "c": "Mô hình quản lý mạng máy tính khách-chủ (Client-Server) không đòi hỏi bất kỳ thiết bị lưu trữ dữ liệu nào.",
+    "d": "Dữ liệu chỉ có thể lưu trữ trên các máy tính khách mà không thể tập trung quản lý",
+    "ans": "b"
+  },
+  {
+    "question": "Trong mô hình quản lý mạng máy tính khách-chủ (Client-Server), vai trò của máy tính được gọi là \"Client\" là gì?",
+    "a": "Máy tính giữ vai trò chủ chốt trong mạng.",
+    "b": "Máy tính chạy các ứng dụng mạng.",
+    "c": "Máy tính phục vụ các yêu cầu từ máy tính Server.",
+    "d": "Máy tính trung tâm để lưu trữ dữ liệu.",
+    "ans": "b"
+  },
+  {
+    "question": "Trong mô hình quản lý mạng máy tính P2P (Peer-to-Peer), dữ liệu và tài nguyên sẽ được lưu trữ ở đâu?",
+    "a": "Trên máy tính Server duy nhất.",
+    "b": "Trên tất cả các máy tính trong mạng.",
+    "c": "Trên các máy tính PDA",
+    "d": "Trên Cloud Computing",
+    "ans": "b"
+  },
+  {
+    "question": "Đoạn văn sau đây đề cập tới thiết bị nào trong hệ thống mạng máy tính của doanh nghiệp?",
+    "a": "Layer 3 Switch - Bộ chuyển mạch có định tuyến",
+    "b": "The protocol dependent router - Router có phụ thuộc giao thức",
+    "c": "The protocol independent router - Router không phụ thuộc giao thức",
+    "d": "Repeater - Bộ lặp tín hiệu",
+    "ans": "d"
+  },
+  {
+    "question": "Doanh nghiệp hiện nay thường sử dụng Switch hay Hub trong các mạng máy tính của mình, hãy lựa chọn một đáp án kèm với phân tích chính xác nhất ?",
+    "a": "Doanh nghiệp ưa thích sử dụng thiết bị Switch trong các mạng máy tính hơn do đảm bảo tính nhất quán trong việc truyền dữ liệu.  ",
+    "b": "Doanh nghiệp ưa thích sử dụng thiết bị Switch trong các mạng máy tính hơn do khả năng chia sẻ băng thông rộng hơn.  ",
+    "c": "Doanh nghiệp ưa thích sử dụng thiết bị Hub trong các mạng máy tính hơn do khả năng giảm tắc nghẽn mạng cho doanh nghiệp nhiều hơn.  ",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Doanh nghiệp A đang phân vân giữa việc lựa chọn thiết bị Switch hay Hub trong mạng máy tính của mình. Hãy đưa ra các tư vấn phù hợp nhất với doanh nghiệp trong số các đáp án sau đây?   ",
+    "a": "Nên sử dụng Switch vì khả năng kiểm soát truy cập vào mạng từ Switch tốt hơn so với Hub.  ",
+    "b": "Nên sử dụng Switch vì sự an toàn trong bảo mật, có thể sử dụng SMS (tin nhắn văn bản) dưới dạng xác thực 2 bước khi tin nhắn được gửi đến một số điện thoại tin cậy và người dùng sẽ được nhắc tương tác với văn bản hoặc sử dụng mã dùng một lần để xác minh danh tính của mình.",
+    "c": "Nên sử dụng Hub vì khả năng kiểm soát dữ liệu đầu ra thông qua phương pháp bảo mật quản lý truy cập và yêu cầu hai hình thức nhận dạng để truy cập tài nguyên và dữ liệu của Hub tốt hơn.  ",
+    "d": "Cả A và B đều đúng",
+    "ans": "a"
+  },
+  {
+    "question": "Internet xuất hiện vào hoàn cảnh nào trong lịch sử phát triển của mạng máy tính?",
+    "a": "Internet được phát triển từ một dự án quân sự vào cuối thập kỷ 1960.",
+    "b": "Internet là kết quả đàm phán của việc sát nhập các tập đoàn công nghệ lớn.",
+    "c": "Internet bắt đầu với sự ra đời của các mạng xã hội vào giữa những năm 1990",
+    "d": "Internet là một phần mềm ra đời ngay sau máy tính cá nhân đầu tiên",
+    "ans": "a"
+  },
+  {
+    "question": "Sự ra đời của Internet liên quan đến sự kiện quan trọng nào sau đây?",
+    "a": "Thảm họa chiến tranh thế giới xảy ra vào những năm 1914-1918.",
+    "b": "Sự kiện đại nhảy vọt trong lĩnh vực công nghệ thông tin vào cuối những năm 1980",
+    "c": "Sự kiện đổ bộ của các tập đoàn viễn thông - công nghệ Hoa Kỳ vào Trung Quốc giữa những năm 1970.",
+    "d": "Một dự án của Bộ Quốc phòng Hoa Kỳ được phát triển vào cuối những năm 1960.",
+    "ans": "d"
+  },
+  {
+    "question": "Sự khác nhau giữa NSFNET và ARPANET là gì?",
+    "a": "NSFNET là dự án nghiên cứu khoa học của mạng thông tin quốc gia Hoa Kỳ, trong khi ARPANET được phát triển bởi bộ nội vụ Hoa Kỳ.",
+    "b": "ARPANET là mạng máy tính đầu tiên trên thế giới, trong khi NSFNET là một phiên bản nâng cấp của nó.",
+    "c": "NSFNET là một dự án thuộc lĩnh vực thương mại, trong khi ARPANET tập trung vào lĩnh vực quân sự.",
+    "d": "ARPANET ban đầu sử dụng nhiều giao thức khác nhau, trong khi NSFNET đóng vai trò quan trọng trong việc tiêu chuẩn hóa và phổ biến giao thức TCP/IP.",
+    "ans": "d"
+  },
+  {
+    "question": "Giao thức TCP/IP có điểm mạnh như thế nào?",
+    "a": "Giao thức TCP/IP đã được phát triển từ lâu và được sử dụng rộng rãi, giúp tạo ra sự thống nhất trong việc kết nối các mạng, bao gồm cả khả năng liên kết các mạng khác nhau với nhau một cách dễ dàng",
+    "b": "Giao thức TCP/IP là giao thức duy nhất được hỗ trợ bởi các thiết bị mạng, loại bỏ sự phức tạp của việc tương tác qua lại với nhiều giao thức khác nhau.",
+    "c": "Giao thức TCP/IP sử dụng mã hóa mạnh mẽ, đảm bảo tính bảo mật và quản lý mạng một cách hiệu quả.",
+    "d": "Giao thức TCP/IP tuy không tỏ rõ hiệu quả trên các mạng nhỏ nhưng lại rất phù hợp cho các mạng có quy mô lớn do khả năng truyền tải dữ liệu qua lại với tần suất cao và sự an toàn trong bảo mật dữ liệu ",
+    "ans": "a"
+  },
+  {
+    "question": "Giao thức TCP/IP là một trong những giao thức quan trọng nhất của Internet được ra đời trong bối cảnh nào sau đây?",
+    "a": "Giai đoạn cuối thế chiến thứ nhất.",
+    "b": "Giai đoạn cuộc cách mạng công nghiệp lần thứ 2",
+    "c": "Giai đoạn cuộc chiến tranh lạnh giữa Hoa Kỳ và Liên Xô.",
+    "d": "Giai đoạn cuộc cách mạng công nghiệp lần đầu tiên",
+    "ans": "c"
+  },
+  {
+    "question": "Giao thức TCP/IP đã ảnh hưởng như thế nào đối với sự phát triển của Internet vào những năm 1990?",
+    "a": "Sự phát triển của giao thức TCP/IP không gây tác động gì đáng kể lên sự phát triển của Internet vào những năm 1990",
+    "b": "Giao thức TCP/IP thúc đẩy sự xuất hiện của World Wide Web (WWW)",
+    "c": "Giao thức TCP/IP là lý do cho sự ra đời của dự án ARPANET 4.0",
+    "d": "Giao thức TCP/IP thúc đẩy sự gia nhập của rất nhiều quốc gia từ thế giới thứ 3 vào mạng Internet vào những năm 1990",
+    "ans": "b"
+  },
+  {
+    "question": "Giao thức TCP/IP trong quá trình phát triển đã trải qua bao nhiêu phiên bản chính quan trọng?",
+    "a": "Chỉ có một phiên bản duy nhất.",
+    "b": "Có hai phiên bản.",
+    "c": "Có bốn phiên bản.",
+    "d": "Có sáu phiên bản.",
+    "ans": "b"
+  },
+  {
+    "question": "Hãy phân tích điểm mạnh chính của IPv6 (Internet Protocol version 6) so với IPv4 (Internet Protocol version 4) là gì?",
+    "a": "Internet Protocol version 6 có địa chỉ IP 64 bit, làm tăng số lượng địa chỉ IP sử dụng được.",
+    "b": "Internet Protocol version 6 hỗ trợ tự động cấp phát địa chỉ IP và bảo mật mạng tốt hơn.",
+    "c": "Internet Protocol version 6 chạy nhanh hơn Internet Protocol version 4 trên các mạng điện toán đám mây và có chi phí lắp đặt rẻ hơn đáng kể.",
+    "d": "Internet Protocol version 6 hỗ trợ tự động hóa công việc kinh doanh của doanh nghiệp",
+    "ans": "a"
+  },
+  {
+    "question": "Vì sao hiện nay giao thức TCP/IP (Transmission Control Protocol/Internet Protocol) trở thành một phần quan trọng của hạ tầng Internet?",
+    "a": "Bởi vì giao thức TCP/IP là giao thức đầu tiên được sử dụng trên Internet",
+    "b": "Bởi vì giao thức TCP/IP quản lý việc gửi và nhận dữ liệu giữa các máy tính và mạng với độ tin cậy cao và đảm bảo dữ liệu không bị thất lạc.",
+    "c": "Bởi vì giao thức TCP/IP có tác dụng bảo mật lớn đối với các mạng cục bộ và không ảnh hưởng đến độ trễ trong việc truyền tải dữ liệu đối với các mạng đô thị.",
+    "d": "Bởi vì giao thức TCP/IP được cấp phát miễn phí cho doanh nghiệp",
+    "ans": "b"
+  },
+  {
+    "question": "Phát biểu nào sau đây phản ánh chính xác việc kết nối Internet qua mạng cục bộ ?",
+    "a": "Kết nối Internet qua mạng cục bộ sẽ giúp tăng tốc độ Internet và giảm độ trễ.",
+    "b": "Kết nối Internet qua mạng cục bộ sẽ làm giảm tính ổn định của Internet.",
+    "c": "Kết nối Internet qua mạng cục bộ chỉ áp dụng cho việc truy cập các trang web nội bộ trong mạng cục bộ.",
+    "d": "Cả C và B đều đúng.",
+    "ans": "a"
+  },
+  {
+    "question": "Khi kết nối Internet qua mạng cục bộ phát biểu nào sau đây phản ánh không chính xác?",
+    "a": "Kết nối Internet qua mạng cục bộ giúp tăng tốc độ truyền dữ liệu giữa các máy tính trong mạng LAN.",
+    "b": "Kết nối Internet qua mạng cục bộ không ảnh hưởng đến tốc độ truy cập Internet, mà chỉ liên quan đến tốc độ truyền dữ liệu trong mạng cục bộ.",
+    "c": "Kết nối Internet qua mạng cục bộ sẽ làm tăng tính ổn định của Internet.",
+    "d": "Kết nối Internet qua mạng cục bộ cho phép chia sẻ tài nguyên và dữ liệu giữa các máy tính trong mạng cục bộ.",
+    "ans": "b"
+  },
+  {
+    "question": "Các thiết bị nào sau đây thường được sử dụng để kết nối Internet qua mạng cục bộ và đóng vai trò là cầu nối giữa mạng cục bộ và Internet?",
+    "a": "Switch",
+    "b": "Router",
+    "c": "Modem",
+    "d": "Repeater",
+    "ans": "b"
+  },
+  {
+    "question": "Trong mạng máy tính, thiết bị nào sau đây chịu trách nhiệm điều phối gói tin dữ liệu giữa mạng cục bộ và Internet?",
+    "a": "Firewall",
+    "b": "Repeater",
+    "c": "Modem",
+    "d": "Router",
+    "ans": "d"
+  },
+  {
+    "question": "Trong một hệ thống mạng máy tính, thành phần nào chịu trách nhiệm điều phối và quản lý các tài nguyên mạng?",
+    "a": "Máy tính Client",
+    "b": "Bộ định tuyến Router.",
+    "c": "Máy tính Server.",
+    "d": "Máy chiếu",
+    "ans": "c"
+  },
+  {
+    "question": "Hãy tìm trong số các thiết bị sau đây được sử dụng để kết nối các mạng con khác nhau và định tuyến dữ liệu giữa chúng?",
+    "a": "Switch",
+    "b": "Hub",
+    "c": "Modem",
+    "d": "Router",
+    "ans": "d"
+  },
+  {
+    "question": "Trong mạng máy tính, Bridge (Cầu) là thiết bị được sử dụng để làm gì?",
+    "a": "Kết nối hai mạng LAN khác nhau.",
+    "b": "Kết nối máy tính với Internet",
+    "c": "Kết nối máy tính với mạng LAN.",
+    "d": "Kết nối thiết bị di động với mạng LAN.",
+    "ans": "a"
+  },
+  {
+    "question": "Thiết bị có tên là “Repeater” trong mạng máy tính có chức năng gì?",
+    "a": "Chuyển gói dữ liệu từ mạng nội bộ sang mạng Internet.",
+    "b": " Tạo ra bản sao chính xác của dữ liệu và truyền nó tới các máy tính trong mạng.",
+    "c": "Kết nối hai hay nhiều mạng nội bộ với nhau.",
+    "d": "Lặp lại và tăng cường tín hiệu mạng để mở rộng phạm vi truyền tải.",
+    "ans": "d"
+  },
+  {
+    "question": "Thiết bị “Repeater” trong mạng máy tính được sử dụng chủ yếu với mục đích gì sau đây?",
+    "a": "Quản lý địa chỉ IP của các thiết bị trong mạng.",
+    "b": "Kết nối hai mạng đô thị khác nhau.",
+    "c": "Tạo các kết nối bảo mật giữa các máy tính trong mạng.",
+    "d": "Lặp lại và tăng cường tín hiệu mạng để mở rộng phạm vi truyền tải.",
+    "ans": "d"
+  },
+  {
+    "question": "Tại sao thiết bị “Repeater” được sử dụng trong mạng máy tính?",
+    "a": "Bởi vì thiết bị Repeater cung cấp tính bảo mật cao cho mạng.",
+    "b": "Bởi vì thiết bị Repeater giúp tăng khả năng chuyển đổi dữ liệu giữa các mạng diện rộng khác nhau.",
+    "c": "Bởi vì thiết bị Repeater giúp giảm tiêu thụ năng lượng của mạng.",
+    "d": "Bởi vì thiết bị Repeater giúp cải thiện chất lượng tín hiệu và mở rộng phạm vi truyền tải.",
+    "ans": "d"
+  }
+]
