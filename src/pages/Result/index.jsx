@@ -50,8 +50,7 @@ export default function Result() {
                             href="#"
                             onClick={(e) => {
                                 e.preventDefault()
-                                alert('🚧 Chức năng đang được phát triển, bạn quay lại sau nhé!')
-                                // route('/feedback') // KHÔNG gọi tới đây vì chưa sẵn sàng
+                                route('/feedback')
                             }}
                             style={{
                                 textDecoration: 'underline',

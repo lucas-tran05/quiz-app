@@ -15,16 +15,15 @@ async function sendResultToSheet(result) {
     formData.append('startTime', result.startTime || '');
     formData.append('endTime', result.endTime || '');
     formData.append('secret', KEY);
+    formData.append('type', 'result');
 
     fetch(API_URL, {
         method: 'POST',
         mode: 'no-cors',
-        // headers: {
-        //     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
-        // },
         body: formData
     })
         .then(() => {
+            console.log('Kết quả bài thi được gửi thành công!');
             let results = JSON.parse(localStorage.getItem('result')) || [];
             results.push(result);
             localStorage.setItem('result', JSON.stringify(results));
@@ -34,4 +33,27 @@ async function sendResultToSheet(result) {
         });
 }
 
-export { sendResultToSheet };
+async function sendFeedbackToSheet(feedbackData) {
+    const formData = new FormData();
+    formData.append('email', feedbackData.email);
+    formData.append('name', feedbackData.name);
+    formData.append('subject', feedbackData.subject);
+    formData.append('feedback', feedbackData.feedback);
+    formData.append('secret', KEY);
+    formData.append('type', 'feedback');
+
+    fetch(API_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+    })
+        .then(() => {
+            console.log('Feedback đã được gửi thành công!');
+        })
+        .catch(err => {
+            console.error('Lỗi gửi feedback:', err);
+        });
+}
+
+// ✅ sendAPI.jsx
+export { sendResultToSheet, sendFeedbackToSheet };

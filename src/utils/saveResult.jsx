@@ -1,4 +1,4 @@
-import { sendResultToSheet } from './sendResult';
+import { sendResultToSheet } from './sendAPI';
 
 export function saveAndSendResult({ questions, answers }) {
     let correct = 0;

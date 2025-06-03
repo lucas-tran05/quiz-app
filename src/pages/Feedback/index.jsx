@@ -1,6 +1,7 @@
 import { route } from 'preact-router'
 import { useState, useEffect } from 'preact/hooks'
 import { subjects } from '../../config/subjects'
+import { sendFeedbackToSheet } from '../../utils/sendAPI'
 
 export default function Feedback() {
     const [email, setEmail] = useState('')
@@ -30,9 +31,15 @@ export default function Feedback() {
             alert('Vui lòng điền đầy đủ thông tin.')
             return
         }
-        console.log({ email, name, subject, feedback })
+
+        const data = { email, name, subject, feedback }
+        console.log('Gửi feedback:', data)
+
+        sendFeedbackToSheet(data)
+
         setSubmitted(true)
     }
+
 
     if (submitted) {
         return (
