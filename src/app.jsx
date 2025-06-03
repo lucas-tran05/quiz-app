@@ -6,6 +6,7 @@ import Exam from './pages/Exam'
 import Result from './pages/Result'
 import Config from './pages/Config'
 import UploadPage from './pages/Upload'
+import Feedback from './pages/Feedback'
 
 export function App() {
   // useEffect(() => {
@@ -31,6 +32,7 @@ export function App() {
         <Result path="/result" />
         <Config path="/config" />
         <UploadPage path="/upload" />
+        <Feedback path="/feedback" />
       </Router>
     </>
   )

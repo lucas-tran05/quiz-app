@@ -3,6 +3,8 @@ import { useEffect, useState } from 'preact/hooks';
 import { route } from 'preact-router';
 import BackToTop from '../../components/BackToTop';
 import Alert from '../../components/alert';
+import { Fragment } from 'preact'
+
 
 const round = (value, decimals) => {
     return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
@@ -41,7 +43,28 @@ export default function Result() {
     return (
         <div class="container mt-5">
             <Alert
-                message="TQC: Chúc các bạn thi toàn A+ :>>>"
+                message={
+                    <Fragment>
+                        TQC: Chúc bạn thi đạt kết quả cao, nếu câu hỏi nào sai hãy gửi góp ý{' '}
+                        <a
+                            href="#"
+                            onClick={(e) => {
+                                e.preventDefault()
+                                alert('🚧 Chức năng đang được phát triển, bạn quay lại sau nhé!')
+                                // route('/feedback') // KHÔNG gọi tới đây vì chưa sẵn sàng
+                            }}
+                            style={{
+                                textDecoration: 'underline',
+                                color: '#1677ff',
+                                cursor: 'not-allowed',
+                                pointerEvents: 'auto'
+                            }}
+                        >
+                            tại đây
+                        </a>
+                        {' '}để chúng mình cải thiện nhé!
+                    </Fragment>
+                }
                 type="success"
                 index="center"
             />
