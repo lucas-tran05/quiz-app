@@ -55,8 +55,6 @@ export default function Result() {
                             style={{
                                 textDecoration: 'underline',
                                 color: '#1677ff',
-                                cursor: 'not-allowed',
-                                pointerEvents: 'auto'
                             }}
                         >
                             tại đây
