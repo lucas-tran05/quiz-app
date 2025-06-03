@@ -42,7 +42,6 @@ export default function Quiz() {
             <h1 className="text-center mb-4">Cấu hình bài thi</h1>
             <p className="text-center mb-4">Hãy chọn các tùy chọn cho bài thi của bạn.</p>
             <form className="col-12 col-md-6 mx-auto">
-                <Alert message={<><strong>Trick!</strong> Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ <strong>Chọn theo khoảng</strong> và nhập số câu hỏi <strong>bắt đầu = 0</strong> và <strong>kết thúc = 1000</strong>.</>} />
                 {/* Chọn môn học */}
                 <div className="mb-3">
                     <label htmlFor="selectSubject" className="form-label">Môn học</label>
@@ -114,6 +113,9 @@ export default function Quiz() {
                             </label>
                         </div>
                     </div>
+                    <p style="color: red; font-style: italic; font-size: 0.7em; opacity: 0.7;">
+                        * Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ "Chọn theo khoảng" và nhập số câu hỏi bắt đầu = 0 và kết thúc = 1000.
+                    </p>
                 </div>
 
                 {/* Random mode: chọn số câu hỏi */}
