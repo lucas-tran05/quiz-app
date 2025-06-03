@@ -1,6 +1,7 @@
 export const subjects = [
     { value: "int1336", label: "Mạng máy tính" },
     { value: "mar1333_1", label: "Internet và Ứng dụng trong kinh doanh (Chương 1)" },
+    { value: "mar1333_2", label: "Internet và Ứng dụng trong kinh doanh (Chương 2)" },
     { value: "bas1122", label: "Tư tưởng Hồ Chí Minh"},
     { value: "bas1122_lms", label: "Tư tưởng Hồ Chí Minh (LMS)"},
     { value: "bas1122_2", label: "Tư tưởng Hồ Chí Minh (Chương 2)" },
