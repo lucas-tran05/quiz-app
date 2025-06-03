@@ -23,7 +23,7 @@ async function sendResultToSheet(result) {
         body: formData
     })
         .then(() => {
-            console.log('Kết quả bài thi được gửi thành công!');
+            // console.log('Kết quả bài thi được gửi thành công!');
             let results = JSON.parse(localStorage.getItem('result')) || [];
             results.push(result);
             localStorage.setItem('result', JSON.stringify(results));

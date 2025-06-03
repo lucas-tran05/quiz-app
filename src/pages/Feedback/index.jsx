@@ -33,7 +33,6 @@ export default function Feedback() {
         }
 
         const data = { email, name, subject, feedback }
-        console.log('Gửi feedback:', data)
 
         sendFeedbackToSheet(data)
 
