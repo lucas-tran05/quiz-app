@@ -112,6 +112,21 @@ export default function Quiz() {
                                 Chọn theo khoảng
                             </label>
                         </div>
+                        <div className="form-check form-check-inline">
+                            <input
+                                className="form-check-input"
+                                type="radio"
+                                name="questionMode"
+                                id="allMode"
+                                value="all"
+                                // checked={!randomMode}
+                                // onChange={() => setRandomMode(false)}
+                                disabled="true"
+                            />
+                            <label className="form-check-label" htmlFor="allMode">
+                                Toàn bộ câu hỏi
+                            </label>
+                        </div>
                     </div>
                     <p style="color: red; font-style: italic; font-size: 0.7em; opacity: 0.7;">
                         * Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ "Chọn theo khoảng" và nhập số câu hỏi bắt đầu = 0 và kết thúc = 1000.

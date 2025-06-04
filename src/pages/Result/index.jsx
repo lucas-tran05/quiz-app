@@ -41,16 +41,16 @@ export default function Result() {
     }
 
     const handleReportQuestion = (questionText, options) => {
-    const newReport = {
-        question: questionText,
-        options: options,
-        reportedAt: new Date().toISOString()
-    };
+        const newReport = {
+            question: questionText,
+            options: options,
+            reportedAt: new Date().toISOString()
+        };
 
-    // Ghi đè luôn
-    localStorage.setItem('feedback', JSON.stringify([newReport]));
-    route('/feedback');
-};
+        // Ghi đè luôn
+        localStorage.setItem('feedback', JSON.stringify([newReport]));
+        route('/feedback');
+    };
 
 
     return (
@@ -124,10 +124,10 @@ export default function Result() {
                         return (
                             <div
                                 key={index}
-                                className={`mb-3 p-3 rounded ${isCorrect ? 'bg-light border border-success' : 'bg-light border border-danger'}`}
+                                className={`question mb-3 p-3 rounded ${isCorrect ? 'bg-light border border-success' : 'bg-light border border-danger'}`}
                             >
-                                <div className="d-flex justify-content-between align-items-start">
-                                    <strong>{index + 1}. {q.question}</strong>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <strong style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>{index + 1}. {q.question}</strong>
                                     <button
                                         className="btn btn-outline-warning btn-sm ms-2"
                                         onClick={() => handleReportQuestion(q.question, {
@@ -144,12 +144,13 @@ export default function Result() {
                                 <div className="mt-2">
                                     {['a', 'b', 'c', 'd'].map((key) => (
                                         <div
+                                            style={{ display: 'flex', alignItems: 'start', gap: '8px', marginBottom: '1px' }}
                                             key={key}
                                             className={`p-1 rounded 
                                     ${q.ans === key ? 'bg-success text-white' : ''} 
                                     ${userAnswer === key && q.ans !== key ? 'bg-danger text-white' : ''}`}
                                         >
-                                            <strong>{key.toUpperCase()}.</strong> {q[key]}
+                                            <strong >{key.toUpperCase()}.</strong> {q[key]}
                                         </div>
                                     ))}
                                 </div>

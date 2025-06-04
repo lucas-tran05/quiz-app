@@ -185,7 +185,7 @@ export default function Exam() {
 
     const renderQuestion = (q, index) => (
         <>
-            <div key={index} id={`question-${index}`} class="mb-4">
+            <div key={index} id={`question-${index}`} className="mb-4 question" >
                 <div style={{ display: 'flex', alignItems: 'start', gap: '8px', marginBottom: '8px' }}>
                     <input
                         // style={{ marginTop: '4px' }}
@@ -261,7 +261,7 @@ export default function Exam() {
     const renderExamInfo = () => {
         const subjectName = subjects.find((s) => s.value === subject)?.label || 'Không xác định';
         return (
-            <div class="card mb-4">
+            <div class="card mb-4 question">
                 <div class="card-body">
                     <h5 class="card-title mb-3 fw-bold">Thông tin bài thi</h5>
                     <div class="row">
