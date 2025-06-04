@@ -18,12 +18,52 @@ export default function Feedback() {
                 if (parsed && typeof parsed === 'object') {
                     setEmail(parsed.email || '')
                     setName(parsed.name || '')
+
                 }
             } catch (err) {
                 console.error('localStorage bị gì á:', err)
             }
         }
+        const storedSubject = localStorage.getItem('quiz-result');
+        if (storedSubject) {
+            try {
+                const parsed = JSON.parse(storedSubject)
+                if (parsed && parsed.subject) {
+                    setSubject(parsed.subject)
+                }
+            } catch (err) {
+                console.error('localStorage bị gì á:', err)
+            }
+        }
+        const storedFeedback = localStorage.getItem('feedback');
+        if (storedFeedback) {
+            try {
+                const parsed = JSON.parse(storedFeedback);
+                if (Array.isArray(parsed)) {
+                    const formattedText = formatFeedbackToString(parsed);
+                    setFeedback(formattedText);
+                }
+            } catch (e) {
+                console.error('Lỗi parse feedback:', e);
+            }
+        }
     }, [])
+
+    const formatFeedbackToString = (feedbackArray) => {
+        return feedbackArray.map((item, index) => {
+            const q = item.question;
+            const opts = item.options;
+            return `Câu hỏi có vấn đề: 
+${index + 1}. ${q}
+A. ${opts.a}
+B. ${opts.b}
+C. ${opts.c}
+D. ${opts.d}
+
+Gợi ý sửa:  
+`;
+        })
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -48,6 +88,7 @@ export default function Feedback() {
                 <button
                     class="btn btn-outline-dark m-2"
                     onClick={() => {
+                        localStorage.removeItem('feedback');
                         localStorage.removeItem('quiz-result');
                         const user = localStorage.getItem('user');
                         if (user) {
@@ -120,18 +161,19 @@ export default function Feedback() {
                         class="form-control"
                         placeholder="Nội dung câu hỏi sai hoặc góp ý..."
                         id="feedbackTextarea"
-                        style={{ height: '150px' }}
+                        style={{ height: '180px' }}
                         value={feedback}
                         onInput={(e) => setFeedback(e.target.value)}
                         required
                     />
-                    <label for="feedbackTextarea">Câu hỏi sai và góp ý</label>
+                    <label for="feedbackTextarea" class="form-label">Câu hỏi sai và góp ý</label>
                 </div>
 
                 <div class="text-center">
                     <button
                         class="btn btn-outline-dark m-2"
                         onClick={() => {
+                            localStorage.removeItem('feedback');
                             localStorage.removeItem('quiz-result');
                             const user = localStorage.getItem('user');
                             if (user) {
