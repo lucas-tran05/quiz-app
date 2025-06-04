@@ -1,53 +1,69 @@
-import { route } from 'preact-router'
-import { useState, useEffect } from 'preact/hooks'
-import { subjects } from '../../config/subjects'
-import { sendFeedbackToSheet } from '../../utils/sendAPI'
+import { route } from 'preact-router';
+import { useState, useEffect } from 'preact/hooks';
+import {
+    Form,
+    Input,
+    Select,
+    Button,
+    Typography,
+    message,
+    Row,
+    Col,
+} from 'antd';
+import { subjects } from '../../config/subjects';
+import { sendFeedbackToSheet } from '../../utils/sendAPI';
+
+const { Title, Paragraph } = Typography;
+const { TextArea } = Input;
+const { Option } = Select;
 
 export default function Feedback() {
-    const [email, setEmail] = useState('')
-    const [name, setName] = useState('')
-    const [subject, setSubject] = useState('')
-    const [feedback, setFeedback] = useState('')
-    const [submitted, setSubmitted] = useState(false)
+    const [form] = Form.useForm();
+    const [submitted, setSubmitted] = useState(false);
 
     useEffect(() => {
-        const storedUser = localStorage.getItem('user')
+        const storedUser = localStorage.getItem('user');
         if (storedUser) {
             try {
-                const parsed = JSON.parse(storedUser)
+                const parsed = JSON.parse(storedUser);
                 if (parsed && typeof parsed === 'object') {
-                    setEmail(parsed.email || '')
-                    setName(parsed.name || '')
-
+                    form.setFieldsValue({
+                        email: parsed.email || '',
+                        name: parsed.name || '',
+                    });
                 }
             } catch (err) {
-                console.error('localStorage bị gì á:', err)
+                console.error('localStorage bị gì á:', err);
             }
         }
+
         const storedSubject = localStorage.getItem('quiz-result');
         if (storedSubject) {
             try {
-                const parsed = JSON.parse(storedSubject)
+                const parsed = JSON.parse(storedSubject);
                 if (parsed && parsed.subject) {
-                    setSubject(parsed.subject)
+                    form.setFieldsValue({
+                        subject: parsed.subject,
+                    });
                 }
             } catch (err) {
-                console.error('localStorage bị gì á:', err)
+                console.error('localStorage bị gì á:', err);
             }
         }
+
         const storedFeedback = localStorage.getItem('feedback');
         if (storedFeedback) {
             try {
                 const parsed = JSON.parse(storedFeedback);
                 if (Array.isArray(parsed)) {
                     const formattedText = formatFeedbackToString(parsed);
-                    setFeedback(formattedText);
+                    form.setFieldsValue({ feedback: formattedText });
                 }
             } catch (e) {
                 console.error('Lỗi parse feedback:', e);
             }
         }
-    }, [])
+    }, []);
 
     const formatFeedbackToString = (feedbackArray) => {
         return feedbackArray.map((item, index) => {
@@ -62,116 +78,29 @@ D. ${opts.d}
 
 Gợi ý sửa:  
 `;
-        })
-    }
+        }).join('\n');
+    };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    const handleSubmit = (values) => {
+        const { email, name, subject, feedback } = values;
+
         if (!email || !name || !subject || !feedback) {
-            alert('Vui lòng điền đầy đủ thông tin.')
-            return
+            message.error('Vui lòng điền đầy đủ thông tin.');
+            return;
         }
 
-        const data = { email, name, subject, feedback }
-
-        sendFeedbackToSheet(data)
-
-        setSubmitted(true)
-    }
-
+        sendFeedbackToSheet({ email, name, subject, feedback });
+        setSubmitted(true);
+    };
 
     if (submitted) {
         return (
-            <div class="container mt-5 text-center">
-                <h2>Cảm ơn bạn đã gửi phản hồi</h2>
-                <p class="mb-4">Chúng tôi sẽ xem xét và cải thiện ngay!</p>
-                <button
-                    class="btn btn-outline-dark m-2"
-                    onClick={() => {
-                        localStorage.removeItem('feedback');
-                        localStorage.removeItem('quiz-result');
-                        const user = localStorage.getItem('user');
-                        if (user) {
-                            route(`/config`);
-                        } else {
-                            route('/');
-                        }
-                    }}
-                >
-                    Trang chủ
-                </button>
-                <button class="btn btn-success m-2" onClick={() => setSubmitted(false)}>Gửi tiếp</button>
-                <button class="btn btn-outline-dark m-2" onClick={() => route('/result')}>Trang kết quả</button>
-            </div>
-        )
-    }
-
-    return (
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Góp ý câu hỏi sai</h2>
-            <p class="text-center mb-4">Nếu bạn phát hiện câu hỏi chưa chính xác, đừng ngần ngại giúp tụi mình cải thiện nha!</p>
-
-            <form class="mb-4 col-12 col-md-6 mx-auto" onSubmit={handleSubmit}>
-                <div class="form-floating mb-3">
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="inputEmail"
-                        placeholder="name@example.com"
-                        value={email}
-                        onInput={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                    <label for="inputEmail">Email</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="inputName"
-                        placeholder="Tran Van A"
-                        value={name}
-                        onInput={(e) => setName(e.target.value)}
-                        required
-                    />
-                    <label for="inputName">Họ và tên</label>
-                </div>
-
-                <div className="mb-3">
-                    <label htmlFor="selectSubject" className="form-label">Môn học</label>
-                    <select
-                        id="selectSubject"
-                        className="form-select"
-                        value={subject}
-                        onChange={(e) => setSubject(e.target.value)}
-                        required
-                    >
-                        <option value="">-- Chọn môn học --</option>
-                        {subjects.map(({ value, label, disabled }) => (
-                            <option key={value} value={value} disabled={disabled}>
-                                {label}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-
-                <div class="form-floating mb-4">
-                    <textarea
-                        class="form-control"
-                        placeholder="Nội dung câu hỏi sai hoặc góp ý..."
-                        id="feedbackTextarea"
-                        style={{ height: '180px' }}
-                        value={feedback}
-                        onInput={(e) => setFeedback(e.target.value)}
-                        required
-                    />
-                    <label for="feedbackTextarea" class="form-label">Câu hỏi sai và góp ý</label>
-                </div>
-
-                <div class="text-center">
-                    <button
-                        class="btn btn-outline-dark m-2"
+            <div style={{ maxWidth: 600, margin: '50px auto', textAlign: 'center' }}>
+                <Title level={3}>Cảm ơn bạn đã gửi phản hồi</Title>
+                <Paragraph>Chúng tôi sẽ xem xét và cải thiện ngay!</Paragraph>
+                <div>
+                    <Button
+                        type="default"
                         onClick={() => {
                             localStorage.removeItem('feedback');
                             localStorage.removeItem('quiz-result');
@@ -182,13 +111,117 @@ Gợi ý sửa:
                                 route('/');
                             }
                         }}
+                        style={{ margin: '0 8px' }}
                     >
                         Trang chủ
-                    </button>
-                    <button type="submit" class="btn btn-success m-2">Gửi góp ý</button>
-                    <button type="button" class="btn btn-outline-dark m-2" onClick={() => route('/result')}>Trang kết quả</button>
+                    </Button>
+                    <Button type="primary" onClick={() => setSubmitted(false)} style={{ margin: '0 8px' }}>
+                        Gửi tiếp
+                    </Button>
+                    <Button onClick={() => route('/result')} style={{ margin: '0 8px' }}>
+                        Trang kết quả
+                    </Button>
                 </div>
-            </form>
+            </div>
+        );
+    }
+
+    return (
+        <div style={{ maxWidth: 600, margin: '50px auto', padding: 20 }}>
+            <Typography style={{ textAlign: 'center' }}>
+                <Title level={2}>Góp ý câu hỏi sai</Title>
+                <Paragraph>Đừng ngại góp ý! Tụi mình trân trọng mọi đóng góp từ bạn</Paragraph>
+            </Typography>
+
+            <Form
+                form={form}
+                layout="vertical"
+                onFinish={handleSubmit}
+                autoComplete="off"
+            >
+                <Form.Item
+                    label="Email"
+                    name="email"
+                    rules={[{ required: true, message: 'Vui lòng nhập email!' }]}
+                >
+                    <Input placeholder="name@example.com" size="large" />
+                </Form.Item>
+
+                <Form.Item
+                    label="Họ và tên"
+                    name="name"
+                    rules={[{ required: true, message: 'Vui lòng nhập họ tên!' }]}
+                >
+                    <Input placeholder="Trần Văn A" size="large" />
+                </Form.Item>
+
+                <Form.Item
+                    label="Môn học"
+                    name="subject"
+                    rules={[{ required: true, message: 'Vui lòng chọn môn học!' }]}
+                >
+                    <Select placeholder="-- Chọn môn học --" size="large">
+                        {subjects.map(({ value, label, disabled }) => (
+                            <Option key={value} value={value} disabled={disabled}>
+                                {label}
+                            </Option>
+                        ))}
+                    </Select>
+                </Form.Item>
+
+                <Form.Item
+                    label="Câu hỏi sai và góp ý"
+                    name="feedback"
+                    rules={[{ required: true, message: 'Vui lòng nhập nội dung góp ý!' }]}
+                >
+                    <TextArea
+                        placeholder="Nội dung câu hỏi sai hoặc góp ý..."
+                        rows={5}
+                        size="large"
+                    />
+                </Form.Item>
+
+                <Form.Item>
+                    <Form.Item>
+                        <Row
+                            gutter={[12, 12]} // khoảng cách giữa các nút
+                            justify="center"
+                            style={{ textAlign: 'center' }}
+                        >
+                            <Col xs={24} sm={5} md="auto">
+                                <Button
+                                    block
+                                    type="default"
+                                    onClick={() => {
+                                        localStorage.removeItem('feedback');
+                                        localStorage.removeItem('quiz-result');
+                                        const user = localStorage.getItem('user');
+                                        if (user) {
+                                            route(`/config`);
+                                        } else {
+                                            route('/');
+                                        }
+                                    }}
+                                >
+                                    Trang chủ
+                                </Button>
+                            </Col>
+                            <Col xs={24} sm={5} md="auto">
+                                <Button block type="primary" htmlType="submit">
+                                    Gửi góp ý
+                                </Button>
+                            </Col>
+                            <Col xs={24} sm={5} md="auto">
+                                <Button block onClick={() => route('/result')}>
+                                    Trang kết quả
+                                </Button>
+                            </Col>
+                        </Row>
+                    </Form.Item>
+
+                </Form.Item>
+
+            </Form>
         </div>
-    )
+    );
 }

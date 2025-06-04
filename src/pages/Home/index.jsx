@@ -1,31 +1,30 @@
 import { route } from 'preact-router'
-import { useState, useEffect } from 'preact/hooks'
+import { useEffect } from 'preact/hooks'
+import { Form, Input, Button, Select, Typography, message } from 'antd'
+
+const { Title, Paragraph } = Typography
+const { Option } = Select
 
 export default function Home() {
-    const [email, setEmail] = useState('')
-    const [name, setName] = useState('')
-    const [major, setMajor] = useState('')
+    const [form] = Form.useForm()
 
-    // Lấy dữ liệu từ localStorage nếu đã có
     useEffect(() => {
         const storedUser = localStorage.getItem('user')
         if (storedUser) {
             try {
-                const { email, name, major } = JSON.parse(storedUser)
-                setEmail(email || '')
-                setName(name || '')
-                setMajor(major || '')
+                const user = JSON.parse(storedUser)
+                form.setFieldsValue(user)
             } catch (err) {
                 console.error('Lỗi khi đọc localStorage:', err)
             }
         }
-    }, [])
+    }, [form])
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    const handleSubmit = (values) => {
+        const { email, name, major } = values
 
         if (!email || !name || !major) {
-            alert('Vui lòng điền đầy đủ thông tin.')
+            message.warning('Vui lòng điền đầy đủ thông tin.')
             return
         }
 
@@ -34,65 +33,59 @@ export default function Home() {
     }
 
     return (
-        <div class="container mt-5">
-            <h1 class="text-center mb-4">Chào mừng đến với trang thi!</h1>
-            <p class="text-center mb-4">Hãy chuẩn bị cho bài kiểm tra của bạn.</p>
+        <div style={{ maxWidth: 500, margin: '50px auto', padding: 20 }}>
+            <Typography style={{ textAlign: 'center' }}>
+                <Title level={2}>Chào mừng đến với trang thi!</Title>
+                <Paragraph>Hãy chuẩn bị cho bài kiểm tra của bạn.</Paragraph>
+            </Typography>
 
-            <form class="mb-4 col-12 col-md-6 mx-auto" onSubmit={handleSubmit}>
-                <div class="form-floating mb-3">
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="inputEmail"
-                        placeholder="name@example.com"
-                        value={email}
-                        onInput={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                    <label for="inputEmail">Email</label>
-                </div>
+            <Form
+                form={form}
+                layout="vertical"
+                onFinish={handleSubmit}
+            >
+                <Form.Item
+                    label="Email"
+                    name="email"
+                    rules={[
+                        { required: true, message: 'Hãy nhập email!' },
+                        { type: 'email', message: 'Email không hợp lệ!' },
+                    ]}
+                >
+                    <Input placeholder="name@example.com" size="large" />
+                </Form.Item>
 
-                <div class="form-floating mb-3">
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="inputName"
-                        placeholder="Tran Van A"
-                        value={name}
-                        onInput={(e) => setName(e.target.value)}
-                        required
-                    />
-                    <label for="inputName">Họ và tên</label>
-                </div>
+                <Form.Item
+                    label="Họ và tên"
+                    name="name"
+                    rules={[{ required: true, message: 'Hãy nhập họ tên!' },
+                    { pattern: /^[\p{L} ]+$/u, message: 'Họ tên chỉ chứa chữ cái và khoảng trắng!' }
+                    ]}
 
-                <div class="mb-3">
-                    <label for="majorSelect" class="form-label m-2">Ngành học</label>
-                    <select
-                        id="majorSelect"
-                        class="form-select"
-                        value={major}
-                        onChange={(e) => setMajor(e.target.value)}
-                        required
-                    >
-                        <option value="" disabled>-- Chọn ngành học --</option>
-                        <option value="Kĩ thuật">Kĩ thuật</option>
-                        <option value="Kinh tế">Kinh tế</option>
-                        <option value="Đa phương tiện">Đa phương tiện</option>
-                        <option value="Báo chí">Báo chí</option>
-                    </select>
-                </div>
+                >
+                    <Input placeholder="Nguyễn Văn A" size='large' />
+                </Form.Item>
 
-                <div class="text-center mb-4">
-                    <button
-                        type="submit"
-                        class="btn btn-success"
-                        disabled={!email || !name || !major}
-                    >
+                <Form.Item
+
+                    label="Ngành học"
+                    name="major"
+                    rules={[{ required: true, message: 'Hãy chọn ngành học!' }]}
+                >
+                    <Select placeholder="-- Chọn ngành học --" size='large'>
+                        <Option value="Kĩ thuật">Kĩ thuật</Option>
+                        <Option value="Kinh tế">Kinh tế</Option>
+                        <Option value="Đa phương tiện">Đa phương tiện</Option>
+                        <Option value="Báo chí">Báo chí</Option>
+                    </Select>
+                </Form.Item>
+
+                <Form.Item style={{ textAlign: 'center' }}>
+                    <Button type="primary" htmlType="submit">
                         Bắt đầu
-                    </button>
-                </div>
-
-            </form>
+                    </Button>
+                </Form.Item>
+            </Form>
         </div>
     )
 }

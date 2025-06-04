@@ -1,214 +1,195 @@
-import { h } from 'preact'
-import { useState } from 'preact/hooks'
-import { route } from 'preact-router'
-import { subjects } from '../../config/subjects'
-import { timeOptions } from '../../config/time'
-import { questionCountOptions } from '../../config/question'
-import Alert from '../../components/alert'
+import { h } from 'preact';
+import { useEffect } from 'preact/hooks';
+import { route } from 'preact-router';
+import {
+    Form,
+    Select,
+    InputNumber,
+    Radio,
+    Button,
+    Typography,
+    message,
+    Row,
+    Col,
+} from 'antd';
+import { subjects } from '../../config/subjects';
+import { timeOptions } from '../../config/time';
+import { questionCountOptions } from '../../config/question';
+
+const { Title, Paragraph } = Typography;
+const { Option } = Select;
 
 export default function Quiz() {
-    const defaultTime = timeOptions.find(opt => opt.isdefault)?.value || ''
-    const [subject, setSubject] = useState('')
-    const [time, setTime] = useState(defaultTime)
-    const [questionCount, setQuestionCount] = useState('')
-    const [randomMode, setRandomMode] = useState(true)
-    const [rangeStart, setRangeStart] = useState('')
-    const [rangeEnd, setRangeEnd] = useState('')
+    const [form] = Form.useForm();
 
-    const handleStart = () => {
-        localStorage.setItem(
-            'quiz-config',
-            JSON.stringify({
-                subject,
-                time,
-                questionCount: randomMode ? questionCount : null,
-                randomMode,
-                rangeStart: randomMode ? null : Number(rangeStart - 1),
-                rangeEnd: randomMode ? null : Number(rangeEnd - 1),
-                startTime: Date.now()
-            })
-        )
-        route('/exam')
-    }
+    useEffect(() => {
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (!user) {
+            route('/');
+        }
+    }, []);
 
-    const user = JSON.parse(localStorage.getItem('user'))
-    if (!user) {
-        route('/')
-        return null
-    }
+    const handleFinish = (values) => {
+        const {
+            subject,
+            time,
+            questionMode,
+            questionCount,
+            rangeStart,
+            rangeEnd,
+        } = values;
+
+        if (questionMode === 'range' && rangeStart > rangeEnd) {
+            message.error('Câu hỏi bắt đầu phải nhỏ hơn hoặc bằng câu hỏi kết thúc.');
+            return;
+        }
+
+        const config = {
+            subject,
+            time,
+            randomMode: questionMode === 'random',
+            questionCount: questionMode === 'random' ? questionCount : null,
+            rangeStart: questionMode === 'range' ? rangeStart - 1 : null,
+            rangeEnd: questionMode === 'range' ? rangeEnd - 1 : null,
+            startTime: Date.now(),
+        };
+
+        localStorage.setItem('quiz-config', JSON.stringify(config));
+        route('/exam');
+    };
 
     return (
-        <div className="container mt-5">
-            <h1 className="text-center mb-4">Cấu hình bài thi</h1>
-            <p className="text-center mb-4">Hãy chọn các tùy chọn cho bài thi của bạn.</p>
-            <form className="col-12 col-md-6 mx-auto">
+        <div style={{ maxWidth: 600, margin: '50px auto', padding: 20 }}>
+            <Typography style={{ textAlign: 'center' }}>
+                <Title level={2}>Cấu hình bài thi</Title>
+                <Paragraph>Hãy chọn các tùy chọn cho bài thi của bạn.</Paragraph>
+            </Typography>
+
+            <Form
+                form={form}
+                layout="vertical"
+                onFinish={handleFinish}
+                initialValues={{
+                    time: timeOptions.find((opt) => opt.isdefault)?.value || '',
+                    questionMode: 'random',
+                }}
+            >
                 {/* Chọn môn học */}
-                <div className="mb-3">
-                    <label htmlFor="selectSubject" className="form-label">Môn học</label>
-                    <select
-                        id="selectSubject"
-                        className="form-select"
-                        value={subject}
-                        onChange={(e) => setSubject(e.target.value)}
-                        required
+                <Form.Item
+                    label="Môn học"
+                    name="subject"
+                    rules={[{ required: true, message: 'Vui lòng chọn môn học!' }]}
+                >
+                    <Select
+                        showSearch
+                        placeholder="-- Chọn môn học --"
+                        optionFilterProp="children"
+                        filterOption={(input, option) =>
+                            option?.children.toLowerCase().includes(input.toLowerCase())
+                        }
+                        size="large"
                     >
-                        <option value="">-- Chọn môn học --</option>
                         {subjects.map(({ value, label, disabled }) => (
-                            <option key={value} value={value} disabled={disabled}>
+                            <Option key={value} value={value} disabled={disabled}>
                                 {label}
-                            </option>
+                            </Option>
                         ))}
-                    </select>
-                </div>
+                    </Select>
+
+                </Form.Item>
 
                 {/* Chọn thời gian */}
-                <div className="mb-3">
-                    <label htmlFor="selectTime" className="form-label">Thời gian làm bài</label>
-                    <select
-                        id="selectTime"
-                        className="form-select"
-                        value={time}
-                        onChange={(e) => setTime(e.target.value)}
-                        required
-                    >
-                        <option value="">-- Chọn thời gian --</option>
+                <Form.Item
+                    label="Thời gian làm bài"
+                    name="time"
+                    rules={[{ required: true, message: 'Vui lòng chọn thời gian!' }]}
+                >
+                    <Select placeholder="-- Chọn thời gian --" size='large'>
                         {timeOptions.map(({ value, label }) => (
-                            <option key={value} value={value}>
+                            <Option key={value} value={value}>
                                 {label}
-                            </option>
+                            </Option>
                         ))}
-                    </select>
-                </div>
+                    </Select>
+                </Form.Item>
 
                 {/* Chế độ chọn câu hỏi */}
-                <div className="mb-3">
-                    <label className="form-label">Chế độ chọn câu hỏi</label>
-                    <div className="d-flex flex-wrap gap-1">
-                        <div className="form-check form-check-inline d-flex align-items-center gap-2">
-                            <input
-                                className="form-check-input"
-                                type="radio"
-                                name="questionMode"
-                                id="randomMode"
-                                value="random"
-                                checked={randomMode}
-                                onChange={() => setRandomMode(true)}
-                            />
-                            <label className="form-check-label" htmlFor="randomMode">
-                                Random
-                            </label>
-                        </div>
-                        <div className="form-check form-check-inline d-flex align-items-center gap-2">
-                            <input
-                                className="form-check-input"
-                                type="radio"
-                                name="questionMode"
-                                id="rangeMode"
-                                value="range"
-                                checked={!randomMode}
-                                onChange={() => setRandomMode(false)}
-                            />
-                            <label className="form-check-label" htmlFor="rangeMode">
-                                Chọn theo khoảng
-                            </label>
-                        </div>
-                        <div className="form-check form-check-inline d-flex align-items-center gap-2">
-                            <input
-                                className="form-check-input"
-                                type="radio"
-                                name="questionMode"
-                                id="allMode"
-                                value="all"
-                                // checked={!randomMode}
-                                // onChange={() => setRandomMode(false)}
-                                disabled="true"
-                            />
-                            <label className="form-check-label" htmlFor="allMode">
-                                Toàn bộ câu hỏi
-                            </label>
-                        </div>
-                    </div>
-                    <p style="color: red; font-style: italic; font-size: 0.7em; opacity: 0.7;">
-                        * Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ "Chọn theo khoảng" và nhập số câu hỏi bắt đầu = 0 và kết thúc = 1000.
-                    </p>
-                </div>
+                <Form.Item label="Chế độ chọn câu hỏi" name="questionMode">
+                    <Radio.Group>
+                        <Radio value="random">Random</Radio>
+                        <Radio value="range">Chọn theo khoảng</Radio>
+                        <Radio value="all" disabled>
+                            Toàn bộ câu hỏi
+                        </Radio>
+                    </Radio.Group>
+                </Form.Item>
 
-                {/* Random mode: chọn số câu hỏi */}
-                {randomMode && (
-                    <div className="mb-3">
-                        <label htmlFor="selectQuestionCount" className="form-label">Số câu hỏi</label>
-                        <select
-                            id="selectQuestionCount"
-                            className="form-select"
-                            value={questionCount}
-                            onChange={(e) => setQuestionCount(e.target.value)}
-                            required
-                        >
-                            <option value="">-- Chọn số câu hỏi --</option>
-                            {questionCountOptions.map(({ value, label }) => (
-                                <option key={value} value={value}>
-                                    {label}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                )}
+                <Typography.Paragraph style={{ margin: 0, color: '#888', fontSize: '0.9em' }}>
+                    Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ "Chọn theo khoảng" và nhập số câu hỏi bắt đầu = 0 và kết thúc = 1000.
+                </Typography.Paragraph>
 
-                {/* Range mode: chọn khoảng câu hỏi */}
-                {!randomMode && (
-                    <div className="row mb-3">
-                        <div className="mb-3 col-6">
-                            <label htmlFor="rangeStart" className="form-label">Câu hỏi bắt đầu từ</label>
-                            <input
-                                type="number"
-                                id="rangeStart"
-                                className="form-control"
-                                value={rangeStart}
-                                onChange={(e) => setRangeStart(e.target.value)}
-                                min="1"
-                                required
-                            />
-                        </div>
-                        <div className="mb-3 col-6">
-                            <label htmlFor="rangeEnd" className="form-label">Câu hỏi kết thúc tại</label>
-                            <input
-                                type="number"
-                                id="rangeEnd"
-                                className="form-control"
-                                value={rangeEnd}
-                                onChange={(e) => setRangeEnd(e.target.value)}
-                                min="1"
-                                required
-                            />
-                        </div>
-                    </div>
-                )}
+                <Form.Item noStyle shouldUpdate={(prev, curr) => prev.questionMode !== curr.questionMode}>
+                    {({ getFieldValue }) => {
+                        const mode = getFieldValue('questionMode');
+                        if (mode === 'random') {
+                            return (
+                                <Form.Item
+                                    label="Số câu hỏi"
+                                    name="questionCount"
+                                    rules={[{ required: true, message: 'Vui lòng chọn số câu hỏi!' }]}
+                                >
+                                    <Select placeholder="-- Chọn số câu hỏi --" size='large'>
+                                        {questionCountOptions.map(({ value, label }) => (
+                                            <Option key={value} value={value}>
+                                                {label}
+                                            </Option>
+                                        ))}
+                                    </Select>
+                                </Form.Item>
+                            );
+                        } else if (mode === 'range') {
+                            return (
+                                <Row gutter={16}>
+                                    <Col span={12}>
+                                        <Form.Item
+                                            label="Câu hỏi bắt đầu từ"
+                                            name="rangeStart"
+                                            rules={[{ required: true, message: 'Vui lòng nhập câu hỏi bắt đầu!' },
+                                            { type: 'number', min: 1, message: 'Câu hỏi bắt đầu phải lớn hơn hoặc bằng 1!' }
+                                            ]}
+                                        >
+                                            <InputNumber min={1} style={{ width: '100%' }} size="large" />
+                                        </Form.Item>
+                                    </Col>
+                                    <Col span={12}>
+                                        <Form.Item
+                                            label="Câu hỏi kết thúc tại"
+                                            name="rangeEnd"
+                                            rules={[{ required: true, message: 'Vui lòng nhập câu hỏi kết thúc!' },
+                                            { type: 'number', min: 1, message: 'Câu hỏi kết thúc phải lớn hơn hoặc bằng 1!' }
+                                            ]}
+                                        >
+                                            <InputNumber min={1} style={{ width: '100%' }} size="large" />
+                                        </Form.Item>
+                                    </Col>
+                                </Row>
+
+                            );
+                        }
+                        return null;
+                    }}
+                </Form.Item>
 
                 {/* Nút hành động */}
-                <div className="text-center mb-3 d-flex justify-content-center gap-2">
-                    <button
-                        type="button"
-                        className="btn btn-outline-success"
-                        style={{ width: '100px' }}
-                        onClick={() => route('/')}
-                    >
+                <Form.Item style={{ textAlign: 'center' }}>
+                    <Button type="default" onClick={() => route('/')} style={{ marginRight: 8 }}>
                         Home
-                    </button>
-                    <button
-                        type="button"
-                        className="btn btn-success"
-                        onClick={handleStart}
-                        disabled={
-                            !subject ||
-                            !time ||
-                            (randomMode && !questionCount) ||
-                            (!randomMode && (!rangeStart || !rangeEnd || Number(rangeStart) > Number(rangeEnd)))
-                        }
-                    >
+                    </Button>
+                    <Button type="primary" htmlType="submit">
                         Bắt đầu thi
-                    </button>
-                </div>
-            </form>
+                    </Button>
+                </Form.Item>
+            </Form>
         </div>
-    )
+    );
 }
