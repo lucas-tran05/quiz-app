@@ -83,8 +83,8 @@ export default function Quiz() {
                 {/* Chế độ chọn câu hỏi */}
                 <div className="mb-3">
                     <label className="form-label">Chế độ chọn câu hỏi</label>
-                    <div>
-                        <div className="form-check form-check-inline">
+                    <div className="d-flex flex-wrap gap-1">
+                        <div className="form-check form-check-inline d-flex align-items-center gap-2">
                             <input
                                 className="form-check-input"
                                 type="radio"
@@ -98,7 +98,7 @@ export default function Quiz() {
                                 Random
                             </label>
                         </div>
-                        <div className="form-check form-check-inline">
+                        <div className="form-check form-check-inline d-flex align-items-center gap-2">
                             <input
                                 className="form-check-input"
                                 type="radio"
@@ -112,7 +112,7 @@ export default function Quiz() {
                                 Chọn theo khoảng
                             </label>
                         </div>
-                        <div className="form-check form-check-inline">
+                        <div className="form-check form-check-inline d-flex align-items-center gap-2">
                             <input
                                 className="form-check-input"
                                 type="radio"
