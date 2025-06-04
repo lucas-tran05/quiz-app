@@ -29,20 +29,6 @@ export default function Exam() {
     const timerRef = useRef(null);
 
     useEffect(() => {
-        const handleVisibilityChange = () => {
-            if (document.visibilityState === 'hidden') {
-                console.warn("Người dùng đã rời khỏi tab");
-                // có thể tăng biến đếm, cảnh báo, hoặc auto-submit...
-            }
-        };
-        document.addEventListener('visibilitychange', handleVisibilityChange);
-        return () => {
-            document.removeEventListener('visibilitychange', handleVisibilityChange);
-        };
-    }, []);
-
-
-    useEffect(() => {
         isMounted.current = true;
         initExam();
 
@@ -125,19 +111,15 @@ export default function Exam() {
     const startExamTimer = () => {
         if (timeSet === 9999) return;
 
-        const startTime = Date.now();
-        const totalDuration = timeSet * 60 * 1000; // milliseconds
-
         timerRef.current = setInterval(() => {
-            const elapsed = Date.now() - startTime;
-            const remaining = Math.max(0, Math.floor((totalDuration - elapsed) / 1000)); // in seconds
-
-            setTimeLeft(remaining);
-
-            if (remaining <= 0) {
-                clearInterval(timerRef.current);
-                setShowTimeUpModal(true);
-            }
+            setTimeLeft((prevTime) => {
+                if (prevTime <= 1) {
+                    clearInterval(timerRef.current);
+                    setShowTimeUpModal(true);
+                    return 0;
+                }
+                return prevTime - 1;
+            });
         }, 1000);
     };
 

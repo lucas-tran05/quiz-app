@@ -155,7 +155,7 @@ export default function Quiz() {
                                             label="Câu hỏi bắt đầu từ"
                                             name="rangeStart"
                                             rules={[{ required: true, message: 'Vui lòng nhập câu hỏi bắt đầu!' },
-                                            { type: 'number', min: 1, message: 'Câu hỏi bắt đầu phải lớn hơn hoặc bằng 1!' }
+                                            { type: 'number', min: 1, message: 'Tối thiểu 1' }
                                             ]}
                                         >
                                             <InputNumber min={1} style={{ width: '100%' }} size="large" />
@@ -166,7 +166,7 @@ export default function Quiz() {
                                             label="Câu hỏi kết thúc tại"
                                             name="rangeEnd"
                                             rules={[{ required: true, message: 'Vui lòng nhập câu hỏi kết thúc!' },
-                                            { type: 'number', min: 1, message: 'Câu hỏi kết thúc phải lớn hơn hoặc bằng 1!' }
+                                            { type: 'number', max: 1000, message: 'Tối đa 1000' }
                                             ]}
                                         >
                                             <InputNumber min={1} style={{ width: '100%' }} size="large" />
