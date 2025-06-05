@@ -9,9 +9,13 @@ import {
     message,
     Row,
     Col,
+    Modal,
+    Space,
 } from 'antd';
 import { subjects } from '../../config/subjects';
 import { sendFeedbackToSheet } from '../../utils/sendAPI';
+import { CheckCircleOutlined } from '@ant-design/icons';
+
 
 const { Title, Paragraph } = Typography;
 const { TextArea } = Input;
@@ -19,7 +23,7 @@ const { Option } = Select;
 
 export default function Feedback() {
     const [form] = Form.useForm();
-    const [submitted, setSubmitted] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false);
 
     useEffect(() => {
         const storedUser = localStorage.getItem('user');
@@ -90,41 +94,14 @@ Gợi ý sửa:
         }
 
         sendFeedbackToSheet({ email, name, subject, feedback });
-        setSubmitted(true);
+        setModalVisible(true);
     };
 
-    if (submitted) {
-        return (
-            <div style={{ maxWidth: 600, margin: '50px auto', textAlign: 'center' }}>
-                <Title level={3}>Cảm ơn bạn đã gửi phản hồi</Title>
-                <Paragraph>Chúng tôi sẽ xem xét và cải thiện ngay!</Paragraph>
-                <div>
-                    <Button
-                        type="default"
-                        onClick={() => {
-                            localStorage.removeItem('feedback');
-                            localStorage.removeItem('quiz-result');
-                            const user = localStorage.getItem('user');
-                            if (user) {
-                                route(`/config`);
-                            } else {
-                                route('/');
-                            }
-                        }}
-                        style={{ margin: '0 8px' }}
-                    >
-                        Trang chủ
-                    </Button>
-                    <Button type="primary" onClick={() => setSubmitted(false)} style={{ margin: '0 8px' }}>
-                        Gửi tiếp
-                    </Button>
-                    <Button onClick={() => route('/result')} style={{ margin: '0 8px' }}>
-                        Trang kết quả
-                    </Button>
-                </div>
-            </div>
-        );
-    }
+    const handleResetAndRoute = (path) => {
+        localStorage.removeItem('feedback');
+        setModalVisible(false);
+        route(path);
+    };
 
     return (
         <div style={{ maxWidth: 600, margin: '50px auto', padding: 20 }}>
@@ -182,46 +159,88 @@ Gợi ý sửa:
                 </Form.Item>
 
                 <Form.Item>
-                    <Form.Item>
-                        <Row
-                            gutter={[12, 12]} // khoảng cách giữa các nút
-                            justify="center"
-                            style={{ textAlign: 'center' }}
-                        >
-                            <Col xs={24} sm={5} md="auto">
-                                <Button
-                                    block
-                                    type="default"
-                                    onClick={() => {
-                                        localStorage.removeItem('feedback');
-                                        localStorage.removeItem('quiz-result');
-                                        const user = localStorage.getItem('user');
-                                        if (user) {
-                                            route(`/config`);
-                                        } else {
-                                            route('/');
-                                        }
-                                    }}
-                                >
-                                    Trang chủ
-                                </Button>
-                            </Col>
-                            <Col xs={24} sm={5} md="auto">
-                                <Button block type="primary" htmlType="submit">
-                                    Gửi góp ý
-                                </Button>
-                            </Col>
-                            <Col xs={24} sm={5} md="auto">
-                                <Button block onClick={() => route('/result')}>
-                                    Trang kết quả
-                                </Button>
-                            </Col>
-                        </Row>
-                    </Form.Item>
-
+                    <Row gutter={[12, 12]} justify="center">
+                        <Col xs={24} sm={5} md="auto">
+                            <Button
+                                block
+                                type="default"
+                                onClick={() => {
+                                    localStorage.removeItem('feedback');
+                                    localStorage.removeItem('quiz-result');
+                                    const user = localStorage.getItem('user');
+                                    if (user) {
+                                        route(`/config`);
+                                    } else {
+                                        route('/');
+                                    }
+                                }}
+                            >
+                                Trang chủ
+                            </Button>
+                        </Col>
+                        <Col xs={24} sm={5} md="auto">
+                            <Button block type="primary" htmlType="submit">
+                                Gửi góp ý
+                            </Button>
+                        </Col>
+                        <Col xs={24} sm={5} md="auto">
+                            <Button block onClick={() => route('/result')}>
+                                Trang kết quả
+                            </Button>
+                        </Col>
+                    </Row>
                 </Form.Item>
-
             </Form>
+
+            <Modal
+                visible={modalVisible}
+                centered
+                closable={false}
+
+                title={
+                    <span>
+                        <CheckCircleOutlined style={{ color: '#52c41a', marginRight: 8 }} />
+                        Cảm ơn bạn đã gửi phản hồi
+                    </span>
+                }
+                onCancel={() => setModalVisible(false)}
+                footer={
+                    <Space style={{ justifyContent: 'center', width: '100%' }}>
+                        <Button
+                            onClick={() => {
+                                const user = localStorage.getItem('user');
+                                const path = user ? '/config' : '/';
+                                localStorage.removeItem('quiz-result');
+                                localStorage.removeItem('feedback');
+                                handleResetAndRoute(path);
+                            }}
+                        >
+                            Trang chủ
+                        </Button>
+                        <Button
+                            type="primary"
+                            onClick={() => {
+                                
+                                localStorage.removeItem('feedback');
+                                setModalVisible(false);
+                            }}
+                        >
+                            Gửi tiếp
+                        </Button>
+                        <Button onClick={() => handleResetAndRoute('/result')}>
+                            Trang kết quả
+                        </Button>
+                    </Space>
+                }
+            >
+            <Paragraph>
+                Cảm ơn bạn đã dành thời gian để gửi góp ý. Chúng tôi sẽ xem xét và cải thiện ngay!
+            </Paragraph>
+            <Paragraph>
+                Nếu bạn có thêm câu hỏi nào khác, đừng ngần ngại gửi tiếp nhé!
+            </Paragraph>
+            </Modal>
+
         </div>
     );
 }
