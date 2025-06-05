@@ -9,28 +9,48 @@ export default function Home() {
     const [form] = Form.useForm()
 
     useEffect(() => {
-        const storedUser = localStorage.getItem('user')
+        const now = new Date();
+
+        const storedUser = localStorage.getItem('user');
         if (storedUser) {
             try {
-                const user = JSON.parse(storedUser)
-                form.setFieldsValue(user)
+                const parsed = JSON.parse(storedUser);
+
+                if (now.getTime() > parsed.expiry) {
+                    localStorage.removeItem('user');
+                    console.log('User data đã hết hạn và bị xóa');
+                    return;
+                }
+
+                form.setFieldsValue(parsed.value);
             } catch (err) {
-                console.error('Lỗi khi đọc localStorage:', err)
+                console.error('Lỗi khi đọc localStorage:', err);
             }
         }
-    }, [form])
+    }, [form]);
+
 
     const handleSubmit = (values) => {
-        const { email, name, major } = values
+        const { email, name, major } = values;
 
         if (!email || !name || !major) {
-            message.warning('Vui lòng điền đầy đủ thông tin.')
-            return
+            message.warning('Vui lòng điền đầy đủ thông tin.');
+            return;
         }
 
-        localStorage.setItem('user', JSON.stringify({ email, name, major }))
-        route('/config')
-    }
+        const ttl = 24 * 60 * 60 * 1000; 
+
+        const now = new Date();
+
+        const userWithExpiry = {
+            value: { email, name, major },
+            expiry: now.getTime() + ttl,
+        };
+
+        localStorage.setItem('user', JSON.stringify(userWithExpiry));
+        route('/config');
+    };
+
 
     return (
         <div style={{ maxWidth: 500, margin: '50px auto', padding: 20 }}>
