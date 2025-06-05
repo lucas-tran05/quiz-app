@@ -8,6 +8,9 @@ import { selectQuestionsInRange } from '../../utils/selectQuestionsInRange';
 import { saveAndSendResult } from '../../utils/saveResult';
 import { calculateScore } from '../../utils/calculateScore';
 import { subjects } from '../../config/subjects';
+import { Card, Row, Col, Modal, Button } from 'antd';
+import { ClockCircleOutlined } from '@ant-design/icons';
+
 
 export default function Exam() {
     const [questions, setQuestions] = useState([]);
@@ -261,88 +264,91 @@ export default function Exam() {
     const renderExamInfo = () => {
         const subjectName = subjects.find((s) => s.value === subject)?.label || 'Không xác định';
         return (
-            <div class="card mb-4 question">
-                <div class="card-body">
-                    <h5 class="card-title mb-3 fw-bold">Thông tin bài thi</h5>
-                    <div class="row">
-                        <div class="col-12 col-md-4 mb-2">
-                            <strong>Thời gian làm bài:</strong> {timeSet === 9999 ? 'Không giới hạn' : `${timeSet} phút`}
-                        </div>
-                        <div class="col-12 col-md-4 mb-2">
-                            <strong>Số câu hỏi:</strong> {questions.length}
-                        </div>
-                        <div class="col-12 col-md-4 mb-2">
-                            <strong>Chủ đề:</strong> {subjectName}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Card title="Thông tin bài thi" style={{ width: '100%', marginBottom: '16px' }} className='qestion'>
+                <Row gutter={[16, 16]}>
+                    <Col xs={24} md={8}>
+                        <strong>Thời gian làm bài:</strong> {timeSet === 9999 ? 'Không giới hạn' : `${timeSet} phút`}
+                    </Col>
+                    <Col xs={24} md={8}>
+                        <strong>Số câu hỏi:</strong> {questions.length}
+                    </Col>
+                    <Col xs={24} md={8}>
+                        <strong>Chủ đề:</strong> {subjectName}
+                    </Col>
+                </Row>
+            </Card>
         );
     };
 
     const renderConfirmModal = () => (
-        <div class={`modal fade ${showConfirmModal ? 'show' : ''}`}
-            style={{ display: showConfirmModal ? 'block' : 'none' }}
-            tabIndex="-1"
-            role="dialog">
-            <div class="modal-dialog modal-dialog-centered" style={{ zIndex: '1061' }} role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Xác nhận nộp bài</h5>
-                        <button type="button" class="btn-close" onClick={() => setShowConfirmModal(false)}></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            {timeSet === 9999
-                                ? 'Bạn đang làm bài ở chế độ không giới hạn thời gian.'
-                                : `Bạn vẫn còn thời gian làm bài (${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}).`}
-                        </p>
-                        <p>Đã trả lời: {answers.filter(a => a).length}/{questions.length} câu</p>
-                        <p>Đánh dấu xem lại: {reviewMarks.filter(mark => mark).length} câu</p>
-                    </div>
+        <Modal
+            title="Xác nhận nộp bài"
+            open={showConfirmModal}
+            onCancel={() => setShowConfirmModal(false)}
+            footer={[
+                <Button key="cancel" onClick={() => setShowConfirmModal(false)}>
+                    Huỷ
+                </Button>,
+                <Button
+                    key="submit"
+                    style={{ backgroundColor: '#faad14', borderColor: '#faad14', color: '#000' }}
+                    onClick={() => {
+                        setShowConfirmModal(false);
+                        submitExam(false);
+                    }}
+                >
+                    Nộp bài
+                </Button>
 
-                    <div class="modal-footer justify-content-center">
-                        <button type="button" class="btn btn-secondary" onClick={() => setShowConfirmModal(false)}>Huỷ</button>
-                        <button type="button" class="btn btn-warning" onClick={() => {
-                            setShowConfirmModal(false);
-                            submitExam(false);
-                        }}>Nộp bài</button>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-backdrop fade show"></div>
-        </div>
+            ]}
+            centered
+            zIndex={1061}
+        >
+            <p>
+                {timeSet === 9999
+                    ? 'Bạn đang làm bài ở chế độ không giới hạn thời gian.'
+                    : `Bạn vẫn còn thời gian làm bài (${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}).`}
+            </p>
+            <p>Đã trả lời: {answers.filter((a) => a).length}/{questions.length} câu</p>
+            <p>Đánh dấu xem lại: {reviewMarks.filter((mark) => mark).length} câu</p>
+        </Modal>
     );
 
     const renderTimeUpModal = () => {
         if (timeSet === 9999) return null;
+
         return (
-            <div class={`modal fade ${showTimeUpModal ? 'show' : ''}`}
-                style={{ display: showTimeUpModal ? 'block' : 'none', backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
-                tabIndex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered" style={{ zIndex: '1061' }} role="document">
-                    <div class="modal-content">
-                        <div class="modal-header bg-danger text-white">
-                            <h5 class="modal-title">Hết thời gian làm bài!</h5>
-                        </div>
-                        <div class="modal-body">
-                            <i class="fas fa-clock fa-3x text-danger mb-3"></i>
-                            <p class="fw-bold">Đã hết thời gian làm bài.</p>
-                            <p>Đã trả lời: {answers.filter(a => a).length}/{questions.length} câu</p>
-                            <p>Bạn cần nộp bài ngay để xem kết quả.</p>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-danger" onClick={() => submitExam(true)}>
-                                Nộp bài ngay
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-backdrop fade show"></div>
-            </div>
+            <Modal
+                title={
+                    <span style={{ color: 'white' }}>
+                        Hết thời gian làm bài!
+                    </span>
+                }
+                open={showTimeUpModal}
+                footer={null}
+                closable={false}
+                centered
+                onCancel={() => { }} // để tránh warning
+                bodyStyle={{ textAlign: 'center' }}
+                className="timeup-modal"
+                zIndex={1061}
+
+            >
+                <ClockCircleOutlined style={{ fontSize: '48px', color: '#ff4d4f', marginBottom: '16px' }} />
+                <p className="fw-bold">Đã hết thời gian làm bài.</p>
+                <p>Đã trả lời: {answers.filter(a => a).length}/{questions.length} câu</p>
+                <p>Bạn cần nộp bài ngay để xem kết quả.</p>
+                <Button
+                    type="primary"
+                    danger
+                    onClick={() => submitExam(true)}
+                    style={{ marginTop: '12px' }}
+                >
+                    Nộp bài ngay
+                </Button>
+            </Modal>
         );
     };
-
     if (loading) return <div>Đang tải đề thi...</div>;
     if (error) return <div>{error}</div>;
     if (questions.length === 0) return <div>Không có câu hỏi.</div>;
