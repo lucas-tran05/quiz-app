@@ -104,7 +104,7 @@ export default function Exam() {
             setRangeEnd(config.rangeEnd || 0);
             setSubject(config.subject || '');
 
-            const user = JSON.parse(localStorage.getItem('user') || '{}');
+            const user = JSON.parse(localStorage.getItem('user')).value || {};
             setName(user.name || '');
         } catch (err) {
             console.error('Lỗi khi đọc localStorage:', err);

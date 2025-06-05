@@ -11,6 +11,7 @@ import {
     message,
     Row,
     Col,
+    message as antMessage
 } from 'antd';
 import { subjects } from '../../config/subjects';
 import { timeOptions } from '../../config/time';
@@ -22,14 +23,65 @@ const { Option } = Select;
 export default function Quiz() {
     const [form] = Form.useForm();
 
+    // Check user mỗi lần vào trang này
     useEffect(() => {
-        const user = JSON.parse(localStorage.getItem('user'));
-        if (!user) {
+        const storedUser = localStorage.getItem('user');
+        if (!storedUser) {
+            antMessage.error('Bạn cần đăng nhập để truy cập trang này.');
+            route('/');
+            return;
+        }
+
+        try {
+            const parsed = JSON.parse(storedUser);
+            const now = Date.now();
+
+            if (!parsed.expiry || now > parsed.expiry) {
+                localStorage.removeItem('user');
+                antMessage.error('Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.');
+                route('/');
+                return;
+            }
+        } catch (err) {
+            console.error('Error parsing user data:', err);
+            localStorage.removeItem('user');
             route('/');
         }
     }, []);
 
+    // Hàm checkUser dùng khi submit bắt buộc phải đúng thì submit, sai redirect
+    const checkUser = () => {
+        const storedUser = localStorage.getItem('user');
+        if (!storedUser) {
+            antMessage.error('Bạn cần đăng nhập để truy cập trang này.');
+            route('/');
+            return false;
+        }
+
+        try {
+            const parsed = JSON.parse(storedUser);
+            const now = Date.now();
+
+            if (!parsed.expiry || now > parsed.expiry) {
+                localStorage.removeItem('user');
+                antMessage.error('Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.');
+                route('/');
+                return false;
+            }
+
+            return true;
+        } catch (err) {
+            console.error('Dữ liệu user lỗi format:', err);
+            localStorage.removeItem('user');
+            route('/');
+            return false;
+        }
+    };
+
+    // Xử lý khi submit form
     const handleFinish = (values) => {
+        if (!checkUser()) return; // Bắt buộc phải checkUser trước khi xử lý tiếp
+
         const {
             subject,
             time,
@@ -95,7 +147,6 @@ export default function Quiz() {
                             </Option>
                         ))}
                     </Select>
-
                 </Form.Item>
 
                 {/* Chọn thời gian */}
@@ -104,7 +155,7 @@ export default function Quiz() {
                     name="time"
                     rules={[{ required: true, message: 'Vui lòng chọn thời gian!' }]}
                 >
-                    <Select placeholder="-- Chọn thời gian --" size='large'>
+                    <Select placeholder="-- Chọn thời gian --" size="large">
                         {timeOptions.map(({ value, label }) => (
                             <Option key={value} value={value}>
                                 {label}
@@ -138,7 +189,7 @@ export default function Quiz() {
                                     name="questionCount"
                                     rules={[{ required: true, message: 'Vui lòng chọn số câu hỏi!' }]}
                                 >
-                                    <Select placeholder="-- Chọn số câu hỏi --" size='large'>
+                                    <Select placeholder="-- Chọn số câu hỏi --" size="large">
                                         {questionCountOptions.map(({ value, label }) => (
                                             <Option key={value} value={value}>
                                                 {label}
@@ -154,8 +205,9 @@ export default function Quiz() {
                                         <Form.Item
                                             label="Câu hỏi bắt đầu từ"
                                             name="rangeStart"
-                                            rules={[{ required: true, message: 'Vui lòng nhập câu hỏi bắt đầu!' },
-                                            { type: 'number', min: 1, message: 'Tối thiểu 1' }
+                                            rules={[
+                                                { required: true, message: 'Vui lòng nhập câu hỏi bắt đầu!' },
+                                                { type: 'number', min: 1, message: 'Tối thiểu 1' },
                                             ]}
                                         >
                                             <InputNumber min={1} style={{ width: '100%' }} size="large" />
@@ -165,15 +217,15 @@ export default function Quiz() {
                                         <Form.Item
                                             label="Câu hỏi kết thúc tại"
                                             name="rangeEnd"
-                                            rules={[{ required: true, message: 'Vui lòng nhập câu hỏi kết thúc!' },
-                                            { type: 'number', max: 1000, message: 'Tối đa 1000' }
+                                            rules={[
+                                                { required: true, message: 'Vui lòng nhập câu hỏi kết thúc!' },
+                                                { type: 'number', max: 1000, message: 'Tối đa 1000' },
                                             ]}
                                         >
                                             <InputNumber min={1} style={{ width: '100%' }} size="large" />
                                         </Form.Item>
                                     </Col>
                                 </Row>
-
                             );
                         }
                         return null;

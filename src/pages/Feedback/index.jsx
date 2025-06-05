@@ -25,7 +25,7 @@ export default function Feedback() {
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
             try {
-                const parsed = JSON.parse(storedUser);
+                const parsed = JSON.parse(storedUser).value;
                 if (parsed && typeof parsed === 'object') {
                     form.setFieldsValue({
                         email: parsed.email || '',

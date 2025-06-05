@@ -2,7 +2,7 @@ import { sendResultToSheet } from './sendAPI';
 
 export function saveAndSendResult({ questions, answers }) {
     let correct = 0;
-    const user = JSON.parse(localStorage.getItem('user'));
+    const user = JSON.parse(localStorage.getItem('user')).value;
     const config = JSON.parse(localStorage.getItem('quiz-config'));
     const subject = config ? config.subject : null;
     if (!user || !config) throw new Error('Missing user or quiz config');
