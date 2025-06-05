@@ -16,9 +16,9 @@ export default function Home() {
             try {
                 const parsed = JSON.parse(storedUser);
 
-                if (now.getTime() > parsed.expiry) {
+                if (!parsed.expiry || now.getTime() > parsed.expiry) {
                     localStorage.removeItem('user');
-                    console.log('User data đã hết hạn và bị xóa');
+                    console.log('User data hết hạn hoặc không hợp lệ, đã xoá.');
                     return;
                 }
 
@@ -30,6 +30,7 @@ export default function Home() {
     }, [form]);
 
 
+
     const handleSubmit = (values) => {
         const { email, name, major } = values;
 
@@ -38,7 +39,7 @@ export default function Home() {
             return;
         }
 
-        const ttl = 24 * 60 * 60 * 1000; 
+        const ttl = 3 * 24 * 60 * 60 * 1000;
 
         const now = new Date();
 
