@@ -91,6 +91,7 @@ export default function Quiz() {
             examMode,
         } = values;
 
+        // Validate range
         if (questionMode === 'range' && rangeStart > rangeEnd) {
             message.error('Câu hỏi bắt đầu phải nhỏ hơn hoặc bằng câu hỏi kết thúc.');
             return;
@@ -101,19 +102,20 @@ export default function Quiz() {
             time,
             randomMode: questionMode === 'random',
             questionCount: questionMode === 'random' ? questionCount : null,
-            rangeStart: questionMode === 'range' ? rangeStart - 1 : null,
-            rangeEnd: questionMode === 'range' ? rangeEnd : null,
+            rangeStart: questionMode === 'range' ? rangeStart - 1 : questionMode === 'all' ? 0 : null,
+            rangeEnd: questionMode === 'range' ? rangeEnd : questionMode === 'all' ? 1000 : null,
             startTime: Date.now(),
         };
 
         localStorage.setItem('quiz-config', JSON.stringify(config));
+
         if (examMode === 'all') {
             route('/exam/');
         } else {
             route('/exam/ver2');
         }
-
     };
+
 
     return (
         <div style={{ maxWidth: 600, margin: '50px auto', padding: 20 }}>
@@ -190,16 +192,11 @@ export default function Quiz() {
                     <Radio.Group>
                         <Radio value="random">Random</Radio>
                         <Radio value="range">Chọn theo khoảng</Radio>
-                        <Radio value="all" disabled>
+                        <Radio value="all">
                             Toàn bộ câu hỏi
                         </Radio>
                     </Radio.Group>
                 </Form.Item>
-
-                <Typography.Paragraph style={{ margin: 0, color: '#888', fontSize: '0.9em' }}>
-                    Để làm toàn bộ câu hỏi trong bài thi, hãy chọn chế độ "Chọn theo khoảng" và nhập số câu hỏi bắt đầu = 0 và kết thúc = 1000.
-                </Typography.Paragraph>
-
                 <Form.Item noStyle shouldUpdate={(prev, curr) => prev.questionMode !== curr.questionMode}>
                     {({ getFieldValue }) => {
                         const mode = getFieldValue('questionMode');
