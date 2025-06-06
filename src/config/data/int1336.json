@@ -1788,7 +1788,7 @@
     "a": "Kéo dài 1 nhánh LAN thông qua việc khuyếch đại tín hiệu truyền đến nó",
     "b": "Ngăn không cho các packet thuộc loại Broadcast đi qua nó",
     "c": "Giúp định tuyến cho các packet ",
-    "d": "Kết nối nhiều máy tính lại với nhau để tạo thành một nhánh LAN (segment)  31 ",
+    "d": "Kết nối nhiều máy tính lại với nhau để tạo thành một nhánh LAN (segment)",
     "ans": "a"
   },
   {
@@ -2128,7 +2128,7 @@
     "ans": "a"
   },
   {
-    "question": "Câu hỏi 1.2 Lệnh Netstat dùng để: 75: ",
+    "question": "Câu hỏi 1.2 Lệnh Netstat dùng để",
     "a": "Biết trạng thái cấu hình TCP/IP của máy tính (cấu hình về các card mạng)  ",
     "b": "Phân tích gói tin nhằm giải quyết một vấn đề cụ thể của mạng",
     "c": "Xác định đường đi của các gói tin từ nguồn đến đích",
