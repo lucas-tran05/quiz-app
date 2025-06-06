@@ -196,7 +196,6 @@ Gợi ý sửa:
                 visible={modalVisible}
                 centered
                 closable={false}
-
                 title={
                     <span>
                         <CheckCircleOutlined style={{ color: '#52c41a', marginRight: 8 }} />

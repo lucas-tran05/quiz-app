@@ -1,16 +1,14 @@
 import { h } from 'preact';
 import { useEffect, useState, useRef } from 'preact/hooks';
-import { route } from 'preact-router';
 import { validateQuizConfig } from '../../utils/validateConfig';
 import { loadQuestionsFromSubject } from '../../utils/loadQuestions';
 import { selectRandomQuestions } from '../../utils/selectQuestionsRandom';
 import { selectQuestionsInRange } from '../../utils/selectQuestionsInRange';
-import { saveAndSendResult } from '../../utils/saveResult';
-import { calculateScore } from '../../utils/calculateScore';
-import { subjects } from '../../config/subjects';
-import { Card, Row, Col, Modal, Button } from 'antd';
-import { ClockCircleOutlined } from '@ant-design/icons';
-
+import QuestionCard from '../../components/exam/QuestionCard';
+import ExamInfo from '../../components/exam/ExamInfo';
+import { handleSubmitExam } from '../../utils/handleSubmitExam';
+import ConfirmSubmitModal from '../../components/exam/ConfirmSubmitModal';
+import TimeUpModal from '../../components/exam/TimeUpModal';
 
 export default function Exam() {
     const [questions, setQuestions] = useState([]);
@@ -135,47 +133,16 @@ export default function Exam() {
     };
 
     const submitExam = async (isTimeUp = false) => {
-        try {
-            if (!questions || questions.length === 0) throw new Error('Không có câu hỏi để nộp bài.');
-
-            const safeAnswers = [...(answers || [])];
-            while (safeAnswers.length < questions.length) safeAnswers.push(null);
-
-            const scoreResult = calculateScore(questions, safeAnswers);
-
-            const result = {
-                questions,
-                answers: safeAnswers,
-                totalQuestions: questions.length,
-                completedTime: timeSet === 9999 ? null : timeSet * 60 - timeLeft,
-                totalTime: timeSet === 9999 ? null : timeSet * 60,
-                subject,
-                score: scoreResult.score,
-                correctAnswers: scoreResult.correctAnswers,
-                wrongAnswers: scoreResult.wrongAnswers,
-                unanswered: scoreResult.unanswered,
-                details: scoreResult.details
-            };
-
-            localStorage.setItem('quiz-result', JSON.stringify(result));
-
-            try {
-                await saveAndSendResult(result);
-            } catch (sendError) {
-                console.error('Error sending result to server:', sendError);
-            }
-
-            localStorage.removeItem('quiz-config');
-            setShowConfirmModal(false);
-            setShowTimeUpModal(false);
-            route('/result');
-        } catch (e) {
-            console.error('Error submitting exam:', e);
-            setError(e.message || 'Lỗi khi lưu kết quả.');
-            if (localStorage.getItem('quiz-result')) {
-                setTimeout(() => route('/result'), 1000);
-            }
-        }
+        await handleSubmitExam({
+            questions,
+            answers,
+            timeSet,
+            timeLeft,
+            subject,
+            setError,
+            setShowConfirmModal,
+            setShowTimeUpModal,
+        });
     };
 
     const handleSubmitClick = () => {
@@ -185,42 +152,6 @@ export default function Exam() {
     const scrollToQuestion = (index) => {
         document.getElementById(`question-${index}`)?.scrollIntoView({ behavior: 'smooth' });
     };
-
-    const renderQuestion = (q, index) => (
-        <>
-            <div key={index} id={`question-${index}`} className="mb-4 question" >
-                <div style={{ display: 'flex', alignItems: 'start', gap: '8px', marginBottom: '8px' }}>
-                    <input
-                        // style={{ marginTop: '4px' }}
-                        type="checkbox"
-                        id={`review-${index}`}
-                        className="form-check-input"
-                        checked={reviewMarks[index] || false}
-                        onChange={() => toggleReviewMark(index)}
-                    />
-                    <h6 style={{ fontWeight: 'bold', textAlign: 'justify', margin: 0 }}>
-                        {index + 1}. {q.question}
-                    </h6>
-                </div>
-
-                {['a', 'b', 'c', 'd'].map((key) => (
-                    <div class="form-check" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} key={key}>
-                        <input
-                            type="radio"
-                            id={`${key}-${index}`}
-                            name={`answer-${index}`}
-                            class="form-check-input"
-                            onChange={() => handleAnswerChange(index, key)}
-                            checked={answers[index] === key}
-                        />
-                        <label htmlFor={`${key}-${index}`} class="form-check-label" style={{ textAlign: 'justify' }}>
-                            {q[key]}
-                        </label>
-                    </div>
-                ))}
-            </div>
-        </>
-    );
 
     const renderQuestionNavigator = () => (
         <div class="d-flex flex-wrap gap-2 justify-content-center">
@@ -261,92 +192,32 @@ export default function Exam() {
         </div>
     );
 
-    const renderExamInfo = () => {
-        const subjectName = subjects.find((s) => s.value === subject)?.label || 'Không xác định';
-        return (
-            <Card title="Thông tin bài thi" style={{ width: '100%', marginBottom: '16px' }} className='qestion'>
-                <Row gutter={[16, 16]}>
-                    <Col xs={24} md={8}>
-                        <strong>Thời gian làm bài:</strong> {timeSet === 9999 ? 'Không giới hạn' : `${timeSet} phút`}
-                    </Col>
-                    <Col xs={24} md={8}>
-                        <strong>Số câu hỏi:</strong> {questions.length}
-                    </Col>
-                    <Col xs={24} md={8}>
-                        <strong>Chủ đề:</strong> {subjectName}
-                    </Col>
-                </Row>
-            </Card>
-        );
-    };
-
     const renderConfirmModal = () => (
-        <Modal
-            title="Xác nhận nộp bài"
+        <ConfirmSubmitModal
             open={showConfirmModal}
             onCancel={() => setShowConfirmModal(false)}
-            footer={[
-                <Button key="cancel" onClick={() => setShowConfirmModal(false)}>
-                    Huỷ
-                </Button>,
-                <Button
-                    key="submit"
-                    style={{ backgroundColor: '#faad14', borderColor: '#faad14', color: '#000' }}
-                    onClick={() => {
-                        setShowConfirmModal(false);
-                        submitExam(false);
-                    }}
-                >
-                    Nộp bài
-                </Button>
-
-            ]}
-            centered
-            zIndex={1061}
-        >
-            <p>
-                {timeSet === 9999
-                    ? 'Bạn đang làm bài ở chế độ không giới hạn thời gian.'
-                    : `Bạn vẫn còn thời gian làm bài (${Math.floor(timeLeft / 60)}:${(timeLeft % 60).toString().padStart(2, '0')}).`}
-            </p>
-            <p>Đã trả lời: {answers.filter((a) => a).length}/{questions.length} câu</p>
-            <p>Đánh dấu xem lại: {reviewMarks.filter((mark) => mark).length} câu</p>
-        </Modal>
+            onSubmit={() => {
+                setShowConfirmModal(false);
+                submitExam(false);
+            }}
+            timeSet={timeSet}
+            timeLeft={timeLeft}
+            answers={answers}
+            questions={questions}
+            reviewMarks={reviewMarks}
+        />
     );
 
     const renderTimeUpModal = () => {
         if (timeSet === 9999) return null;
 
         return (
-            <Modal
-                title={
-                    <span style={{ color: 'white' }}>
-                        Hết thời gian làm bài!
-                    </span>
-                }
+            <TimeUpModal
                 open={showTimeUpModal}
-                footer={null}
-                closable={false}
-                centered
-                onCancel={() => { }} // để tránh warning
-                bodyStyle={{ textAlign: 'center' }}
-                className="timeup-modal"
-                zIndex={1061}
-
-            >
-                <ClockCircleOutlined style={{ fontSize: '48px', color: '#ff4d4f', marginBottom: '16px' }} />
-                <p className="fw-bold">Đã hết thời gian làm bài.</p>
-                <p>Đã trả lời: {answers.filter(a => a).length}/{questions.length} câu</p>
-                <p>Bạn cần nộp bài ngay để xem kết quả.</p>
-                <Button
-                    type="primary"
-                    danger
-                    onClick={() => submitExam(true)}
-                    style={{ marginTop: '12px' }}
-                >
-                    Nộp bài ngay
-                </Button>
-            </Modal>
+                answers={answers}
+                questions={questions}
+                onSubmit={() => submitExam(true)}
+            />
         );
     };
     if (loading) return <div>Đang tải đề thi...</div>;
@@ -355,10 +226,21 @@ export default function Exam() {
 
     return (
         <div class="container mt-5 mb-5 pb-5">
-            {renderExamInfo()}
+            <ExamInfo timeSet={timeSet} questions={questions} subject={subject} />
             <div class="row">
                 <div class="col-12">
-                    {questions.map(renderQuestion)}
+                    {questions.map((q, index) => (
+                        <QuestionCard
+                            key={index}
+                            index={index}
+                            question={q}
+                            answer={answers[index]}
+                            reviewMark={reviewMarks[index]}
+                            onToggleReview={toggleReviewMark}
+                            onAnswerChange={handleAnswerChange}
+                            locked={false}
+                        />
+                    ))}
                 </div>
                 <div style={{ height: '180px' }} />
                 <div class="col-12 fixed-bottom">{renderStatusBar()}</div>

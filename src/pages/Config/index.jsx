@@ -78,9 +78,8 @@ export default function Quiz() {
         }
     };
 
-    // Xử lý khi submit form
     const handleFinish = (values) => {
-        if (!checkUser()) return; // Bắt buộc phải checkUser trước khi xử lý tiếp
+        if (!checkUser()) return;
 
         const {
             subject,
@@ -89,6 +88,7 @@ export default function Quiz() {
             questionCount,
             rangeStart,
             rangeEnd,
+            examMode,
         } = values;
 
         if (questionMode === 'range' && rangeStart > rangeEnd) {
@@ -102,12 +102,17 @@ export default function Quiz() {
             randomMode: questionMode === 'random',
             questionCount: questionMode === 'random' ? questionCount : null,
             rangeStart: questionMode === 'range' ? rangeStart - 1 : null,
-            rangeEnd: questionMode === 'range' ? rangeEnd - 1 : null,
+            rangeEnd: questionMode === 'range' ? rangeEnd : null,
             startTime: Date.now(),
         };
 
         localStorage.setItem('quiz-config', JSON.stringify(config));
-        route('/exam');
+        if (examMode === 'all') {
+            route('/exam/');
+        } else {
+            route('/exam/ver2');
+        }
+
     };
 
     return (
@@ -164,8 +169,24 @@ export default function Quiz() {
                     </Select>
                 </Form.Item>
 
+                {/* Chế độ làm bài */}
+                <Form.Item
+                    label="Chế độ làm bài"
+                    name="examMode"
+                    initialValue="all"
+                    rules={[{ required: true, message: 'Vui lòng chọn chế độ làm bài!' }]}
+                >
+                    <Radio.Group>
+                        <Radio value="all">Hiển thị toàn bộ câu hỏi</Radio>
+                        <Radio value="each">Hiển thị từng câu (beta)</Radio>
+                    </Radio.Group>
+                </Form.Item>
+
                 {/* Chế độ chọn câu hỏi */}
-                <Form.Item label="Chế độ chọn câu hỏi" name="questionMode">
+                <Form.Item label="Chế độ chọn câu hỏi" name="questionMode"
+                    initialValue="random"
+                    rules={[{ required: true, message: 'Vui lòng chọn chế độ câu hỏi!' }]}
+                >
                     <Radio.Group>
                         <Radio value="random">Random</Radio>
                         <Radio value="range">Chọn theo khoảng</Radio>
@@ -242,6 +263,6 @@ export default function Quiz() {
                     </Button>
                 </Form.Item>
             </Form>
-        </div>
+        </div >
     );
 }
