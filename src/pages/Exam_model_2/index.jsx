@@ -200,7 +200,7 @@ export default function SingleQuestionExamWithNavigator() {
                     </span>
                 </div>
                 <button class="btn btn-warning" onClick={() => setShowConfirmModal(true)}>
-                    Nộp bài
+                    Nộp bài ngay
                 </button>
             </div>
             <QuestionNavigator
