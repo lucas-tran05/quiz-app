@@ -188,7 +188,7 @@ export default function SingleQuestionExamWithNavigator() {
     };
 
     const renderStatusBar = () => (
-        <div class="p-3 bg-light border-top fixed-bottom">
+        <div id='status-bar' class="p-3 bg-light border-top fixed-bottom">
             <div class="d-flex flex-wrap justify-content-around align-items-center mb-3 gap-3">
                 <p class="fw-bold mb-0">{name}</p>
                 <div>
