@@ -1,14 +1,13 @@
 import { h } from 'preact';
 import { useEffect, useState, useRef } from 'preact/hooks';
 import { validateQuizConfig } from '../../utils/validateConfig';
-import { loadQuestionsFromSubject } from '../../utils/loadQuestions';
-import { selectRandomQuestions } from '../../utils/selectQuestionsRandom';
-import { selectQuestionsInRange } from '../../utils/selectQuestionsInRange';
 import QuestionCard from '../../components/exam/QuestionCard';
 import ExamInfo from '../../components/exam/ExamInfo';
 import { handleSubmitExam } from '../../utils/handleSubmitExam';
 import ConfirmSubmitModal from '../../components/exam/ConfirmSubmitModal';
 import TimeUpModal from '../../components/exam/TimeUpModal';
+import fetchQuestions from '../../utils/fetchQuestions';
+import { Spin } from 'antd';
 
 export default function Exam() {
     const [questions, setQuestions] = useState([]);
@@ -52,9 +51,8 @@ export default function Exam() {
             loadConfigFromLocalStorage();
 
             const { subject, time, questionCount } = validateQuizConfig();
-            const allQuestions = await loadQuestionsFromSubject(subject);
-
             const config = JSON.parse(localStorage.getItem('quiz-config') || '{}');
+
             const randomMode = config.randomMode === true;
             const start = config.rangeStart || 0;
             const end = config.rangeEnd || 0;
@@ -63,12 +61,19 @@ export default function Exam() {
             setTimeSet(parseInt(timeSetting));
             setTimeLeft(parseInt(timeSetting) * 60);
 
-            let selectedQuestions = [];
+            const fetchParams = {
+                id: subject,
+                mode: randomMode ? 'random' : 'range',
+            };
+
             if (randomMode) {
-                selectedQuestions = selectRandomQuestions(allQuestions, questionCount);
+                fetchParams.count = questionCount;
             } else {
-                selectedQuestions = selectQuestionsInRange(allQuestions, start, end);
+                fetchParams.start = start;
+                fetchParams.end = end;
             }
+
+            const selectedQuestions = await fetchQuestions(fetchParams);
 
             if (!isMounted.current) return;
 
@@ -80,11 +85,12 @@ export default function Exam() {
             setLoading(false);
         } catch (e) {
             if (isMounted.current) {
-                setError(e.message || 'Không thể tải câu hỏi.');
+                setError(e.message || 'Không thể tải câu hỏi từ máy chủ.');
                 setLoading(false);
             }
         }
     };
+
 
     const toggleReviewMark = (index) => {
         setReviewMarks((prev) => {
@@ -220,7 +226,11 @@ export default function Exam() {
             />
         );
     };
-    if (loading) return <div>Đang tải đề thi...</div>;
+    if (loading) return (
+        <div class="d-flex justify-content-center align-items-center vh-100" style={{ backgroundColor: '#f8f9fa' }}>
+            <Spin size="large" tip="Đang tải câu hỏi..." style={{ color: '#007bff' }} />
+        </div>
+    );
     if (error) return <div>{error}</div>;
     if (questions.length === 0) return <div>Không có câu hỏi.</div>;
 
