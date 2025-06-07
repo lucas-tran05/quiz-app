@@ -219,25 +219,25 @@ Gợi ý sửa:
                         <Button
                             type="primary"
                             onClick={() => {
-                                
                                 localStorage.removeItem('feedback');
                                 setModalVisible(false);
                             }}
                         >
                             Gửi tiếp
                         </Button>
+
                         <Button onClick={() => handleResetAndRoute('/result')}>
                             Trang kết quả
                         </Button>
                     </Space>
                 }
             >
-            <Paragraph>
-                Cảm ơn bạn đã dành thời gian để gửi góp ý. Chúng tôi sẽ xem xét và cải thiện ngay!
-            </Paragraph>
-            <Paragraph>
-                Nếu bạn có thêm câu hỏi nào khác, đừng ngần ngại gửi tiếp nhé!
-            </Paragraph>
+                <Paragraph>
+                    Cảm ơn bạn đã dành thời gian để gửi góp ý. Chúng tôi sẽ xem xét và cải thiện ngay!
+                </Paragraph>
+                <Paragraph>
+                    Nếu bạn có thêm câu hỏi nào khác, đừng ngần ngại gửi tiếp nhé!
+                </Paragraph>
             </Modal>
 
         </div>

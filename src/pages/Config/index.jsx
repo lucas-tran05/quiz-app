@@ -174,7 +174,7 @@ export default function Quiz() {
                 <Form.Item
                     label="Chế độ làm bài"
                     name="examMode"
-                    initialValue="all"
+                    initialValue="each"
                     rules={[{ required: true, message: 'Vui lòng chọn chế độ làm bài!' }]}
                 >
                     <Radio.Group>
