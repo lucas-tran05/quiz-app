@@ -43,7 +43,6 @@ export default function Quiz() {
                 return;
             }
         } catch (err) {
-            console.error('Error parsing user data:', err);
             localStorage.removeItem('user');
             route('/');
         }
@@ -71,7 +70,6 @@ export default function Quiz() {
 
             return true;
         } catch (err) {
-            console.error('Dữ liệu user lỗi format:', err);
             localStorage.removeItem('user');
             route('/');
             return false;
