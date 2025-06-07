@@ -1,4 +1,5 @@
 export const subjects = [
+    { value: "leadership1", label: "Leadership UEB" },
     { value: "bas1221", label: "Pháp luật đại cương"},
     { value: "bas1221_1", label: "Pháp luật đại cương (Chương 1)" },
     { value: "bas1221_2", label: "Pháp luật đại cương (Chương 2)" },
