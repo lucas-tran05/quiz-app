@@ -253,12 +253,23 @@ export default function SingleQuestionExamWithNavigator() {
 
                     {isCorrect !== null && (
                         <div class={`alert mt-3 ${isCorrect ? 'alert-success' : 'alert-danger'}`}>
-                            {isCorrect
-                                ? 'Đúng rồi! Bạn chọn chính xác.'
-                                : <>
+                            {isCorrect ? (
+                                'Đúng rồi! Bạn chọn chính xác.'
+                            ) : (
+                                <>
                                     Đáp án sai. <br />
-                                    <strong>Đáp án đúng:</strong> {correctAnswer}
-                                </>}
+                                    {correctAnswer && (
+                                        <>
+                                            <strong>Đáp án đúng:</strong> {correctAnswer} <br />
+                                        </>
+                                    )}
+                                    {currentQuestion?.explain && (
+                                        <>
+                                            <strong>Giải thích:</strong> {currentQuestion.explain}
+                                        </>
+                                    )}
+                                </>
+                            )}
                         </div>
                     )}
 

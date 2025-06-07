@@ -154,6 +154,13 @@ export default function Result() {
                                         </div>
                                     ))}
                                 </div>
+
+                                {/* Hiển thị giải thích nếu có */}
+                                {q.explain && (
+                                    <div className="mt-2 p-2 bg-light border rounded">
+                                        <strong>Giải thích:</strong> {q.explain}
+                                    </div>
+                                )}
                             </div>
                         );
                     })}
