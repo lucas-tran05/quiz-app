@@ -35,6 +35,8 @@ export default function Exam() {
         const handleBeforeUnload = (e) => {
             e.preventDefault();
             e.returnValue = 'Hành động này sẽ huỷ bài làm. Bạn có chắc chắn muốn thoát?';
+            localStorage.removeItem('quiz-config');
+
         };
 
         window.addEventListener('beforeunload', handleBeforeUnload);

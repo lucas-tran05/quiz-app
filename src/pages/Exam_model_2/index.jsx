@@ -91,6 +91,7 @@ export default function SingleQuestionExamWithNavigator() {
     const handleBeforeUnload = useCallback((e) => {
         e.preventDefault();
         e.returnValue = 'Bạn có chắc chắn muốn rời khỏi? Bài làm sẽ bị hủy!';
+        localStorage.removeItem('quiz-config');
     }, []);
 
     const handleAnswerChange = useCallback((index, answer) => {
