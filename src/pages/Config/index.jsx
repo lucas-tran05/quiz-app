@@ -16,6 +16,7 @@ import {
 import { subjects } from '../../config/subjects';
 import { timeOptions } from '../../config/time';
 import { questionCountOptions } from '../../config/question';
+import RecentResults from '../../components/history/historyCard';
 
 const { Title, Paragraph } = Typography;
 const { Option } = Select;
@@ -258,6 +259,7 @@ export default function Quiz() {
                     </Button>
                 </Form.Item>
             </Form>
+            {/* <RecentResults /> */}
         </div >
     );
 }
