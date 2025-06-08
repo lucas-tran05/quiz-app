@@ -27,6 +27,18 @@ export default function QuestionCard({
                     {index + 1}. {question.question}
                 </h6>
             </div>
+            {!!question.image && (
+                <div style={{ display: 'flex', marginBottom: '8px', textAlign: 'justify', width: '100%', justifyContent: 'center' }}>
+                    <img
+                        draggable="false"
+                        loading="lazy"
+                        src={question.image}
+                        alt={`Question ${index + 1}`}
+                        className="question-image"
+                    />
+                </div>
+            )}
+
 
             {['a', 'b', 'c', 'd'].map((key) => {
                 const isAnswerCorrect = question.correctAnswer === key;
