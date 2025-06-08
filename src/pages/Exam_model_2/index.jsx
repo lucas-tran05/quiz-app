@@ -7,7 +7,7 @@ import TimeUpModal from '../../components/exam/TimeUpModal';
 import { validateQuizConfig } from '../../utils/validateConfig';
 import { handleSubmitExam } from '../../utils/handleSubmitExam';
 import fetchQuestions from '../../utils/fetchQuestions';
-import { Spin, Progress, Flex, Tag  } from 'antd';
+import { Spin, Progress, Flex, Tag } from 'antd';
 
 export default function SingleQuestionExamWithNavigator() {
     const [questions, setQuestions] = useState([]);
@@ -24,7 +24,7 @@ export default function SingleQuestionExamWithNavigator() {
     const [subject, setSubject] = useState('');
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [showTimeUpModal, setShowTimeUpModal] = useState(false);
-    
+
 
     const timerRef = useRef(null);
     const isMounted = useRef(true);
@@ -247,13 +247,15 @@ export default function SingleQuestionExamWithNavigator() {
                     )}
 
                     <div class="d-flex justify-content-center mt-3">
-                        <button
-                            class="btn btn-outline-primary"
-                            onClick={handleNextQuestion}
-                            disabled={currentQuestionIndex >= questions.length - 1 && !showConfirmModal && timeSet !== 9999}
-                        >
-                            {currentQuestionIndex < questions.length - 1 ? 'Câu tiếp theo' : 'Nộp bài'}
-                        </button>
+                        {currentQuestionIndex < questions.length - 1 && (
+                            <button
+                                className="btn btn-outline-primary"
+                                onClick={handleNextQuestion}
+                                disabled={currentQuestionIndex >= questions.length - 1 && !showConfirmModal && timeSet !== 9999}
+                            >
+                                Câu tiếp theo
+                            </button>
+                        )}
                     </div>
                 </div>
 
