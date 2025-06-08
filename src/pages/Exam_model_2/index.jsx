@@ -233,7 +233,7 @@ export default function SingleQuestionExamWithNavigator() {
                                     Đáp án sai. <br />
                                     {correctAnswer && (
                                         <>
-                                            <strong>Đáp án đúng:</strong> {correctAnswer} <br />
+                                            <strong>Đáp án đúng:</strong> {correctAnswer.toUpperCase()} - {currentQuestion?.[`${correctAnswer}`]} <br />
                                         </>
                                     )}
                                     {currentQuestion?.explain && (
