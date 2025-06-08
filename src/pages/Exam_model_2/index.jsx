@@ -7,45 +7,7 @@ import TimeUpModal from '../../components/exam/TimeUpModal';
 import { validateQuizConfig } from '../../utils/validateConfig';
 import { handleSubmitExam } from '../../utils/handleSubmitExam';
 import fetchQuestions from '../../utils/fetchQuestions';
-import { Spin } from 'antd';
-
-function QuestionNavigator({ questions, currentQuestionIndex, reviewMarks, answers, setCurrentQuestionIndex, setIsCorrect }) {
-    return (
-        <div class="d-flex flex-wrap gap-2 justify-content-center">
-            {questions.map((_, idx) => {
-                const isCurrent = idx === currentQuestionIndex;
-                const isLocked = idx < currentQuestionIndex;
-                const markedForReview = reviewMarks[idx];
-                const answered = answers[idx] !== undefined && answers[idx] !== null;
-
-                let btnClass = 'btn-outline-secondary';
-                if (isCurrent) btnClass = 'btn-primary';
-                else if (idx > currentQuestionIndex) {
-                    btnClass = markedForReview ? 'btn-warning' : (answered ? 'btn-success' : 'btn-outline-secondary');
-                } else {
-                    btnClass = 'btn-secondary disabled';
-                }
-
-                return (
-                    <button
-                        key={idx}
-                        class={`btn btn-sm rounded-3 ${btnClass}`}
-                        style={{ width: '40px', height: '40px', padding: 0, fontSize: '0.8rem' }}
-                        disabled={isLocked}
-                        onClick={() => {
-                            if (!isLocked) {
-                                setCurrentQuestionIndex(idx);
-                                setIsCorrect(null);
-                            }
-                        }}
-                    >
-                        {String(idx + 1).padStart(2, '0')}
-                    </button>
-                );
-            })}
-        </div>
-    );
-}
+import { Spin, Progress, Flex, Tag  } from 'antd';
 
 export default function SingleQuestionExamWithNavigator() {
     const [questions, setQuestions] = useState([]);
@@ -62,6 +24,7 @@ export default function SingleQuestionExamWithNavigator() {
     const [subject, setSubject] = useState('');
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [showTimeUpModal, setShowTimeUpModal] = useState(false);
+    
 
     const timerRef = useRef(null);
     const isMounted = useRef(true);
@@ -196,12 +159,16 @@ export default function SingleQuestionExamWithNavigator() {
         };
     }, [initExam, handleBeforeUnload]);
 
+    const answeredCount = answers.filter(ans => ans !== null && ans !== undefined).length;
+    const progressPercent = Math.round((answeredCount / questions.length) * 100);
+
+
     const renderStatusBar = () => (
         <div id="status-bar" class="p-3 bg-light border-top fixed-bottom" style={{ zIndex: 1000 }}>
             <div class="d-flex flex-wrap justify-content-around align-items-center mb-3 gap-3">
                 <p class="fw-bold mb-0">{name}</p>
                 <div>
-                    Thời gian còn lại:
+                    Thời gian:
                     <span class={`fw-bold ms-2 ${timeLeft < 300 && timeSet !== 9999 ? 'text-danger' : ''}`}>
                         {timeSet === 9999
                             ? 'Không giới hạn'
@@ -210,14 +177,20 @@ export default function SingleQuestionExamWithNavigator() {
                 </div>
                 <button class="btn btn-warning" onClick={() => setShowConfirmModal(true)}>Nộp bài ngay</button>
             </div>
-            <QuestionNavigator
-                questions={questions}
-                currentQuestionIndex={currentQuestionIndex}
-                reviewMarks={reviewMarks}
-                answers={answers}
-                setCurrentQuestionIndex={setCurrentQuestionIndex}
-                setIsCorrect={setIsCorrect}
-            />
+            <Flex gap={16} justify="center" align="center" class="mt-3">
+                <p class="fw-bold m-0">Tiến độ: {answeredCount}/{questions.length}</p>
+                <Progress
+                    percent={progressPercent}
+                    status={progressPercent === 100 ? 'success' : 'active'}
+                    strokeColor={{
+                        '0%': '#108ee9',
+                        '100%': '#52c41a',
+                    }}
+                    showInfo={true}
+                    style={{ width: '90%', maxWidth: '70%' }}
+                />
+            </Flex>
+
         </div>
     );
 

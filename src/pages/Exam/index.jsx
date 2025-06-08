@@ -186,7 +186,7 @@ export default function Exam() {
             <div class="d-flex flex-wrap justify-content-around align-items-center mb-3 gap-3">
                 <p class="fw-bold mb-0">{name}</p>
                 <div>
-                    Thời gian còn lại:
+                    Thời gian:
                     <span class={`fw-bold ms-2 ${timeLeft < 300 && timeSet !== 9999 ? 'text-danger' : ''}`}>
                         {timeSet === 9999
                             ? 'Không giới hạn'

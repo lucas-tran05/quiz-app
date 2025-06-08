@@ -2,13 +2,10 @@ import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { route } from 'preact-router';
 import BackToTop from '../../components/BackToTop';
-import Alert from '../../components/alert';
-import { Fragment } from 'preact'
+import { Progress } from 'antd';
 
-
-const round = (value, decimals) => {
-    return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
-};
+const round = (value, decimals) =>
+    Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
 
 export default function Result() {
     const [data, setData] = useState(null);
@@ -31,92 +28,58 @@ export default function Result() {
         route('/config');
         return;
     }
-    const score = round((10 / total) * correct, 2);
 
-    let scoreClass = 'text-success'; // Mặc định màu xanh
-    if (score < 5) {
-        scoreClass = 'text-danger'; // đỏ
-    } else if (score < 8) {
-        scoreClass = 'text-warning'; // vàng
-    }
+    const score = round((10 / total) * correct, 2);
 
     const handleReportQuestion = (questionText, options) => {
         const newReport = {
             question: questionText,
-            options: options,
+            options,
             reportedAt: new Date().toISOString()
         };
-
-        // Ghi đè luôn
         localStorage.setItem('feedback', JSON.stringify([newReport]));
         route('/feedback');
     };
 
-
     return (
         <div class="container mt-5">
-            <Alert
-                message={
-                    <Fragment>
-                        TQC: Chúc bạn thi đạt kết quả cao, nếu câu hỏi nào sai hãy gửi góp ý{' '}
-                        <a
-                            href="#"
-                            onClick={(e) => {
-                                e.preventDefault()
-                                route('/feedback')
-                            }}
-                            style={{
-                                textDecoration: 'underline',
-                                color: '#1677ff',
-                            }}
-                        >
-                            tại đây
-                        </a>
-                        {' '}để chúng mình cải thiện nhé!
-                    </Fragment>
-                }
-                type="success"
-                index="center"
-            />
-
             <h3 class="text-center mb-4 fw-bold">Kết quả bài thi</h3>
 
             <div class="text-center mb-4">
-                <h4>Điểm số: <span class={scoreClass}>{score} / 10</span></h4>
-                <p>Đúng: {correct} / {total} câu</p>
+                <Progress
+                    type="circle"
+                    percent={Math.round((score / 10) * 100)}
+                    format={() => `${score} / 10`}
+                    strokeColor={
+                        score >= 8 ? '#52c41a' :
+                            score >= 5 ? '#faad14' : '#ff4d4f'
+                    }
+                />
+                <p class="mt-3">Đúng: {correct} / {total} câu</p>
             </div>
 
-            {/* Nút chức năng canh giữa */}
             <div class="d-flex justify-content-center gap-3 mt-4 mb-4">
-                {!showDetails ? (
-                    <button class="btn btn-outline-success" onClick={() => setShowDetails(true)}>
-                        Xem chi tiết
-                    </button>
-                ) : (
-                    <button class="btn btn-outline-success" onClick={() => setShowDetails(false)}>
-                        Ẩn chi tiết
-                    </button>
-                )}
+                <button
+                    class="btn btn-outline-success"
+                    onClick={() => setShowDetails(prev => !prev)}
+                >
+                    {showDetails ? 'Ẩn chi tiết' : 'Xem chi tiết'}
+                </button>
                 <button
                     class="btn btn-success"
                     onClick={() => {
                         localStorage.removeItem('quiz-result');
                         const user = localStorage.getItem('user');
-                        if (user) {
-                            route(`/config`);
-                        } else {
-                            route('/');
-                        }
+                        route(user ? '/config' : '/');
                     }}
                 >
                     Làm bài mới
                 </button>
             </div>
 
-            {/* Hiển thị chi tiết bài làm nếu được bật */}
             {showDetails && (
-                <div className="p-3">
-                    <h5 className="mb-3">Chi tiết bài làm</h5>
+                <div class="p-3">
+                    <h5 class="mb-3">Chi tiết bài làm</h5>
                     {questions.map((q, index) => {
                         const userAnswer = answers[index];
                         const isCorrect = userAnswer === q.ans;
@@ -124,12 +87,16 @@ export default function Result() {
                         return (
                             <div
                                 key={index}
-                                className={`question mb-3 p-3 rounded ${isCorrect ? 'bg-light border border-success' : 'bg-light border border-danger'}`}
+                                class={`question mb-3 p-3 rounded 
+                                    bg-light border 
+                                    ${isCorrect ? 'border-success' : 'border-danger'}`}
                             >
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <strong style={{ display: 'flex', alignItems: 'start', gap: '8px' }}>{index + 1}. {q.question}</strong>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong style={{ display: 'flex', gap: '8px' }}>
+                                        {index + 1}. {q.question}
+                                    </strong>
                                     <button
-                                        className="btn btn-outline-warning btn-sm ms-2"
+                                        class="btn btn-outline-warning btn-sm ms-2"
                                         onClick={() => handleReportQuestion(q.question, {
                                             a: q.a,
                                             b: q.b,
@@ -138,26 +105,35 @@ export default function Result() {
                                             correct: q.ans
                                         })}
                                     >
-                                        <i className="bi bi-flag-fill"></i>
+                                        <i class="bi bi-flag-fill"></i>
                                     </button>
                                 </div>
-                                <div className="mt-2">
-                                    {['a', 'b', 'c', 'd'].map((key) => (
-                                        <div
-                                            style={{ display: 'flex', alignItems: 'start', gap: '8px', marginBottom: '1px' }}
-                                            key={key}
-                                            className={`p-1 rounded 
-                                    ${q.ans === key ? 'bg-success text-white' : ''} 
-                                    ${userAnswer === key && q.ans !== key ? 'bg-danger text-white' : ''}`}
-                                        >
-                                            <strong >{key.toUpperCase()}.</strong> {q[key]}
-                                        </div>
-                                    ))}
+
+                                <div class="mt-2">
+                                    {['a', 'b', 'c', 'd'].map((key) => {
+                                        const isCorrect = q.ans === key;
+                                        const isUserWrong = userAnswer === key && !isCorrect;
+
+                                        const bgColor = isCorrect
+                                            ? 'bg-success-subtle border border-success text-success'
+                                            : isUserWrong
+                                                ? 'bg-danger-subtle border border-danger text-danger'
+                                                : 'bg-light';
+
+                                        return (
+                                            <div
+                                                key={key}
+                                                class={`p-2 rounded d-flex gap-2 align-items-start mb-2 ${bgColor}`}
+                                            >
+                                                <strong>{key.toUpperCase()}.</strong> {q[key]}
+                                            </div>
+                                        );
+                                    })}
                                 </div>
 
-                                {/* Hiển thị giải thích nếu có */}
+
                                 {q.explain && (
-                                    <div className="mt-2 p-2 bg-light border rounded">
+                                    <div class="mt-2 p-2 bg-light border rounded">
                                         <strong>Giải thích:</strong> {q.explain}
                                     </div>
                                 )}
