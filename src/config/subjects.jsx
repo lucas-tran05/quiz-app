@@ -1,6 +1,7 @@
 export const subjects = [
     { value: "mar1333_1", label: "Internet và Ứng dụng trong kinh doanh (Chương 1)" },
     { value: "mar1333_2", label: "Internet và Ứng dụng trong kinh doanh (Chương 2)" },
+    { value: "mar1333_3", label: "Internet và Ứng dụng trong kinh doanh (Chương 3)" },
     { value: "fia1321_1", label: "Nguyên lí kế toán (Chương 1)" },
     { value: "fia1321_2", label: "Nguyên lí kế toán (Chương 2)" },
     { value: "fia1321_3", label: "Nguyên lí kế toán (Chương 3)" },
